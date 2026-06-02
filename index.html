@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spielplatzatlas Spelle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+
+  <div class="logo-wrapper">
+    <img src="images/logo.png" class="logo">
+  </div>
+
+  <p>Die schönsten Spielplätze in Spelle & Venhaus</p>
+
+</header>
+
+<section class="filters">
+
+  <button onclick="filterCards('all')">Alle</button>
+
+  <button onclick="filterCards('Kleinkinder Kletterturm')">
+    <img src="images/kleinkinder kletterturm.png" class="filter-icon">
+    Kleinkinder Kletterturm
+  </button>
+
+  <button onclick="filterCards('Kletterturm')">
+     <img src="images/kletterturm.png" class="filter-icon">
+     Kletterturm
+  </button>
+
+  <button onclick="filterCards('Babyschaukel')">
+    <img src="images/babyschaukel.png" class="filter-icon">
+    Babyschaukel
+  </button>
+
+  <button onclick="filterCards('Wasserspiel')">
+     <img src="images/wasserspiel.png" class="filter-icon">
+    Wasserspiel
+  </button>
+
+  <button onclick="filterCards('Bagger')">
+    <img src="images/bagger.png" class="filter-icon">
+    Bagger
+  </button>
+
+  <button onclick="filterCards('Turnreck')">
+    <img src="images/turnreck.png" class="filter-icon">
+    Turnreck
+  </button>
+
+  <button onclick="filterCards('Ballspiele')">
+    <img src="images/ballspiele.png" class="filter-icon">
+    Ballspiele
+  </button>
+
+  <button onclick="filterCards('Schatten')">
+    <img src="images/schatten.png" class="filter-icon">
+    Schatten
+  </button>
+
+  <button onclick="filterCards('Abschließbar')">
+     <img src="images/abschließbar.png" class="filter-icon">
+    Abschließbar
+  </button>
+
+</section>
+
+ 
+</section>
+
+<section class="cards">
+
+  <div class="card" data-tags="Kleinkinder Kletterturm Wasserspiel Schatten Babyschaukel Ballspiele Abschließbar">
+
+    <div class="carousel">
+      <button class="arrow left" onclick="prevSlide(this)">‹</button>
+
+      <img src="images/buergerpark1.jpg" class="active">
+      <img src="images/buergerpark2.jpg">
+      <img src="images/buergerpark3.jpg">
+      <img src="images/buergerpark4.jpg">
+      <img src="images/buergerpark5.jpg">
+      <img src="images/buergerpark6.jpg">
+      <img src="images/buergerpark7.jpg">
+      <img src="images/buergerpark8.jpg">
+      <img src="images/buergerpark9.jpg">
+      <img src="images/buergerpark10.jpg">
+      <img src="images/buergerpark11.jpg">
+
+      <button class="arrow right" onclick="nextSlide(this)">›</button>
+
+      <div class="dots"></div>
+    </div>
+
+    <div class="content">
+  <h2>Bürgerpark Spelle</h2>
+      <p>
+        Großer Spielplatz mit viel Schatten. Der Kleinkinder-Kletterturm ist
+        ein Feuerwehrauto. Der Bereich ist eingezäunt und hat ein Tor zum
+        Abschließen. Die große Wasser-Matschanlage ist von gemütlichen
+        Sonnenliegen umgeben.
+      </p>
+       
+    </div>
+
+    <div class="tags">
+      <span><img src="images/kleinkinder kletterturm.png" class="tag-icon"> Kleinkinder Kletterturm</span>
+      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>
+      <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span>
+      <span><img src="images/wasserspiel.png" class="tag-icon"> Wasserspiel</span>
+      <span><img src="images/tischtennis.png" class="tag-icon"> Tischtennis</span>
+      <span><img src="images/schatten.png" class="tag-icon"> Schatten</span>
+      <span><img src="images/abschließbar.png" class="tag-icon"> Abschließbar</span>
+    </div>
+
+<div class="tags">
+</div>
+
+<a href="https://www.google.com/maps/dir/?api=1&destination=52.3606757,7.4675378"
+   target="_blank"
+   class="route-link">
+  <img src="images/route.png" alt="Route planen" class="route-icon">
+</a>
+  </div>
+
+  <div class="card" data-tags="Kleinkinder Kletterturm Babyschaukel">
+
+    <div class="carousel">
+      <button class="arrow left" onclick="prevSlide(this)">‹</button>
+
+      <img src="images/rotdornstrasse1.jpg" class="active">
+      <img src="images/rotdornstrasse2.jpg">
+      <img src="images/rotdornstrasse3.jpg">
+      <img src="images/rotdornstrasse4.jpg">
+      <img src="images/rotdornstrasse6.jpg">
+      <img src="images/rotdornstrasse7.jpg">
+      <img src="images/rotdornstrasse8.jpg">
+      <img src="images/rotdornstrasse9.jpg">
+
+      <button class="arrow right" onclick="nextSlide(this)">›</button>
+
+      <div class="dots"></div>
+    </div>
+
+    <div class="content">
+    <h2>Spielplatz Rotdornstraße</h2>
+      <p>
+        Moderner Spielplatz mit großem Kletterturm und sonniger Fläche.
+      </p>
+    </div>
+
+    <div class="tags">
+      <span><img src="images/kleinkinder kletterturm.png" class="tag-icon"> Kleinkinder Kletterturm</span>
+      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>
+      <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span>
+    </div>
+
+<a href="https://www.google.com/maps/dir/?api=1&destination=52.3672290, 7.4903597"
+   target="_blank"
+   class="route-link">
+  <img src="images/route.png" alt="Route planen" class="route-icon">
+</a>
+
+  </div>
+  <div class="card" data-tags="Turnreck Schatten Ballspiele">
+
+    <div class="carousel">
+      <button class="arrow left" onclick="prevSlide(this)">‹</button>
+
+      <img src="images/telemannstrasse1.jpg" class="active">
+<img src="images/telemannstrasse2.jpg">
+<img src="images/telemannstrasse3.jpg">
+<img src="images/telemannstrasse4.jpg">
+
+      <button class="arrow right" onclick="nextSlide(this)">›</button>
+
+      <div class="dots"></div>
+    </div>
+
+    <div class="content">
+      <h2>Spielplatz Telemannstraße</h2>
+      <p>
+        Ein klassisch ausgestatteter Spielplatz mit viel Schatten und Rasenfläche, super Ziel für warme Sommertage.
+      </p>
+    </div>
+
+    <div class="tags">
+      <span><img src="images/turnreck.png" class="tag-icon"> Turnreck</span>
+      <span><img src="images/basketball.png" class="tag-icon"> Basketball</span>
+      <span><img src="images/schatten.png" class="tag-icon"> Schatten</span>
+    </div>
+<a href="https://www.google.com/maps/dir/?api=1&destination=52.3710313, 7.4798179"
+   target="_blank"
+   class="route-link">
+  <img src="images/route.png" alt="Route planen" class="route-icon">
+</a>
+  </div>
+
+<div class="card" data-tags="Kleinkinder Kletterturm Babyschaukel Turnreck">
+
+    <div class="carousel">
+      <button class="arrow left" onclick="prevSlide(this)">‹</button>
+
+      <img src="images/margaretenstrasse1.jpg" class="active">
+<img src="images/margaretenstrasse2.jpg">
+<img src="images/margaretenstrasse3.jpg">
+<img src="images/margaretenstrasse4.jpg">
+
+      <button class="arrow right" onclick="nextSlide(this)">›</button>
+
+      <div class="dots"></div>
+    </div>
+
+    <div class="content">
+      <h2>Spielplatz Margaretenstraße</h2>
+      <p>
+        Sonniger Spielplatz mit großer Rasenfläche.
+      </p>
+    </div>
+
+    <div class="tags">
+      <span><img src="images/kleinkinder kletterturm.png" class="tag-icon"> Kleinkinder Kletterturm</span>
+      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>
+      <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span>
+      <span><img src="images/turnreck.png" class="tag-icon"> Turnreck</span>
+    </div>
+
+<a href="https://www.google.com/maps/dir/?api=1&destination=52.3636915, 7.4639121"
+   target="_blank"
+   class="route-link">
+  <img src="images/route.png" alt="Route planen" class="route-icon">
+</a>
+  </div>
+  
+  <div class="card" data-tags="Kletterturm Babyschaukel Turnreck Bagger Ballspiele">
+
+    <div class="carousel">
+      <button class="arrow left" onclick="prevSlide(this)">‹</button>
+
+      <img src="images/bauernkamp1.jpg" class="active">
+<img src="images/bauernkamp2.jpg">
+<img src="images/bauernkamp3.jpg">
+<img src="images/bauernkamp4.jpg">
+
+      <button class="arrow right" onclick="nextSlide(this)">›</button>
+
+      <div class="dots"></div>
+    </div>
+
+    <div class="content">
+      <h2>Spielplatz Bauernkamp</h2>
+      <p>
+        Schöner Spielplatz mit großer Seilpyramide zum klettern und einem Sandbagger.
+      </p>
+    </div>
+
+    <div class="tags">
+      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>
+      <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span>
+      <span><img src="images/bagger.png" class="tag-icon"> Bagger</span>
+      <span><img src="images/turnreck.png" class="tag-icon"> Turnreck</span>
+      <span><img src="images/tischtennis.png" class="tag-icon"> Tischtennis</span>
+    </div>
+<a href="https://www.google.com/maps/dir/?api=1&destination=52.3646288, 7.4767689"
+   target="_blank"
+   class="route-link">
+  <img src="images/route.png" alt="Route planen" class="route-icon">
+</a>
+  </div>
+  
+   <div class="card" data-tags="Kleinkinder Kletterturm Babyschaukel Turnreck Schatten">
+
+    <div class="carousel">
+      <button class="arrow left" onclick="prevSlide(this)">‹</button>
+
+      <img src="images/halflingerstrasse1.jpg" class="active">
+<img src="images/halflingerstrasse2.jpg">
+<img src="images/halflingerstrasse3.jpg">
+<img src="images/halflingerstrasse4.jpg">
+<img src="images/halflingerstrasse5.jpg">
+<img src="images/halflingerstrasse6.jpg">
+
+      <button class="arrow right" onclick="nextSlide(this)">›</button>
+
+      <div class="dots"></div>
+    </div>
+
+    <div class="content">
+      <h2>Spielplatz Halflingerstraße</h2>
+      <p>
+        Naturnaher Spielplatz mit Kletterturm für Groß und Klein, verschiedenen Schaukeln und großem Sandbereich. Dank vieler Bäume gibt es auch im Sommer schattige Plätze zum Spielen und Ausruhen.
+      </p>
+    </div>
+
+    <div class="tags">
+      <span><img src="images/kleinkinder kletterturm.png" class="tag-icon"> Kleinkinder Kletterturm</span>
+      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>
+      <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span>
+      <span><img src="images/turnreck.png" class="tag-icon"> Turnreck</span>
+      <span><img src="images/schatten.png" class="tag-icon"> Schatten</span>
+    
+    </div>
+<a href="https://www.google.com/maps/dir/?api=1&destination=52.3675778, 7.4491590"
+   target="_blank"
+   class="route-link">
+  <img src="images/route.png" alt="Route planen" class="route-icon">
+</a>
+  </div>
+</section>
+
+<div id="lightbox" class="lightbox">
+  <span class="close-lightbox">&times;</span>
+  <button class="lightbox-arrow left-lightbox">‹</button>
+  <img id="lightbox-img" src="" alt="">
+  <button class="lightbox-arrow right-lightbox">›</button>
+</div>
+<script src="script.js"></script>
+
+<div class="card">
+  <div style="display:flex; flex-wrap:wrap; align-items:center; gap:25px; padding:20px;">
+
+    <div style="flex:0 0 140px; text-align:center;">
+      <img src="images/kaffeekasse.png"
+           alt="Kaffeekasse"
+           style="width:140px; height:auto;">
+    </div>
+
+    <div style="flex:1; min-width:250px;">
+
+      <h2 style="margin-top:0; display:flex; align-items:center; gap:10px;">
+  <img src="images/kaffeetasse.png" alt="Kaffeekasse" style="width:40px; height:40px;">
+  Kaffeekasse
+</h2>
+      <p style="font-size:14px; line-height:1.6;">
+         Der Spielplatzatlas Spelle ist ein privates Herzensprojekt, welches in meiner Elternzeit entstanden ist und wird in meiner Freizeit gepflegt.
+  Wenn dir die Seite geholfen hat, freue ich mich über einen virtuellen Kaffee.
+      </p>
+
+      <p style="font-size:14px; line-height:1.6;">
+        Die Unterstützung hilft bei Domainkosten, dem Betrieb der Website
+        und dem Ausbau des Spielplatzatlas.
+      </p>
+
+      <a href="https://paypal.me/Spielplatzatlas"
+         target="_blank"
+         style="
+           display:inline-block;
+           background:#e8c547;
+           color:#2e2e2e;
+           padding:10px 18px;
+           border-radius:20px;
+           text-decoration:none;
+           font-weight:bold;
+           margin-top:5px;
+         ">
+          Kaffee spendieren
+      </a>
+<p style="font-size:14px; color:#666; margin-top:18px;">
+  Vielen Dank. <br><br>
+  Anastasia
+</p>
+    </div>
+
+  </div>
+</div>
+
+<footer style="text-align:center; padding:40px 20px; font-size:14px;">
+  <a href="impressum.html" style="color:#2e2e2e; text-decoration:none;">Impressum</a>
+  |
+  <a href="datenschutz.html" style="color:#2e2e2e; text-decoration:none;">Datenschutz</a>
+</footer>
+<footer>
+  © 2026–<span id="year"></span> Spielplatzatlas Spelle
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
