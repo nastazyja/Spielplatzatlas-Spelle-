@@ -19,56 +19,53 @@
 
 <section class="filters">
 
-  <button onclick="filterCards('all')">Alle</button>
+  <button class="active" onclick="setActiveFilter(this); filterCards('all')">Alle</button>
 
-  <button onclick="filterCards('Kleinkinder Kletterturm')">
+  <button onclick="setActiveFilter(this); filterCards('Kleinkinder Kletterturm')">
     <img src="images/kleinkinder kletterturm.png" class="filter-icon">
     Kleinkinder Kletterturm
   </button>
 
-  <button onclick="filterCards('Kletterturm')">
-     <img src="images/kletterturm.png" class="filter-icon">
-     Kletterturm
+  <button onclick="setActiveFilter(this); filterCards('Kletterturm')">
+    <img src="images/kletterturm.png" class="filter-icon">
+    Kletterturm
   </button>
 
-  <button onclick="filterCards('Babyschaukel')">
+  <button onclick="setActiveFilter(this); filterCards('Babyschaukel')">
     <img src="images/babyschaukel.png" class="filter-icon">
     Babyschaukel
   </button>
 
-  <button onclick="filterCards('Wasserspiel')">
-     <img src="images/wasserspiel.png" class="filter-icon">
+  <button onclick="setActiveFilter(this); filterCards('Wasserspiel')">
+    <img src="images/wasserspiel.png" class="filter-icon">
     Wasserspiel
   </button>
 
-  <button onclick="filterCards('Bagger')">
+  <button onclick="setActiveFilter(this); filterCards('Bagger')">
     <img src="images/bagger.png" class="filter-icon">
     Bagger
   </button>
 
-  <button onclick="filterCards('Turnreck')">
+  <button onclick="setActiveFilter(this); filterCards('Turnreck')">
     <img src="images/turnreck.png" class="filter-icon">
     Turnreck
   </button>
 
-  <button onclick="filterCards('Ballspiele')">
+  <button onclick="setActiveFilter(this); filterCards('Ballspiele')">
     <img src="images/ballspiele.png" class="filter-icon">
     Ballspiele
   </button>
 
-  <button onclick="filterCards('Schatten')">
+  <button onclick="setActiveFilter(this); filterCards('Schatten')">
     <img src="images/schatten.png" class="filter-icon">
     Schatten
   </button>
 
-  <button onclick="filterCards('Abschließbar')">
-     <img src="images/abschließbar.png" class="filter-icon">
+  <button onclick="setActiveFilter(this); filterCards('Abschließbar')">
+    <img src="images/abschließbar.png" class="filter-icon">
     Abschließbar
   </button>
 
-</section>
-
- 
 </section>
 
 <section class="cards">
@@ -309,6 +306,42 @@
   <img src="images/route.png" alt="Route planen" class="route-icon">
 </a>
   </div>
+  
+  <div class="card" data-tags="Kletterturm Wasserspiel">
+
+    <div class="carousel">
+      <button class="arrow left" onclick="prevSlide(this)">‹</button>
+
+      <img src="images/schlanestrasse1.jpg" class="active">
+<img src="images/schlanestrasse2.jpg">
+<img src="images/schlanestrasse3.jpg">
+<img src="images/schlanestrasse4.jpg">
+<img src="images/schlanestrasse5.jpg">
+<img src="images/schlanestrasse6.jpg">
+
+      <button class="arrow right" onclick="nextSlide(this)">›</button>
+
+      <div class="dots"></div>
+    </div>
+
+    <div class="content">
+      <h2>Spielplatz Schlanestraße</h2>
+      <p>
+        Toller Spielplatz mit einem spannenden großen Kletterturm und einer Wasser-Matschanlage.
+      </p>
+    </div>
+
+    <div class="tags">
+      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>
+      <span><img src="images/wasserspiel.png" class="tag-icon"> Wasserspiel</span>
+    </div>
+<a href="https://www.google.com/maps/dir/?api=1&destination=52.3603751, 7.4368376"
+   target="_blank"
+   class="route-link">
+  <img src="images/route.png" alt="Route planen" class="route-icon">
+</a>
+  </div>
+
 </section>
 
 <div id="lightbox" class="lightbox">

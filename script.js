@@ -117,3 +117,11 @@ lightbox.onclick = e => {
     lightbox.style.display = "none";
   }
 };
+
+function setActiveFilter(button) {
+  document.querySelectorAll('.filters button').forEach(btn => {
+    btn.classList.remove('active');
+  });
+
+  button.classList.add('active');
+}

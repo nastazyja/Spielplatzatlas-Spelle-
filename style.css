@@ -225,3 +225,9 @@ margin: 0;
   width: auto;
   max-width: 90%;
 }
+
+.filters button.active {
+  background: #dff5d8;
+  border-color: #b7e4a8;
+  color: #2d5a27;
+}
