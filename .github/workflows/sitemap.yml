@@ -1,16 +1,15 @@
-name: Generate Sitemap
+name: Auto Sitemap Generator
 
 on:
   push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   sitemap:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Generate sitemap.xml
@@ -31,8 +30,41 @@ jobs:
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://spielplatzatlas-spelle.de/spielplatz-rotdornstrasse.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://spielplatzatlas-spelle.de/spielplatz-telemannstrasse.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://spielplatzatlas-spelle.de/spielplatz-margaretenstrasse.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://spielplatzatlas-spelle.de/spielplatz-bauernkamp.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://spielplatzatlas-spelle.de/spielplatz-halflingerstrasse.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
 EOF
+
+      - name: Show generated sitemap (debug)
+        run: cat sitemap.xml
 
       - name: Commit sitemap
         run: |
