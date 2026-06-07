@@ -70,15 +70,45 @@
 
 </section>
 
+<section class="filters orts">
+
+  <button class="active" onclick="setActiveFilter(this); filterOrt('all')">
+    Alle Orte
+  </button>
+
+  <button onclick="setActiveFilter(this); filterOrt('Spelle')">
+    Spelle
+  </button>
+
+  <button onclick="setActiveFilter(this); filterOrt('Venhaus')">
+    Venhaus
+  </button>
+
+  <button onclick="setActiveFilter(this); filterOrt('Varenrode')">
+    Varenrode
+  </button>
+
+  <button onclick="setActiveFilter(this); filterOrt('Lünne')">
+    Lünne
+  </button>
+
+  <button onclick="setActiveFilter(this); filterOrt('Schapen')">
+    Schapen
+  </button>
+
+</section>
+
 <section class="cards">
 
-  <div class="card" data-tags="Kleinkinder Kletterturm Wasserspiel Schatten Babyschaukel Ballspiele Abschließbar">
+  <div class="card" data-tags="Kleinkinder Kletterturm Wasserspiel Schatten Babyschaukel Ballspiele Abschließbar"
+  data-ort="Spelle">
 
     <div class="carousel">  <button class="arrow left" onclick="prevSlide(this)">‹</button>  <img src="images/buergerpark1.webp" class="active">  <img src="images/buergerpark2.webp" loading="lazy">  <img src="images/buergerpark3.webp" loading="lazy">  <img src="images/buergerpark4.webp" loading="lazy">  <img src="images/buergerpark5.webp" loading="lazy">  <img src="images/buergerpark6.webp" loading="lazy">  <img src="images/buergerpark7.webp" loading="lazy">  <img src="images/buergerpark8.webp" loading="lazy">  <img src="images/buergerpark9.webp" loading="lazy">  <img src="images/buergerpark10.webp" loading="lazy">  <img src="images/buergerpark11.webp" loading="lazy">  <button class="arrow right" onclick="nextSlide(this)">›</button>  <div class="dots"></div></div>
 
 
     <div class="content">
   <h2>Bürgerpark Spelle</h2>
+  <p class="ort-badge">📍 Spelle</p>
       <p>
         Großer Spielplatz mit viel Schatten. Der Kleinkinder-Kletterturm ist
         ein Feuerwehrauto. Der Bereich ist eingezäunt und hat ein Tor zum
@@ -108,7 +138,8 @@
 </a>
   </div>
 
-  <div class="card" data-tags="Kleinkinder Kletterturm Babyschaukel">
+  <div class="card" data-tags="Kleinkinder Kletterturm Babyschaukel"
+  data-ort="Spelle">
 
     <div class="carousel">
   <button class="arrow left" onclick="prevSlide(this)">‹</button>
@@ -129,6 +160,7 @@
 
     <div class="content">
     <h2>Spielplatz Rotdornstraße</h2>
+    <p class="ort-badge">📍 Spelle</p>
       <p>
         Moderner Spielplatz mit großem Kletterturm und sonniger Fläche.
       </p>
@@ -147,7 +179,8 @@
 </a>
 
   </div>
-  <div class="card" data-tags="Turnreck Schatten Ballspiele">
+  <div class="card" data-tags="Turnreck Schatten Ballspiele"
+  data-ort="Spelle">
 
     <div class="carousel">
   <button class="arrow left" onclick="prevSlide(this)">‹</button>
@@ -164,6 +197,7 @@
 
     <div class="content">
       <h2>Spielplatz Telemannstraße</h2>
+      <p class="ort-badge">📍 Spelle</p>
       <p>
         Ein klassisch ausgestatteter Spielplatz mit viel Schatten und Rasenfläche, super Ziel für warme Sommertage.
       </p>
@@ -181,7 +215,8 @@
 </a>
   </div>
 
-<div class="card" data-tags="Kleinkinder Kletterturm Babyschaukel Turnreck">
+<div class="card" data-tags="Kleinkinder Kletterturm Babyschaukel Turnreck"
+data-ort="Spelle">
 
     <div class="carousel">
   <button class="arrow left" onclick="prevSlide(this)">‹</button>
@@ -198,6 +233,7 @@
 
     <div class="content">
       <h2>Spielplatz Margaretenstraße</h2>
+      <p class="ort-badge">📍 Spelle</p>
       <p>
         Sonniger Spielplatz mit großer Rasenfläche.
       </p>
@@ -217,7 +253,8 @@
 </a>
   </div>
   
-  <div class="card" data-tags="Kletterturm Babyschaukel Turnreck Bagger Ballspiele">
+  <div class="card" data-tags="Kletterturm Babyschaukel Turnreck Bagger Ballspiele"
+  data-ort="Spelle">
 
  <div class="carousel">
   <button class="arrow left" onclick="prevSlide(this)">‹</button>
@@ -234,6 +271,7 @@
 
     <div class="content">
       <h2>Spielplatz Bauernkamp</h2>
+      <p class="ort-badge">📍 Spelle</p>
       <p>
         Schöner Spielplatz mit großer Seilpyramide zum klettern und einem Sandbagger.
       </p>
@@ -253,7 +291,8 @@
 </a>
   </div>
   
-   <div class="card" data-tags="Kleinkinder Kletterturm Babyschaukel Turnreck Schatten">
+   <div class="card" data-tags="Kleinkinder Kletterturm Babyschaukel Turnreck Schatten"
+   data-ort="Spelle">
 
   <div class="carousel">
   <button class="arrow left" onclick="prevSlide(this)">‹</button>
@@ -272,6 +311,7 @@
 
     <div class="content">
       <h2>Spielplatz Halflingerstraße</h2>
+      <p class="ort-badge">📍 Spelle</p>
       <p>
         Naturnaher Spielplatz mit Kletterturm für Groß und Klein, verschiedenen Schaukeln und großem Sandbereich. Dank vieler Bäume gibt es auch im Sommer schattige Plätze zum Spielen und Ausruhen.
       </p>
@@ -292,7 +332,8 @@
 </a>
   </div>
   
-  <div class="card" data-tags="Kletterturm Wasserspiel">
+  <div class="card" data-tags="Kletterturm Wasserspiel"
+  data-ort="Venhaus">
 
    <div class="carousel">
   <button class="arrow left" onclick="prevSlide(this)">‹</button>
@@ -311,6 +352,7 @@
 
     <div class="content">
       <h2>Spielplatz Schlanestraße</h2>
+      <p class="ort-badge">📍 Venhaus</p>
       <p>
         Toller Spielplatz mit einem spannenden großen Kletterturm und einer Wasser-Matschanlage.
       </p>
@@ -327,7 +369,8 @@
 </a>
   </div>
 
-<div class="card" data-tags="Kletterturm Babyschaukel Turnreck Ballspiele Schatten">
+<div class="card" data-tags="Kletterturm Babyschaukel Turnreck Ballspiele Schatten"
+data-ort="Spelle">
 
   <div class="carousel">
   <button class="arrow left" onclick="prevSlide(this)">‹</button>
@@ -351,6 +394,7 @@
 
     <div class="content">
       <h2>Spielplatz Wacholderstraße</h2>
+      <p class="ort-badge">📍 Spelle</p>
       <p>
         Dieser ruhig gelegene Spielplatz bietet einen Kletterturm mit Rutsche, Schaukeln und einen großen Sandbereich zum Buddeln. Besonders schön sind die schattenspendenden Bäume und die weitläufige Wiese mit Toren für kleine Fußballspiele. Ein überdachter Unterstand lädt zum Ausruhen oder Picknicken ein. Ideal für einen entspannten Spielplatzbesuch im Grünen.
       </p>
@@ -371,7 +415,8 @@
 </a>
   </div>
   
-  <div class="card" data-tags="Kletterturm Babyschaukel Turnreck Schatten">
+  <div class="card" data-tags="Kletterturm Babyschaukel Turnreck Schatten"
+  data-ort="Spelle">
 
    <div class="carousel">
   <button class="arrow left" onclick="prevSlide(this)">‹</button>
@@ -390,6 +435,7 @@
 
     <div class="content">
       <h2>Spielplatz Trakehnerstraße</h2>
+      <p class="ort-badge">📍 Spelle</p>
       <p>
         Dieser ruhig gelegene Spielplatz, umgeben von gepflegten Hecken und Bäumen, bietet eine vielfältige Auswahl an Spielgeräten. Für ein schattiges Spielerlebnis im Sandbereich wird in den Sommermonaten ein Sonnensegel angebracht.
       </p>

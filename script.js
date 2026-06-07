@@ -1,3 +1,5 @@
+let activeTag = "all";
+let activeOrt = "all";
 document.querySelectorAll(".carousel").forEach((carousel) => {
   const images = carousel.querySelectorAll("img");
   const dotsContainer = carousel.querySelector(".dots");
@@ -53,16 +55,36 @@ function prevSlide(btn) {
 }
 
 function filterCards(tag) {
+  activeTag = tag;
+  applyFilters();
+}
+
+function filterOrt(ort) {
+  activeOrt = ort;
+  applyFilters();
+}
+
+function applyFilters() {
   const cards = document.querySelectorAll(".card");
 
-  cards.forEach((card) => {
-    const tags = card.dataset.tags;
+  cards.forEach(card => {
 
-    if (tag === "all" || tags.includes(tag)) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
-    }
+    const tags = card.dataset.tags || "";
+    const ort = card.dataset.ort || "";
+
+    const tagMatch =
+      activeTag === "all" ||
+      tags.includes(activeTag);
+
+    const ortMatch =
+      activeOrt === "all" ||
+      ort === activeOrt;
+
+    card.style.display =
+      tagMatch && ortMatch
+        ? "block"
+        : "none";
+
   });
 }
 
@@ -119,7 +141,9 @@ lightbox.onclick = e => {
 };
 
 function setActiveFilter(button) {
-  document.querySelectorAll('.filters button').forEach(btn => {
+  const parent = button.parentElement;
+
+  parent.querySelectorAll('button').forEach(btn => {
     btn.classList.remove('active');
   });
 
