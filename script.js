@@ -65,7 +65,7 @@ function filterOrt(ort) {
 }
 
 function applyFilters() {
-  const cards = document.querySelectorAll(".card");
+  const cards = document.querySelectorAll(".card:not(.helper-card):not(.kaffeekasse-card)");
 
   cards.forEach(card => {
 
@@ -86,6 +86,15 @@ function applyFilters() {
         : "none";
 
   });
+
+  const helperCard = document.querySelector(".helper-card");
+  const kaffeekasseCard = document.querySelector(".kaffeekasse-card");
+
+  helperCard.style.display = "block";
+  kaffeekasseCard.style.display = "block";
+
+  helperCard.parentNode.appendChild(helperCard);
+  helperCard.parentNode.appendChild(kaffeekasseCard);
 }
 
 function addPlayground() {
