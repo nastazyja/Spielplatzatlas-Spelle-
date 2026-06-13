@@ -15,53 +15,53 @@ jobs:
       - name: Generate sitemap.xml
         run: |
           cat <<EOF > sitemap.xml
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://spielplatzatlas-spelle.de/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+            <url>
+              <loc>https://spielplatzatlas-spelle.de/</loc>
+              <changefreq>weekly</changefreq>
+              <priority>1.0</priority>
+            </url>
 
-  <url>
-    <loc>https://spielplatzatlas-spelle.de/buergerpark-spelle.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+            <url>
+              <loc>https://spielplatzatlas-spelle.de/buergerpark-spelle.html</loc>
+              <changefreq>monthly</changefreq>
+              <priority>0.8</priority>
+            </url>
 
-  <url>
-    <loc>https://spielplatzatlas-spelle.de/spielplatz-rotdornstrasse.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+            <url>
+              <loc>https://spielplatzatlas-spelle.de/spielplatz-rotdornstrasse.html</loc>
+              <changefreq>monthly</changefreq>
+              <priority>0.8</priority>
+            </url>
 
-  <url>
-    <loc>https://spielplatzatlas-spelle.de/spielplatz-telemannstrasse.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+            <url>
+              <loc>https://spielplatzatlas-spelle.de/spielplatz-telemannstrasse.html</loc>
+              <changefreq>monthly</changefreq>
+              <priority>0.8</priority>
+            </url>
 
-  <url>
-    <loc>https://spielplatzatlas-spelle.de/spielplatz-margaretenstrasse.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+            <url>
+              <loc>https://spielplatzatlas-spelle.de/spielplatz-margaretenstrasse.html</loc>
+              <changefreq>monthly</changefreq>
+              <priority>0.8</priority>
+            </url>
 
-  <url>
-    <loc>https://spielplatzatlas-spelle.de/spielplatz-bauernkamp.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+            <url>
+              <loc>https://spielplatzatlas-spelle.de/spielplatz-bauernkamp.html</loc>
+              <changefreq>monthly</changefreq>
+              <priority>0.8</priority>
+            </url>
 
-  <url>
-    <loc>https://spielplatzatlas-spelle.de/spielplatz-halflingerstrasse.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+            <url>
+              <loc>https://spielplatzatlas-spelle.de/spielplatz-halflingerstrasse.html</loc>
+              <changefreq>monthly</changefreq>
+              <priority>0.8</priority>
+            </url>
 
-</urlset>
-EOF
+          </urlset>
+          EOF
 
       - name: Show generated sitemap (debug)
         run: cat sitemap.xml
