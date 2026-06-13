@@ -243,3 +243,21 @@ margin: 0;
   padding-top: 0;
   margin-top: -10px;
 }
+
+.open-list {
+  padding-left: 18px;
+  margin-top: 10px;
+}
+
+.open-list li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.send-icon {
+  width: 320px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
