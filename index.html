@@ -657,7 +657,7 @@ Ich freue mich auf deine Fotos!
   id="installButton"
   onclick="installPWA()"
   style="
-    display:none;
+    display:inline-block;
     background:transparent;
     border:none;
     padding:0;
@@ -838,7 +838,6 @@ let deferredPrompt;
 window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
     deferredPrompt = e;
-    document.getElementById('installButton').style.display = 'inline-block';
 });
 
 document.getElementById('installButton').addEventListener('click', async () => {
@@ -856,6 +855,10 @@ document.getElementById('installButton').addEventListener('click', async () => {
         deferredPrompt.prompt();
         await deferredPrompt.userChoice;
         deferredPrompt = null;
+    } else {
+        alert(
+            "Falls keine Installationsabfrage erscheint, öffne das Browser-Menü und wähle 'App installieren' oder 'Zum Startbildschirm hinzufügen'."
+        );
     }
 });
 </script>
