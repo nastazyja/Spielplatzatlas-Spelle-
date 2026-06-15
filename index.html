@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="images/icon-512.png">
   <meta name="theme-color" content="#ffffff">
   
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="./manifest.json">
 <meta name="theme-color" content="#8b6f47">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -665,7 +665,7 @@ Ich freue mich auf deine Fotos!
   ">
 
   <img
-    src="images/pwaicon.png"
+    src=".images/pwaicon.png"
     alt="Installieren"
     style="
       width:32px;
@@ -861,7 +861,7 @@ document.getElementById('installButton').addEventListener('click', async () => {
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js');
+  navigator.serviceWorker.register('./sw.js');
 }
 </script>
 </body>
