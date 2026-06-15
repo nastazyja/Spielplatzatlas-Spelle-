@@ -12,6 +12,14 @@
   <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="images/icon-512.png">
   <meta name="theme-color" content="#ffffff">
+  
+  <link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#8b6f47">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Spielplatzatlas">
+
+<link rel="apple-touch-icon" href="/images/icon-192.png">
 </head>
 
 
@@ -629,10 +637,42 @@ Ich freue mich auf deine Fotos!
 </div>
 <footer style="text-align:center; padding:40px 20px;">
 
-  <div style="margin-bottom:15px;">
-    <a href="https://www.instagram.com/spielplatzatlasspelle/" target="_blank" aria-label="Instagram">
-      <i class="fab fa-instagram" style="font-size:32px; color:#E4405F;"></i>
+  <div style="
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-bottom:15px;
+    flex-wrap:wrap;
+  ">
+
+    <a href="https://www.instagram.com/spielplatzatlasspelle/"
+       target="_blank"
+       aria-label="Instagram">
+      <i class="fab fa-instagram"
+         style="font-size:32px; color:#E4405F;"></i>
     </a>
+
+<button
+  id="installButton"
+  onclick="installPWA()"
+  style="
+    display:none;
+    background:transparent;
+    border:none;
+    padding:0;
+    cursor:pointer;
+  ">
+
+  <img
+    src="images/pwaicon.png"
+    alt="Installieren"
+    style="
+      width:32px;
+      height:32px;
+    ">
+</button>
+
   </div>
 
   <div style="font-size:14px; margin-bottom:10px;">
@@ -791,6 +831,38 @@ window.addEventListener('load', function() {
   });
 
 });
+</script>
+<script>
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    document.getElementById('installButton').style.display = 'inline-block';
+});
+
+document.getElementById('installButton').addEventListener('click', async () => {
+
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+    if (isIOS) {
+        alert(
+            "Auf dem iPhone:\n\n1. Teilen-Symbol antippen\n2. 'Zum Home-Bildschirm' wählen\n3. Hinzufügen"
+        );
+        return;
+    }
+
+    if (deferredPrompt) {
+        deferredPrompt.prompt();
+        await deferredPrompt.userChoice;
+        deferredPrompt = null;
+    }
+});
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js');
+}
 </script>
 </body>
 </html>
