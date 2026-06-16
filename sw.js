@@ -34,29 +34,38 @@ self.addEventListener("activate", (event) => {
 
 // FETCH
 self.addEventListener("fetch", (event) => {
-  // index.html immer frisch laden
-  if (
-    event.request.mode === "navigate" ||
-    event.request.url.endsWith("/index.html")
-  ) {
+  const request = event.request;
+
+  // HTML immer frisch
+  if (request.mode === "navigate") {
     event.respondWith(
-      fetch(event.request)
-        .then((response) => {
-          const copy = response.clone();
+      fetch(request)
+        .then((res) => {
+          const copy = res.clone();
           caches.open(CACHE_NAME).then((cache) => {
             cache.put("./index.html", copy);
           });
-          return response;
+          return res;
         })
         .catch(() => caches.match("./index.html"))
     );
     return;
   }
 
-  // Alle anderen Dateien: Cache zuerst
+  // Assets: Cache first, aber fallback network update
   event.respondWith(
-    caches.match(event.request).then((cached) => {
-      return cached || fetch(event.request);
+    caches.match(request).then((cached) => {
+      const network = fetch(request)
+        .then((res) => {
+          const copy = res.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(request, copy);
+          });
+          return res;
+        })
+        .catch(() => cached);
+
+      return cached || network;
     })
   );
 });
