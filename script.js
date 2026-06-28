@@ -56,13 +56,13 @@ function prevSlide(btn) {
 
 function filterCards(tag) {
   activeTag = tag;
-  applyFilters
+  applyFilters();
   updatePlaygroundCount();
 }
 
 function filterOrt(ort) {
   activeOrt = ort;
-  applyFilters
+  applyFilters();
   updatePlaygroundCount();
 }
 
