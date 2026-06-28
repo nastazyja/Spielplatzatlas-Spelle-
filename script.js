@@ -56,12 +56,14 @@ function prevSlide(btn) {
 
 function filterCards(tag) {
   activeTag = tag;
-  applyFilters();
+  applyFilters
+  updatePlaygroundCount();
 }
 
 function filterOrt(ort) {
   activeOrt = ort;
-  applyFilters();
+  applyFilters
+  updatePlaygroundCount();
 }
 
 function applyFilters() {
@@ -149,6 +151,25 @@ lightbox.onclick = e => {
   }
 };
 
+function updatePlaygroundCount() {
+  const visibleCards = document.querySelectorAll(".card:not(.helper-card):not(.kaffeekasse-card)");
+
+  let count = 0;
+
+  visibleCards.forEach(card => {
+    if (card.style.display !== "none") {
+      count++;
+    }
+  });
+
+  const text =
+    count === 1
+      ? "1 Spielplatz gefunden"
+      : count + " Spielplätze gefunden";
+
+  document.getElementById("playground-count").textContent = text;
+}
+
 function setActiveFilter(button) {
   const parent = button.parentElement;
 
@@ -158,3 +179,5 @@ function setActiveFilter(button) {
 
   button.classList.add('active');
 }
+
+window.addEventListener("load", updatePlaygroundCount);
