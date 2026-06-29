@@ -269,3 +269,54 @@ margin: 0;
   margin: 8px 0 20px;
   font-weight: 500;
 }
+
+.sponsor-card{
+    padding:20px 15px;
+    margin:20px auto;
+}
+
+.sponsor-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:10px;
+
+    max-width: 320px;   
+    margin: 0 auto;
+}
+
+.sponsor-box {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    border: 2px dashed #d7d7d7;
+    border-radius: 14px;
+    background: #fafafa;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:.2s;
+    text-decoration:none;
+}
+
+.sponsor-box img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+.sponsor-text{
+    text-align:center;
+    color:#666;
+    font-size:14px;
+    line-height:1.6;
+}
+
+@media(max-width:650px){
+
+    .sponsor-grid{
+        grid-template-columns:1fr;
+    }
+
+}

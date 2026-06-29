@@ -67,7 +67,7 @@ function filterOrt(ort) {
 }
 
 function applyFilters() {
-  const cards = document.querySelectorAll(".card:not(.helper-card):not(.kaffeekasse-card)");
+  const cards = document.querySelectorAll(".card:not(.helper-card):not(.kaffeekasse-card):not(.sponsor-card)");
 
   cards.forEach(card => {
 
@@ -90,13 +90,16 @@ function applyFilters() {
   });
 
   const helperCard = document.querySelector(".helper-card");
-  const kaffeekasseCard = document.querySelector(".kaffeekasse-card");
+const kaffeekasseCard = document.querySelector(".kaffeekasse-card");
+const sponsorCard = document.querySelector(".sponsor-card");
 
-  helperCard.style.display = "block";
-  kaffeekasseCard.style.display = "block";
+helperCard.style.display = "block";
+kaffeekasseCard.style.display = "block";
+sponsorCard.style.display = "block";
 
-  helperCard.parentNode.appendChild(helperCard);
-  helperCard.parentNode.appendChild(kaffeekasseCard);
+helperCard.parentNode.appendChild(helperCard);
+helperCard.parentNode.appendChild(kaffeekasseCard);
+helperCard.parentNode.appendChild(sponsorCard);
 }
 
 function addPlayground() {
@@ -152,7 +155,7 @@ lightbox.onclick = e => {
 };
 
 function updatePlaygroundCount() {
-  const visibleCards = document.querySelectorAll(".card:not(.helper-card):not(.kaffeekasse-card)");
+  const visibleCards = document.querySelectorAll(".card:not(.helper-card):not(.kaffeekasse-card):not(.sponsor-card)");
 
   let count = 0;
 
