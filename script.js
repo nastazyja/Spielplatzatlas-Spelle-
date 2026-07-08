@@ -314,7 +314,17 @@ function initMap() {
   });
 
   map.addControl(new maplibregl.NavigationControl(), "top-right");
-
+  
+map.addControl(
+  new maplibregl.GeolocateControl({
+    positionOptions: {
+      enableHighAccuracy: true
+    },
+    trackUserLocation: true,
+    showUserHeading: true
+  }),
+  "top-right"
+);
   map.on("load", () => {
     renderMarkers();
     fitMapToVisiblePlaygrounds();
