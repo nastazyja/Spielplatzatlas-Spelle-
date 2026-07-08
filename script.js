@@ -159,7 +159,7 @@ function filterOrt(ort) {
 }
 
 function applyFilters() {
-  const cards = document.querySelectorAll(".card");
+  const cards = document.querySelectorAll(".card[data-id]");
 
   cards.forEach(card => {
     const tags = card.dataset.tags || "";
@@ -178,6 +178,15 @@ function applyFilters() {
         ? "block"
         : "none";
   });
+
+  updateMarkersVisibility();
+
+  if (
+    map &&
+    document.getElementById("map-view").style.display === "block"
+  ) {
+    fitMapToVisiblePlaygrounds();
+  }
 }
 
 function updatePlaygroundCount() {
@@ -415,4 +424,22 @@ function openMapCard(spielplatzId) {
 function closeMapCard() {
   const overlay = document.getElementById("map-card-overlay");
   if (overlay) overlay.classList.remove("open");
+}
+
+function updateMarkersVisibility() {
+  if (!map || markers.length === 0) return;
+
+  const visibleIds = [...document.querySelectorAll(".card[data-id]")]
+    .filter(card => card.style.display !== "none")
+    .map(card => card.dataset.id);
+
+  markers.forEach(item => {
+    const markerElement = item.marker.getElement();
+
+    if (visibleIds.includes(item.id)) {
+      markerElement.style.display = "block";
+    } else {
+      markerElement.style.display = "none";
+    }
+  });
 }
