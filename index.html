@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spielplatzatlas Spelle</title>
   
-  <meta name="description" content="Entdecke die schönsten Spielplätze in Spelle, Venhaus und Varenrode. Mit Fotos, Ausstattung, Filtern und direkter Navigation.">
+  <meta name="description" content="Entdecke die schönsten Spielplätze in der Samtgemeinde Spelle. Mit Fotos, Ausstattung, Filtern und direkter Navigation.">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Spielplatzatlas Spelle">
-<meta property="og:description" content="Entdecke die schönsten Spielplätze in Spelle, Venhaus und Varenrode. Mit Fotos, Ausstattung, Filtern und Navigation.">
+<meta property="og:description" content="Entdecke die schönsten Spielplätze in der Samtgemeinde Spelle. Mit Fotos, Ausstattung, Filtern und Navigation.">
 <meta property="og:image" content="https://www.spielplatzatlas-spelle.de/images/social-preview.jpg">
 <meta property="og:url" content="https://www.spielplatzatlas-spelle.de/">
 <meta property="og:type" content="website">
@@ -18,11 +18,14 @@
 <!-- Twitter/X -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Spielplatzatlas Spelle">
-<meta name="twitter:description" content="Entdecke die schönsten Spielplätze in Spelle, Venhaus und Varenrode.">
+<meta name="twitter:description" content="Entdecke die schönsten Spielplätze in der Samtgemeinde Spelle.">
 <meta name="twitter:image" content="https://www.spielplatzatlas-spelle.de/images/social-preview.jpg">
   
   <link rel="stylesheet" href="style.css">
   
+  <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -46,9 +49,9 @@
     <img src="images/logo.png" class="logo">
   </div>
 
-  <p>Die schönsten Spielplätze in Spelle, Venhaus und Varenrode.</p>
+  <p>Die schönsten Spielplätze in dee Samtgemeinde Spelle.</p>
 
-<p>Der Atlas wird kontinuierlich erweitert, bald mit Spielplätzen aus der gesamten Samtgemeinde Spelle.</p>
+<p>Der Atlas wird kontinuierlich erweitert.</p>
 
 </header>
 
@@ -131,593 +134,23 @@
 
 </section>
 
+<div class="view-toggle">
+  <button id="listViewBtn" class="active" onclick="showListView()">📋 Listenansicht</button>
+  <button id="mapViewBtn" onclick="showMapView()">🗺️ Kartenansicht</button>
+</div>
+
+<div id="map-view">
+  <div id="map"></div>
+</div>
+
+<div id="map-card-overlay" class="map-card-overlay">
+  <button class="close-map-card" onclick="closeMapCard()">×</button>
+  <div id="map-card-content"></div>
+</div>
+
 <div id="playground-count" class="playground-count"></div>
 
-<section class="cards">
-
-  <div class="card" data-tags="Kleinkinder Kletterturm Wasserspiel Schatten Babyschaukel Ballspiele Abschließbar"
-  data-ort="Spelle">
-
-    <div class="carousel">  <button class="arrow left" onclick="prevSlide(this)">‹</button>  <img src="images/buergerpark1.webp" class="active">  <img src="images/buergerpark2.webp" loading="lazy">  <img src="images/buergerpark3.webp" loading="lazy">  <img src="images/buergerpark4.webp" loading="lazy">  <img src="images/buergerpark5.webp" loading="lazy">  <img src="images/buergerpark6.webp" loading="lazy">  <img src="images/buergerpark7.webp" loading="lazy">  <img src="images/buergerpark8.webp" loading="lazy">  <img src="images/buergerpark9.webp" loading="lazy">  <img src="images/buergerpark10.webp" loading="lazy">  <img src="images/buergerpark11.webp" loading="lazy">  <button class="arrow right" onclick="nextSlide(this)">›</button>  <div class="dots"></div></div>
-
-
-    <div class="content">
-  <h2>Bürgerpark Spelle</h2>
-  <p class="ort-badge">📍 Spelle</p>
-      <p>
-        Großer Spielplatz mit viel Schatten. Der Kleinkinder-Kletterturm ist
-        ein Feuerwehrauto. Der Bereich ist eingezäunt und hat ein Tor zum
-        Abschließen. Die große Wasser-Matschanlage ist von gemütlichen
-        Sonnenliegen umgeben.
-      </p>
-       
-    </div>
-
-    <div class="tags">
-      <span><img src="images/kleinkinder kletterturm.png" class="tag-icon"> Kleinkinder Kletterturm</span>
-      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>
-      <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span>
-      <span><img src="images/wasserspiel.png" class="tag-icon"> Wasserspiel</span>
-      <span><img src="images/tischtennis.png" class="tag-icon"> Tischtennis</span>
-      <span><img src="images/schatten.png" class="tag-icon"> Schatten</span>
-      <span><img src="images/abschließbar.png" class="tag-icon"> Abschließbar</span>
-    </div>
-
-<div class="tags">
-</div>
-
-<a href="https://www.google.com/maps/dir/?api=1&destination=52.3606757,7.4675378"
-   target="_blank"
-   class="route-link">
-  <img src="images/route.png" alt="Route planen" class="route-icon">
-</a>
-  </div>
-
-  <div class="card" data-tags="Kleinkinder Kletterturm Babyschaukel"
-  data-ort="Spelle">
-
-    <div class="carousel">
-  <button class="arrow left" onclick="prevSlide(this)">‹</button>
-
-  <img src="images/rotdornstrasse1.webp" class="active">
-  <img src="images/rotdornstrasse2.webp" loading="lazy">
-  <img src="images/rotdornstrasse3.webp" loading="lazy">
-  <img src="images/rotdornstrasse4.webp" loading="lazy">
-  <img src="images/rotdornstrasse6.webp" loading="lazy">
-  <img src="images/rotdornstrasse7.webp" loading="lazy">
-  <img src="images/rotdornstrasse8.webp" loading="lazy">
-  <img src="images/rotdornstrasse9.webp" loading="lazy">
-
-  <button class="arrow right" onclick="nextSlide(this)">›</button>
-
-  <div class="dots"></div>
-</div>
-
-    <div class="content">
-    <h2>Spielplatz Rotdornstraße</h2>
-    <p class="ort-badge">📍 Spelle</p>
-      <p>
-        Moderner Spielplatz mit großem Kletterturm und sonniger Fläche.
-      </p>
-    </div>
-
-    <div class="tags">
-      <span><img src="images/kleinkinder kletterturm.png" class="tag-icon"> Kleinkinder Kletterturm</span>
-      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>
-      <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span>
-    </div>
-
-<a href="https://www.google.com/maps/dir/?api=1&destination=52.3672290, 7.4903597"
-   target="_blank"
-   class="route-link">
-  <img src="images/route.png" alt="Route planen" class="route-icon">
-</a>
-
-  </div>
-  <div class="card" data-tags="Turnreck Schatten Ballspiele"
-  data-ort="Spelle">
-
-    <div class="carousel">
-  <button class="arrow left" onclick="prevSlide(this)">‹</button>
-
-  <img src="images/telemannstrasse1.webp" class="active">
-  <img src="images/telemannstrasse2.webp" loading="lazy">
-  <img src="images/telemannstrasse3.webp" loading="lazy">
-  <img src="images/telemannstrasse4.webp" loading="lazy">
-
-  <button class="arrow right" onclick="nextSlide(this)">›</button>
-
-  <div class="dots"></div>
-</div>
-
-    <div class="content">
-      <h2>Spielplatz Telemannstraße</h2>
-      <p class="ort-badge">📍 Spelle</p>
-      <p>
-        Ein klassisch ausgestatteter Spielplatz mit viel Schatten und Rasenfläche, super Ziel für warme Sommertage.
-      </p>
-    </div>
-
-    <div class="tags">
-      <span><img src="images/turnreck.png" class="tag-icon"> Turnreck</span>
-      <span><img src="images/basketball.png" class="tag-icon"> Basketball</span>
-      <span><img src="images/schatten.png" class="tag-icon"> Schatten</span>
-    </div>
-<a href="https://www.google.com/maps/dir/?api=1&destination=52.3710313, 7.4798179"
-   target="_blank"
-   class="route-link">
-  <img src="images/route.png" alt="Route planen" class="route-icon">
-</a>
-  </div>
-
-<div class="card" data-tags="Kleinkinder Kletterturm Babyschaukel Turnreck"
-data-ort="Spelle">
-
-    <div class="carousel">
-  <button class="arrow left" onclick="prevSlide(this)">‹</button>
-
-  <img src="images/margaretenstrasse1.webp" class="active">
-  <img src="images/margaretenstrasse2.webp" loading="lazy">
-  <img src="images/margaretenstrasse3.webp" loading="lazy">
-  <img src="images/margaretenstrasse4.webp" loading="lazy">
-
-  <button class="arrow right" onclick="nextSlide(this)">›</button>
-
-  <div class="dots"></div>
-</div>
-
-    <div class="content">
-      <h2>Spielplatz Margaretenstraße</h2>
-      <p class="ort-badge">📍 Spelle</p>
-      <p>
-        Sonniger Spielplatz mit großer Rasenfläche.
-      </p>
-    </div>
-
-    <div class="tags">
-      <span><img src="images/kleinkinder kletterturm.png" class="tag-icon"> Kleinkinder Kletterturm</span>
-      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>
-      <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span>
-      <span><img src="images/turnreck.png" class="tag-icon"> Turnreck</span>
-    </div>
-
-<a href="https://www.google.com/maps/dir/?api=1&destination=52.3636915, 7.4639121"
-   target="_blank"
-   class="route-link">
-  <img src="images/route.png" alt="Route planen" class="route-icon">
-</a>
-  </div>
-  
-  <div class="card" data-tags="Kletterturm Babyschaukel Turnreck Bagger Ballspiele"
-  data-ort="Spelle">
-
- <div class="carousel">
-  <button class="arrow left" onclick="prevSlide(this)">‹</button>
-
-  <img src="images/bauernkamp1.webp" class="active">
-  <img src="images/bauernkamp2.webp" loading="lazy">
-  <img src="images/bauernkamp3.webp" loading="lazy">
-  <img src="images/bauernkamp4.webp" loading="lazy">
-
-  <button class="arrow right" onclick="nextSlide(this)">›</button>
-
-  <div class="dots"></div>
-</div>
-
-    <div class="content">
-      <h2>Spielplatz Bauernkamp</h2>
-      <p class="ort-badge">📍 Spelle</p>
-      <p>
-        Schöner Spielplatz mit großer Seilpyramide zum klettern und einem Sandbagger.
-      </p>
-    </div>
-
-    <div class="tags">
-      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>
-      <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span>
-      <span><img src="images/bagger.png" class="tag-icon"> Bagger</span>
-      <span><img src="images/turnreck.png" class="tag-icon"> Turnreck</span>
-      <span><img src="images/tischtennis.png" class="tag-icon"> Tischtennis</span>
-    </div>
-<a href="https://www.google.com/maps/dir/?api=1&destination=52.3646288, 7.4767689"
-   target="_blank"
-   class="route-link">
-  <img src="images/route.png" alt="Route planen" class="route-icon">
-</a>
-  </div>
-  
-   <div class="card" data-tags="Kleinkinder Kletterturm Babyschaukel Turnreck Schatten"
-   data-ort="Spelle">
-
-  <div class="carousel">
-  <button class="arrow left" onclick="prevSlide(this)">‹</button>
-
-  <img src="images/halflingerstrasse1.webp" class="active">
-  <img src="images/halflingerstrasse2.webp" loading="lazy">
-  <img src="images/halflingerstrasse3.webp" loading="lazy">
-  <img src="images/halflingerstrasse4.webp" loading="lazy">
-  <img src="images/halflingerstrasse5.webp" loading="lazy">
-  <img src="images/halflingerstrasse6.webp" loading="lazy">
-
-  <button class="arrow right" onclick="nextSlide(this)">›</button>
-
-  <div class="dots"></div>
-</div>
-
-    <div class="content">
-      <h2>Spielplatz Halflingerstraße</h2>
-      <p class="ort-badge">📍 Spelle</p>
-      <p>
-        Naturnaher Spielplatz mit Kletterturm für Groß und Klein, verschiedenen Schaukeln und großem Sandbereich. Dank vieler Bäume gibt es auch im Sommer schattige Plätze zum Spielen und Ausruhen.
-      </p>
-    </div>
-
-    <div class="tags">
-      <span><img src="images/kleinkinder kletterturm.png" class="tag-icon"> Kleinkinder Kletterturm</span>
-      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>
-      <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span>
-      <span><img src="images/turnreck.png" class="tag-icon"> Turnreck</span>
-      <span><img src="images/schatten.png" class="tag-icon"> Schatten</span>
-    
-    </div>
-<a href="https://www.google.com/maps/dir/?api=1&destination=52.3675778, 7.4491590"
-   target="_blank"
-   class="route-link">
-  <img src="images/route.png" alt="Route planen" class="route-icon">
-</a>
-  </div>
-  
-  <div class="card" data-tags="Kletterturm Wasserspiel"
-  data-ort="Venhaus">
-
-   <div class="carousel">
-  <button class="arrow left" onclick="prevSlide(this)">‹</button>
-
-  <img src="images/schlanestrasse1.webp" class="active">
-  <img src="images/schlanestrasse2.webp" loading="lazy">
-  <img src="images/schlanestrasse3.webp" loading="lazy">
-  <img src="images/schlanestrasse4.webp" loading="lazy">
-  <img src="images/schlanestrasse5.webp" loading="lazy">
-  <img src="images/schlanestrasse6.webp" loading="lazy">
-
-  <button class="arrow right" onclick="nextSlide(this)">›</button>
-
-  <div class="dots"></div>
-</div>
-
-    <div class="content">
-      <h2>Spielplatz Schlanestraße</h2>
-      <p class="ort-badge">📍 Venhaus</p>
-      <p>
-        Toller Spielplatz mit einem spannenden großen Kletterturm und einer Wasser-Matschanlage.
-      </p>
-    </div>
-
-    <div class="tags">
-      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>
-      <span><img src="images/wasserspiel.png" class="tag-icon"> Wasserspiel</span>
-    </div>
-<a href="https://www.google.com/maps/dir/?api=1&destination=52.3603751, 7.4368376"
-   target="_blank"
-   class="route-link">
-  <img src="images/route.png" alt="Route planen" class="route-icon">
-</a>
-  </div>
-
-<div class="card" data-tags="Kletterturm Babyschaukel Turnreck Ballspiele Schatten"
-data-ort="Spelle">
-
-  <div class="carousel">
-  <button class="arrow left" onclick="prevSlide(this)">‹</button>
-
-  <img src="images/wacholderstrasse1.webp" class="active">
-  <img src="images/wacholderstrasse2.webp" loading="lazy">
-  <img src="images/wacholderstrasse3.webp" loading="lazy">
-  <img src="images/wacholderstrasse4.webp" loading="lazy">
-  <img src="images/wacholderstrasse5.webp" loading="lazy">
-  <img src="images/wacholderstrasse6.webp" loading="lazy">
-  <img src="images/wacholderstrasse7.webp" loading="lazy">
-  <img src="images/wacholderstrasse8.webp" loading="lazy">
-  <img src="images/wacholderstrasse9.webp" loading="lazy">
-  <img src="images/wacholderstrasse10.webp" loading="lazy">
-  <img src="images/wacholderstrasse11.webp" loading="lazy">
-
-  <button class="arrow right" onclick="nextSlide(this)">›</button>
-
-  <div class="dots"></div>
-</div>
-
-    <div class="content">
-      <h2>Spielplatz Wacholderstraße</h2>
-      <p class="ort-badge">📍 Spelle</p>
-      <p>
-        Dieser ruhig gelegene Spielplatz bietet einen Kletterturm mit Rutsche, Schaukeln und einen großen Sandbereich zum Buddeln. Besonders schön sind die schattenspendenden Bäume und die weitläufige Wiese mit Toren für kleine Fußballspiele. Ein überdachter Unterstand lädt zum Ausruhen oder Picknicken ein. Ideal für einen entspannten Spielplatzbesuch im Grünen.
-      </p>
-    </div>
-
-    <div class="tags">
-      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>
-      <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span>
-      <span><img src="images/turnreck.png" class="tag-icon"> Turnreck</span>
-      <span><img src="images/tischtennis.png" class="tag-icon"> Tischtennis</span>
-      <span><img src="images/fussball.png" class="tag-icon"> Fußball</span>
-      <span><img src="images/schatten.png" class="tag-icon"> Schatten</span>
-    </div>
-<a href="https://www.google.com/maps/dir/?api=1&destination=52.3521116, 7.4611260"
-   target="_blank"
-   class="route-link">
-  <img src="images/route.png" alt="Route planen" class="route-icon">
-</a>
-  </div>
-  
-  <div class="card" data-tags="Kletterturm Babyschaukel Turnreck Schatten"
-  data-ort="Spelle">
-
-   <div class="carousel">
-  <button class="arrow left" onclick="prevSlide(this)">‹</button>
-
-  <img src="images/trakehnerstrasse1.webp" class="active">
-  <img src="images/trakehnerstrasse2.webp" loading="lazy">
-  <img src="images/trakehnerstrasse3.webp" loading="lazy">
-  <img src="images/trakehnerstrasse4.webp" loading="lazy">
-  <img src="images/trakehnerstrasse5.webp" loading="lazy">
-  <img src="images/trakehnerstrasse6.webp" loading="lazy">
-
-  <button class="arrow right" onclick="nextSlide(this)">›</button>
-
-  <div class="dots"></div>
-</div>
-
-    <div class="content">
-      <h2>Spielplatz Trakehnerstraße</h2>
-      <p class="ort-badge">📍 Spelle</p>
-      <p>
-        Dieser ruhig gelegene Spielplatz, umgeben von gepflegten Hecken und Bäumen, bietet eine vielfältige Auswahl an Spielgeräten. Für ein schattiges Spielerlebnis im Sandbereich wird in den Sommermonaten ein Sonnensegel angebracht.
-      </p>
-    </div>
-
-    <div class="tags">
-      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>
-      <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span>
-      <span><img src="images/turnreck.png" class="tag-icon"> Turnreck</span>
-      <span><img src="images/schatten.png" class="tag-icon"> Schatten</span>
-    </div>
-<a href="https://www.google.com/maps/dir/?api=1&destination=52.3658619, 7.4501390"
-   target="_blank"
-   class="route-link">
-  <img src="images/route.png" alt="Route planen" class="route-icon">
-</a>
-  </div>
-
-<div class="card" data-tags="Kletterturm Babyschaukel Turnreck Bagger Ballspiele Schatten"
-  data-ort="Spelle">
-
- <div class="carousel">
-  <button class="arrow left" onclick="prevSlide(this)">‹</button>
-
-  <img src="images/paullinckestrasse1.webp" class="active">
-<img src="images/paullinckestrasse2.webp" loading="lazy">
-<img src="images/paullinckestrasse3.webp" loading="lazy">
-<img src="images/paullinckestrasse4.webp" loading="lazy">
-<img src="images/paullinckestrasse5.webp" loading="lazy">
-<img src="images/paullinckestrasse6.webp" loading="lazy">
-
-  <button class="arrow right" onclick="nextSlide(this)">›</button>
-
-  <div class="dots"></div>
-</div>
-
-    <div class="content">
-      <h2>Spielplatz Paul-Lincke-Straße </h2>
-      <p class="ort-badge">📍 Spelle</p>
-      <p>
-        Kleiner, ruhiger Spielplatz mit Rutsche, Kletternetz, Doppelschaukel und Sandkasten mit Sandbagger. Eine Tischtennisplatte sowie Sitzmöglichkeiten laden zum Verweilen ein. Durch die umliegenden Hecken und Bäume ist der Spielplatz angenehm grün und bietet teilweise Schatten. 
-      </p>
-    </div>
-
-    <div class="tags">
-      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>
-      <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span>
-      <span><img src="images/bagger.png" class="tag-icon"> Bagger</span>
-      <span><img src="images/turnreck.png" class="tag-icon"> Turnreck</span>
-      <span><img src="images/tischtennis.png" class="tag-icon"> Tischtennis</span>
-      <span><img src="images/schatten.png" class="tag-icon"> Schatten</span>
-    </div>
-<a href="https://www.google.com/maps/dir/?api=1&destination=52.3687410, 7.4791927"
-   target="_blank"
-   class="route-link">
-  <img src="images/route.png" alt="Route planen" class="route-icon">
-</a>
-  </div>
-  
-<div class="card" data-tags="Kleinkinder Kletterturm Babyschaukel Turnreck"  data-ort="Spelle"> <div class="carousel">  <button class="arrow left" onclick="prevSlide(this)">‹</button>  <img src="images/konradadenauerring1.webp" class="active">
-<img src="images/konradadenauerring2.webp" loading="lazy">
-<img src="images/konradadenauerring3.webp" loading="lazy">
-<img src="images/konradadenauerring4.webp" loading="lazy">
-<img src="images/konradadenauerring5.webp" loading="lazy">
-<img src="images/konradadenauerring6.webp" loading="lazy">
-<img src="images/konradadenauerring7.webp" loading="lazy"> <button class="arrow right" onclick="nextSlide(this)">›</button>  <div class="dots"></div></div>    <div class="content">      <h2>Spielplatz Konrad-Adenauer-Ring</h2>      <p class="ort-badge">📍 Spelle</p>      <p>        Dieser Spielplatz ist ein wahres Paradies für kleine Kinder. Das große Kletterschiff sorgt für leuchtende Augen und jede Menge Spielspaß. Da der Spielplatz frei liegt, ist er den ganzen Tag über sonnendurchflutet.    </p>    </div>    <div class="tags">      <span><img src="images/kleinkinder kletterturm.png" class="tag-icon"> Kleinkinder Kletterturm</span>
-<span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span> <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span> <span><img src="images/turnreck.png" class="tag-icon"> Turnreck</span>          </div><a href="https://www.google.com/maps/dir/?api=1&destination=52.3640979, 7.4844411"   target="_blank"   class="route-link">  <img src="images/route.png" alt="Route planen" class="route-icon"></a>  </div>
-
-<div class="card" data-tags="Kletterturm Ballspiele Schatten"  data-ort="Spelle"> <div class="carousel">  <button class="arrow left" onclick="prevSlide(this)">‹</button>  <img src="images/schumannstrasse1.webp" class="active">  <img src="images/schumannstrasse2.webp" loading="lazy">  <img src="images/schumannstrasse3.webp" loading="lazy">   <button class="arrow right" onclick="nextSlide(this)">›</button>  <div class="dots"></div></div>    <div class="content">      <h2>Spielplatz Schumannstraße</h2>      <p class="ort-badge">📍 Spelle</p>      <p>        Dieser Spielplatz bietet viel Platz zum Spielen und Bewegen. Die große Wiese mit Fußballtor lädt zum Kicken und Toben ein. Zwei große Bäume spenden an den Sitzbänken und rund um das Tor angenehmen Schatten und sorgen für einen Rückzugsort an sonnigen Tagen. Das Klettergerüst steht in einem großzügigen Sandbereich, sodass Kinder hier nach Herzenslust klettern, buddeln und spielen können.      </p>    </div>    <div class="tags">      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span> <span><img src="images/fussball.png" class="tag-icon"> Fußball</span> 
-<span><img src="images/schatten.png" class="tag-icon"> Schatten</span>
-</div><a href="https://www.google.com/maps/dir/?api=1&destination=52.3710671, 7.4766519"   target="_blank"   class="route-link">  <img src="images/route.png" alt="Route planen" class="route-icon"></a>  </div>
-
-<div class="card" data-tags="Kletterturm Babyschaukel Turnreck Wasserspiel"
-  data-ort="Venhaus">
-
- <div class="carousel">
-  <button class="arrow left" onclick="prevSlide(this)">‹</button>
-
- <img src="images/pastorkohnestrasse1.webp" class="active">
-<img src="images/pastorkohnestrasse2.webp" loading="lazy">
-<img src="images/pastorkohnestrasse3.webp" loading="lazy">
-<img src="images/pastorkohnestrasse4.webp" loading="lazy">
-<img src="images/pastorkohnestrasse5.webp" loading="lazy">
-
-  <button class="arrow right" onclick="nextSlide(this)">›</button>
-
-  <div class="dots"></div>
-</div>
-
-    <div class="content">
-      <h2>Spielplatz Pastor-Kohne-Straße</h2>
-      <p class="ort-badge">📍 Venhaus</p>
-      <p>
-        Ein vielseitiger Spielplatz für Bewegung und Wasserspaß. Neben der kleinen Wasserspiel Anlage ist die Stehwippe ein seltenes Highlight.
-      </p>
-    </div>
-
-    <div class="tags">
-      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>
-      <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span>
-      <span><img src="images/wasserspiel.png" class="tag-icon"> Wasserspiel</span>
-      <span><img src="images/turnreck.png" class="tag-icon"> Turnreck</span>
-    </div>
-<a href="https://www.google.com/maps/dir/?api=1&destination=52.3583054, 7.4413460"
-   target="_blank"
-   class="route-link">
-  <img src="images/route.png" alt="Route planen" class="route-icon">
-</a>
-  </div>
-  
-  <div class="card" data-tags="Kletterturm Babyschaukel Turnreck Ballspiele Schatten"  data-ort="Varenrode"> <div class="carousel">  <button class="arrow left" onclick="prevSlide(this)">‹</button>  <img src="images/eichenstrasse1.webp" class="active">
-<img src="images/eichenstrasse2.webp" loading="lazy">
-<img src="images/eichenstrasse3.webp" loading="lazy">
-<img src="images/eichenstrasse4.webp" loading="lazy">
-<img src="images/eichenstrasse5.webp" loading="lazy">
-<img src="images/eichenstrasse6.webp" loading="lazy">
-<img src="images/eichenstrasse7.webp" loading="lazy">
-<img src="images/eichenstrasse8.webp" loading="lazy"> 
-<img src="images/eichenstrasse9.webp" loading="lazy">
-<img src="images/eichenstrasse10.webp" loading="lazy"><button class="arrow right" onclick="nextSlide(this)">›</button>  <div class="dots"></div></div>    <div class="content">      <h2>Spielplatz Eichenstraße</h2>      <p class="ort-badge">📍 Varenrode</p>      <p> Ein wunderschöner, grüner und abwechslungsreicher Spielplatz, der sowohl für kleine als auch für größere Kinder viel zu bieten hat. Neben verschiedenen Kletter- und Spielmöglichkeiten gibt es unter anderem eine Stehwippe, Hüpfplatten und Balancierbalken. Außerdem gibt es ein großes Fußballfeld mit zwei Toren. Ein besonderes Highlight für viele Kinder: Direkt hinter dem Feld verläuft die B70. Wer begeistert Lkw, Traktoren oder Autos beobachtet, kommt hier voll auf seine Kosten. </p>    </div>    <div class="tags">      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>      <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span>            <span><img src="images/turnreck.png" class="tag-icon"> Turnreck</span>      <span><img src="images/fussball.png" class="tag-icon"> Fußball</span>
-<span><img src="images/tischtennis.png" class="tag-icon"> Tischtennis</span><span><img src="images/schatten.png" class="tag-icon"> Schatten</span></div><a href="https://www.google.com/maps/dir/?api=1&destination=52.3878265, 7.4323341"   target="_blank"   class="route-link">  <img src="images/route.png" alt="Route planen" class="route-icon"></a>  </div>
-
-<div class="card" data-tags="Kleinkinder Kletterturm Turnreck Ballspiele"  data-ort="Spelle"> <div class="carousel">  <button class="arrow left" onclick="prevSlide(this)">‹</button>  <img src="images/olympiastrasse1.webp" class="active">
-<img src="images/olympiastrasse2.webp" loading="lazy">
-<img src="images/olympiastrasse3.webp" loading="lazy">
-<img src="images/olympiastrasse4.webp" loading="lazy">
-<img src="images/olympiastrasse5.webp" loading="lazy">
-<img src="images/olympiastrasse6.webp" loading="lazy">
-<img src="images/olympiastrasse7.webp" loading="lazy">
-<img src="images/olympiastrasse8.webp" loading="lazy"><button class="arrow right" onclick="nextSlide(this)">›</button>  <div class="dots"></div></div>    <div class="content">      <h2>Spielplatz Olympiastraße</h2>      <p class="ort-badge">📍 Spelle</p>      <p>        Ein schöner Spielplatz auf einer großen Rasenfläche, umgeben von alten Bäumen, die an warmen Tagen angenehm Schatten spenden. 
-Besonders für die Kleinsten gibt es einen großen Kletterturm mit Rutsche und Tunnel, der zum Entdecken einlädt. Auf der weitläufigen Wiese bleibt außerdem jede Menge Platz zum Rennen, Spielen oder für eine Runde Fußball am Tor.
-Hier finden Kinder jeden Alters viel Platz zum Spielen und Familien ein schattiges Plätzchen zum Verweilen.
-</p>    </div>    <div class="tags">      <span><img src="images/kleinkinder kletterturm.png" class="tag-icon"> Kleinkinder Kletterturm</span>                <span><img src="images/turnreck.png" class="tag-icon"> Turnreck</span>      <span><img src="images/fussball.png" class="tag-icon"> Fußball</span>
-<span><img src="images/schatten.png" class="tag-icon"> Schatten</span>
-</div><a href="https://www.google.com/maps/dir/?api=1&destination=52.3669907, 7.4555869"   target="_blank"   class="route-link">  <img src="images/route.png" alt="Route planen" class="route-icon"></a>  </div>
-
-<div class="card" data-tags="Kletterturm Babyschaukel Turnreck Ballspiele"  data-ort="Varenrode"> <div class="carousel">  <button class="arrow left" onclick="prevSlide(this)">‹</button>  <img src="images/seggerhook1.webp" class="active">
-<img src="images/seggerhook2.webp" loading="lazy">
-<img src="images/seggerhook3.webp" loading="lazy">
-<img src="images/seggerhook4.webp" loading="lazy">
-<img src="images/seggerhook5.webp" loading="lazy">
-<img src="images/seggerhook6.webp" loading="lazy">
-<img src="images/seggerhook7.webp" loading="lazy"> <button class="arrow right" onclick="nextSlide(this)">›</button>  <div class="dots"></div></div>    <div class="content">      <h2>Spielplatz Seggerhook</h2>      <p class="ort-badge">📍 Varenrode</p>      <p>        Ein kleiner, idyllischer Spielplatz direkt an einem charmanten
-Fachwerkhaus. Durch die ruhige Lage und die gemütliche Atmosphäre eignet er sich
-wunderbar für eine entspannte Spielpause.
-Unter einer Überdachung stehen Sitzbänke mit Tischen, die auch an sonnigen Tagen einen
-schattigen Platz zum Picknicken bieten.
-Unser Highlight: Am
-Spielplatzzaun grenzt eine Wiese an. Eine neugierige Ziege kam bis an den Zaun und ließ sich mit Blättern von ihrem Lieblingsbusch füttern.      </p>    </div>    <div class="tags">      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>      <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span>   <span><img src="images/turnreck.png" class="tag-icon"> Turnreck</span>      <span><img src="images/basketball.png" class="tag-icon"> Basketball</span>    </div><a href="https://www.google.com/maps/dir/?api=1&destination=52.3885423, 7.4358726"   target="_blank"   class="route-link">  <img src="images/route.png" alt="Route planen" class="route-icon"></a>  </div>
-
-<div class="card" data-tags="Kleinkinder Kletterturm Wasserspiel Babyschaukel"
-  data-ort="Lünne">
-
-    <div class="carousel">  <button class="arrow left" onclick="prevSlide(this)">‹</button>  <img src="images/kirchstrasse1.webp" class="active">
-<img src="images/kirchstrasse2.webp" loading="lazy">
-<img src="images/kirchstrasse3.webp" loading="lazy">
-<img src="images/kirchstrasse4.webp" loading="lazy">
-<img src="images/kirchstrasse5.webp" loading="lazy">
-<img src="images/kirchstrasse6.webp" loading="lazy">
-<img src="images/kirchstrasse7.webp" loading="lazy">
-<img src="images/kirchstrasse8.webp" loading="lazy">
-<img src="images/kirchstrasse9.webp" loading="lazy">
-<img src="images/kirchstrasse10.webp" loading="lazy">
-<img src="images/kirchstrasse11.webp" loading="lazy">
-<img src="images/kirchstrasse12.webp" loading="lazy">  <button class="arrow right" onclick="nextSlide(this)">›</button>  <div class="dots"></div></div>
-
-
-    <div class="content">
-  <h2>Spielplatz Kirchstraße</h2>
-  <p class="ort-badge">📍 Lünne</p>
-     <p>Der neugestaltete Spielplatz ist ein echtes Highlight. Er ist modern und abwechslungsreich gestaltet und bietet für jede Altersklasse eine tolle Ausstattung.</p>
-
-<p>Für die Kleinsten gibt es einen besonders großen Kleinkinder-Kletterturm, der zum selbstständigen Entdecken und Klettern einlädt. Auch der Kletterturm für ältere Kinder ist abwechslungsreich gestaltet und sorgt für jede Menge Spielspaß.</p>
-
-<p>An Babys wurde ebenfalls gedacht: es gibt eine moderne Babyschaukel. Hier sitzen sich Kind und Begleitperson direkt gegenüber, sodass Blickkontakt und gemeinsamer Schaukelspaß garantiert sind.</p>
-
-<p>Das absolute Herzstück ist die beeindruckende Wassermatschanlage. Sie ist außergewöhnlich groß und mit zahlreichen Elementen zum Drehen, Schieben, Stauen und Umleiten des Wassers ausgestattet. Hier können Kinder spielerisch experimentieren und immer wieder Neues entdecken.</p>
-
-<p>Für Begleitpersonen gibt es zahlreiche Sitzmöglichkeiten, unter anderem zwei Sonnenliegen. Besonders praktisch ist außerdem der vorhandene Trinkwasserspender.</p>
-       
-    </div>
-
-    <div class="tags">
-      <span><img src="images/kleinkinder kletterturm.png" class="tag-icon"> Kleinkinder Kletterturm</span>
-      <span><img src="images/kletterturm.png" class="tag-icon"> Kletterturm</span>
-      <span><img src="images/babyschaukel.png" class="tag-icon"> Babyschaukel</span>
-      <span><img src="images/wasserspiel.png" class="tag-icon"> Wasserspiel</span>
-    </div>
-
-<div class="tags">
-</div>
-
-<a href="https://www.google.com/maps/dir/?api=1&destination=52.4318622, 7.4268108"
-   target="_blank"
-   class="route-link">
-  <img src="images/route.png" alt="Route planen" class="route-icon">
-</a>
-  </div>
-  
-<div class="card helper-card">
-
-  <div class="carousel">
-  <img src="images/freiwilligehelfer.webp" class="active" loading="lazy" alt="Spielplatzatlas mithelfen">
-  <div class="dots"></div>
-</div>
-
-  <div class="content">
-    
-    <p>
-      Du möchtest helfen und hast Spaß am Fotografieren?  
-      Dann kannst du mir gerne Fotos von Spielplätzen aus der offenen Liste senden:
-    </p>
-  </div>
-
-  <div class="content">
-    
-    <ul class="open-list">
-      <li>Dr.-Hellmich-Straße 10, 48480 Schapen</li>
-      <li>Wehwinkel, Lünne</li>
-      <li>Raphaelstraße 9, 48480 Schapen</li>
-      <li>Parkstraße 20, 48480 Schapen</li>
-      <li>Crommestraße 13, 48480 Schapen</li>
-      <li>Weemkamp 15, 48480 Schapen</li>
-      <li>Heitel (52.3992054, 7.4140770)</li>
-      <li>Speller Weg, Lünne (52.4208134, 7.4313085)</li>
-      <li>St. Vitus Straße, Lünne</li>
-      <li>Seggerhook, Varenrode</li>
-      <li>Teichstraße, Varenrode</li>
-    </ul>
-    
-    <p>Worauf ich Wert lege:
-<div class="foto-hinweis">
-  <p>☀️ Fotos bei strahlendem Sonnenschein</p>
-  <p>📸 Eine ansprechende Bildausrichtung</p>
-  <p>🛝 Der Spielplatz sollte möglichst vollständig und gut erkennbar abgebildet sein</p>
-</div>
-Ich freue mich auf deine Fotos!
-</p>
-  </div>
-
- <a href="mailto:spielplatzatlas.spelle@googlemail.com?subject=Spielplatzfotos%20für%20Spielplatzatlas&body=Hallo,%0D%0A%0D%0Ahier sind meine Fotos für einen Spielplatz aus der offenen Liste:%0D%0A%0D%0AOrt/Spielplatz:%0D%0A%0D%0AViele Grüße"
-   class="send-link">
-  <img src="images/fotossenden.png" alt="Fotos senden" class="send-icon">
-</a>
-
-</div>
-</section>
+<section id="cards" class="cards"></section>
 
 <div id="lightbox" class="lightbox">
   <span class="close-lightbox">&times;</span>
@@ -725,6 +158,7 @@ Ich freue mich auf deine Fotos!
   <img id="lightbox-img" src="" alt="">
   <button class="lightbox-arrow right-lightbox">›</button>
 </div>
+
 <script src="script.js"></script>
 
 <div class="card kaffeekasse-card">
@@ -1046,5 +480,7 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register("sw.js");
 }
 </script>
+<script src="spielplaetze.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
