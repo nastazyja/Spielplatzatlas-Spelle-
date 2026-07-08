@@ -395,3 +395,16 @@ margin: 0;
   box-shadow: none;
   margin: 0;
 }
+
+.view-toggle button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.view-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
