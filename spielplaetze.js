@@ -310,5 +310,22 @@ Das absolute Herzstück ist die beeindruckende Wassermatschanlage. Sie ist auße
 
 Für Begleitpersonen gibt es zahlreiche Sitzmöglichkeiten, unter anderem zwei Sonnenliegen. Besonders praktisch ist außerdem der vorhandene Trinkwasserspender.`,
     tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel", "Wasserspiel"]
+  },
+  
+    {
+    id: "moorcafe",
+    name: "Spielplatz Moorcafé",
+    ort: "Spelle",
+    koordinaten: { lat: 52.3806797, lng: 7.4764548 },
+    bilder: [
+      "images/moorcafe1.webp",
+      "images/moorcafe2.webp"
+    ],
+    beschreibung: `Ein besonders schönes Ausflugsziel für die ganze Familie. Das Moorcafé liegt idyllisch, umgeben von Feldern und Bäumen, und bietet eine herrlich ruhige Atmosphäre. Im Biergarten sorgen die vielen Bäume auch an warmen Sommertagen für angenehmen Schatten.
+
+Direkt im Biergarten befindet sich ein Kletterturm und viel Platz zum Toben, während die Erwachsenen ihr Essen oder einen Kaffee ganz entspannt genießen können, ohne dass den Kindern langweilig wird.
+
+Eine tolle Kombination aus gemütlicher Einkehr und Spielspaß.`,
+    tags: ["Kletterturm", "Schatten"]
   }
 ];
