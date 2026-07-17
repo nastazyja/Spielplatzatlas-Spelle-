@@ -327,5 +327,38 @@ Direkt im Biergarten befindet sich ein Kletterturm und viel Platz zum Toben, wä
 
 Eine tolle Kombination aus gemütlicher Einkehr und Spielspaß.`,
     tags: ["Kletterturm", "Schatten"]
+  },
+  
+      {
+    id: "dghheitel",
+    name: "Spielplatz Dorfgemeinschaftshaus Heitel",
+    ort: "Lünne",
+    koordinaten: { lat: 52.3992332, lng: 7.4140562 },
+    bilder: [
+      "images/dghheitel1.webp",
+"images/dghheitel2.webp",
+"images/dghheitel3.webp",
+"images/dghheitel4.webp",
+"images/dghheitel5.webp",
+"images/dghheitel6.webp",
+"images/dghheitel7.webp",
+"images/dghheitel8.webp",
+"images/dghheitel9.webp",
+"images/dghheitel10.webp",
+"images/dghheitel11.webp",
+"images/dghheitel12.webp"
+    ],
+    beschreibung: `<p>
+Dieser Spielplatz ist ein schönes Ziel für einen Ausflug mit dem Fahrrad. Besonders der Radweg von Varenrode nach Heitel führt durch eine ruhige Landschaft mit Feldern und Bauernhöfen und macht bereits die Anfahrt zu einem kleinen Erlebnis.
+</p>
+
+<p>
+Das weitläufige Gelände bietet viel Platz zum Spielen und Bewegen. Im Sandbereich stehen zwei Klettertürme bereit. Eine Seilbahn sorgt für zusätzlichen Spielspaß, und ist außerdem um eine Hangrutsche ergänzt. Die große Wiese mit Fußballtoren bietet reichlich Raum zum austoben.
+</p>
+
+<p>
+Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinschaftshaus an sonnigen Tagen angenehmen Schatten spenden. Direkt daneben befindet sich ein überdachter Pavillon. Er eignet sich ideal für eine gemütliche Pause oder ein Picknick.
+</p>`,
+    tags: ["Kletterturm", "Babyschaukel", "Turnreck", "Fußball", "Tischtennis", "Schatten"]
   }
 ];
