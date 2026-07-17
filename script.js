@@ -165,9 +165,15 @@ function applyFilters() {
     const tags = card.dataset.tags || "";
     const ort = card.dataset.ort || "";
 
-    const tagMatch =
-      activeTag === "all" ||
-      tags.includes(activeTag);
+const ballspieleTags = ["Fußball", "Tischtennis", "Basketball"];
+
+const tagMatch =
+  activeTag === "all" ||
+  tags.includes(activeTag) ||
+  (
+    activeTag === "Ballspiele" &&
+    ballspieleTags.some(ballTag => tags.includes(ballTag))
+  );
 
     const ortMatch =
       activeOrt === "all" ||
