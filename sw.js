@@ -1,4 +1,4 @@
-const CACHE_NAME = "spielplatzatlas-v5";
+const CACHE_NAME = "spielplatzatlas-v7";
 
 const ASSETS = [
   "./",
