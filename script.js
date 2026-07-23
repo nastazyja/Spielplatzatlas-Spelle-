@@ -1,4 +1,4 @@
-let activeTag = "all";
+const activeTags = new Set();
 let activeOrt = "all";
 let map;
 let markers = [];
@@ -12,8 +12,14 @@ function createCard(spielplatz) {
   card.dataset.ort = spielplatz.ort;
   card.dataset.id = spielplatz.id;
 
+  // Alle bisher vorhandenen Einträge sind automatisch Atlas-Tipps.
+  // Bei einem neuen, normalen Spielplatz einfach atlasTipp: false eintragen.
+  const isAtlasTipp = spielplatz.atlasTipp !== false;
+  card.dataset.atlasTipp = String(isAtlasTipp);
+
   card.innerHTML = `
     <div class="carousel">
+      ${isAtlasTipp ? '<span class="atlas-tipp-badge" aria-label="Atlas-Tipp">★ Atlas-Tipp</span>' : ''}
       <button class="arrow left" onclick="prevSlide(this)">‹</button>
 
       ${spielplatz.bilder.map((bild, index) => `
@@ -59,13 +65,15 @@ function getTagIcon(tag) {
     "Babyschaukel": "images/babyschaukel.png",
     "Wasserspiel": "images/wasserspiel.png",
     "Bagger": "images/bagger.png",
+    "Seilbahn": "images/seilbahn.png",
     "Turnreck": "images/turnreck.png",
     "Ballspiele": "images/ballspiele.png",
     "Schatten": "images/schatten.png",
     "Abschließbar": "images/abschließbar.png",
     "Tischtennis": "images/tischtennis.png",
     "Fußball": "images/fussball.png",
-    "Basketball": "images/basketball.png"
+    "Basketball": "images/basketball.png",
+    "Volleyball": "images/volleyball.png"
   };
 
   if (!icons[tag]) return "";
@@ -146,10 +154,58 @@ function prevSlide(btn) {
   carousel.showSlide(prev);
 }
 
-function filterCards(tag) {
-  activeTag = tag;
+function toggleFeatureFilter(button, tag) {
+  if (activeTags.has(tag)) {
+    activeTags.delete(tag);
+    button.classList.remove("active");
+  } else {
+    activeTags.add(tag);
+    button.classList.add("active");
+  }
+
+  updateAllButtonState();
   applyFilters();
   updatePlaygroundCount();
+}
+
+// Bleibt als Kompatibilitätsfunktion erhalten.
+function filterCards(tag) {
+  if (tag === "all") {
+    clearFeatureFilters();
+    return;
+  }
+
+  const button = document.querySelector(
+    `.ausstattungs-filter button[data-filter="${CSS.escape(tag)}"]`
+  );
+
+  if (button) toggleFeatureFilter(button, tag);
+}
+
+function clearFeatureFilters() {
+  activeTags.clear();
+
+  document.querySelectorAll(".ausstattungs-filter button").forEach(button => {
+    button.classList.remove("active");
+  });
+
+  const allButton = document.querySelector(
+    '.ausstattungs-filter button[data-filter="all"]'
+  );
+
+  if (allButton) allButton.classList.add("active");
+
+  applyFilters();
+  updatePlaygroundCount();
+}
+
+function updateAllButtonState() {
+  const allButton = document.querySelector(
+    '.ausstattungs-filter button[data-filter="all"]'
+  );
+
+  if (!allButton) return;
+  allButton.classList.toggle("active", activeTags.size === 0);
 }
 
 function filterOrt(ort) {
@@ -158,22 +214,34 @@ function filterOrt(ort) {
   updatePlaygroundCount();
 }
 
+function cardMatchesFeature(card, selectedTag) {
+  const tags = (card.dataset.tags || "").split(" ");
+  const isAtlasTipp = card.dataset.atlasTipp === "true";
+
+  if (selectedTag === "Atlas-Tipp") {
+    return isAtlasTipp;
+  }
+
+  if (selectedTag === "Ballspiele") {
+    const ballspieleTags = ["Fußball", "Tischtennis", "Basketball", "Volleyball"];
+    return ballspieleTags.some(ballTag => tags.includes(ballTag));
+  }
+
+  // data-tags enthält Bezeichnungen mit Leerzeichen. Deshalb wird hier
+  // zusätzlich der vollständige ursprüngliche Text geprüft.
+  return (card.dataset.tags || "").includes(selectedTag);
+}
+
 function applyFilters() {
   const cards = document.querySelectorAll(".card[data-id]");
 
   cards.forEach(card => {
-    const tags = card.dataset.tags || "";
     const ort = card.dataset.ort || "";
 
-const ballspieleTags = ["Fußball", "Tischtennis", "Basketball"];
-
-const tagMatch =
-  activeTag === "all" ||
-  tags.includes(activeTag) ||
-  (
-    activeTag === "Ballspiele" &&
-    ballspieleTags.some(ballTag => tags.includes(ballTag))
-  );
+    // UND-Verknüpfung: Die Card muss ALLE ausgewählten Merkmale erfüllen.
+    const tagMatch = [...activeTags].every(selectedTag =>
+      cardMatchesFeature(card, selectedTag)
+    );
 
     const ortMatch =
       activeOrt === "all" ||

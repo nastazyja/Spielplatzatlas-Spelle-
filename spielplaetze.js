@@ -82,7 +82,7 @@ const spielplaetze = [
       "images/bauernkamp4.webp"
     ],
     beschreibung: "Schöner Spielplatz mit großer Seilpyramide zum klettern und einem Sandbagger.",
-    tags: ["Kletterturm", "Babyschaukel", "Bagger", "Turnreck", "Tischtennis"]
+    tags: ["Kletterturm", "Babyschaukel", "Bagger", "Seilbahn", "Turnreck", "Tischtennis"]
   },
 
   {
@@ -99,7 +99,7 @@ const spielplaetze = [
       "images/halflingerstrasse6.webp"
     ],
     beschreibung: "Naturnaher Spielplatz mit Kletterturm für Groß und Klein, verschiedenen Schaukeln und großem Sandbereich. Dank vieler Bäume gibt es auch im Sommer schattige Plätze zum Spielen und Ausruhen.",
-    tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel", "Turnreck", "Schatten"]
+    tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel", "Seilbahn", "Turnreck", "Schatten"]
   },
 
   {
@@ -138,7 +138,7 @@ const spielplaetze = [
       "images/wacholderstrasse11.webp"
     ],
     beschreibung: "Dieser ruhig gelegene Spielplatz bietet einen Kletterturm mit Rutsche, Schaukeln und einen großen Sandbereich zum Buddeln. Besonders schön sind die schattenspendenden Bäume und die weitläufige Wiese mit Toren für kleine Fußballspiele. Ein überdachter Unterstand lädt zum Ausruhen oder Picknicken ein. Ideal für einen entspannten Spielplatzbesuch im Grünen.",
-    tags: ["Kletterturm", "Babyschaukel", "Turnreck", "Tischtennis", "Fußball", "Schatten"]
+    tags: ["Kletterturm", "Babyschaukel", "Seilbahn", "Turnreck", "Tischtennis", "Fußball", "Schatten"]
   },
 
   {
@@ -155,7 +155,7 @@ const spielplaetze = [
       "images/trakehnerstrasse6.webp"
     ],
     beschreibung: "Dieser ruhig gelegene Spielplatz, umgeben von gepflegten Hecken und Bäumen, bietet eine vielfältige Auswahl an Spielgeräten. Für ein schattiges Spielerlebnis im Sandbereich wird in den Sommermonaten ein Sonnensegel angebracht.",
-    tags: ["Kletterturm", "Babyschaukel", "Turnreck", "Schatten"]
+    tags: ["Kletterturm", "Babyschaukel", "Seilbahn", "Turnreck", "Schatten"]
   },
 
   {
@@ -241,7 +241,7 @@ const spielplaetze = [
       "images/eichenstrasse10.webp"
     ],
     beschreibung: "Ein wunderschöner, grüner und abwechslungsreicher Spielplatz, der sowohl für kleine als auch für größere Kinder viel zu bieten hat. Neben verschiedenen Kletter- und Spielmöglichkeiten gibt es unter anderem eine Stehwippe, Hüpfplatten und Balancierbalken. Außerdem gibt es ein großes Fußballfeld mit zwei Toren. Ein besonderes Highlight für viele Kinder: Direkt hinter dem Feld verläuft die B70. Wer begeistert Lkw, Traktoren oder Autos beobachtet, kommt hier voll auf seine Kosten.",
-    tags: ["Kletterturm", "Babyschaukel", "Turnreck", "Fußball", "Tischtennis", "Schatten"]
+    tags: ["Kletterturm", "Babyschaukel", "Seilbahn", "Turnreck", "Fußball", "Tischtennis", "Schatten"]
   },
 
   {
@@ -260,7 +260,7 @@ const spielplaetze = [
       "images/olympiastrasse8.webp"
     ],
     beschreibung: "Ein schöner Spielplatz auf einer großen Rasenfläche, umgeben von alten Bäumen, die an warmen Tagen angenehm Schatten spenden. Besonders für die Kleinsten gibt es einen großen Kletterturm mit Rutsche und Tunnel, der zum Entdecken einlädt. Auf der weitläufigen Wiese bleibt außerdem jede Menge Platz zum Rennen, Spielen oder für eine Runde Fußball am Tor. Hier finden Kinder jeden Alters viel Platz zum Spielen und Familien ein schattiges Plätzchen zum Verweilen.",
-    tags: ["Kleinkinder Kletterturm", "Turnreck", "Fußball", "Schatten"]
+    tags: ["Kleinkinder Kletterturm", "Seilbahn", "Turnreck", "Fußball", "Schatten"]
   },
 
   {
@@ -359,6 +359,357 @@ Das weitläufige Gelände bietet viel Platz zum Spielen und Bewegen. Im Sandbere
 <p>
 Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinschaftshaus an sonnigen Tagen angenehmen Schatten spenden. Direkt daneben befindet sich ein überdachter Pavillon. Er eignet sich ideal für eine gemütliche Pause oder ein Picknick.
 </p>`,
-    tags: ["Kletterturm", "Babyschaukel", "Turnreck", "Fußball", "Tischtennis", "Schatten"]
+    tags: ["Kletterturm", "Babyschaukel", "Seilbahn", "Turnreck", "Fußball", "Tischtennis", "Schatten"]
+  },
+
+  {
+    id: "georgstrasse",
+    name: "Spielplatz Georgstraße",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3661495, lng: 7.4744472 },
+    bilder: [
+      "images/platzhalter-spielplatz.webp"
+    ],
+    beschreibung: "",
+    tags: ["Babyschaukel", "Seilbahn"]
+  },
+
+  {
+    id: "hedwigstrasse",
+    name: "Spielplatz Hedwigstraße",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3630282, lng: 7.4713951 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Kletterturm", "Babyschaukel", "Turnreck"]
+  },
+
+  {
+    id: "amselweg",
+    name: "Spielplatz Amselweg",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3590110, lng: 7.4709291 },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Babyschaukel", "Turnreck"]
+  },
+
+  {
+    id: "habichtstrasse",
+    name: "Spielplatz Habichtstraße",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3584123, lng: 7.4682462 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Basketball", "Seilbahn"]
+  },
+
+  {
+    id: "suedring",
+    name: "Spiel- und Bolzplatz Südring",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3562641, lng: 7.4678482 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Fußball", "Volleyball"]
+  },
+
+  {
+    id: "neuer-ring",
+    name: "Spielplatz Neuer Ring",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3542156, lng: 7.4656954 },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Babyschaukel", "Turnreck"]
+  },
+
+  {
+    id: "oevelgoenne",
+    name: "Spielplatz Oevelgönne",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: null, lng: null }, // TODO: Koordinaten eintragen
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "vitusstrasse",
+    name: "Spielplatz Vitusstraße",
+    ort: "Venhaus",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3580091, lng: 7.4505594 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Kleinkinder Kletterturm", "Babyschaukel", "Turnreck", "Tischtennis"]
+  },
+
+  {
+    id: "schuetzenstrasse-venhaus",
+    name: "Spielplatz Schützenstraße",
+    ort: "Venhaus",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3535875, lng: 7.4495415 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "teichstrasse-varenrode",
+    name: "Spielplatz Teichstraße",
+    ort: "Varenrode",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3849916, lng: 7.4343589 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "schierring",
+    name: "Spielplatz Schierring",
+    ort: "Varenrode",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3942703, lng: 7.4365817 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Kletterturm", "Seilbahn", "Turnreck", "Fußball", "Schatten"]
+  },
+
+  {
+    id: "rudolf-harbig-strasse",
+    name: "Spielplatz Rudolf-Harbig-Straße",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3673782, lng: 7.4574118 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "von-seydlitz-strasse",
+    name: "Spielplatz Von-Seydlitz-Straße",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3670636, lng: 7.4638742 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Bagger", "Turnreck"]
+  },
+
+  {
+    id: "maria-aerdken-strasse",
+    name: "Spielplatz Maria-Aerdken-Straße",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3684225, lng: 7.4651657 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Kletterturm", "Turnreck"]
+  },
+
+  {
+    id: "venhauser-strasse",
+    name: "Spiel- und Bolzplatz Venhauser Straße",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3647252, lng: 7.4596263 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Fußball"]
+  },
+
+  {
+    id: "goethestrasse",
+    name: "Spielplatz Goethestraße",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3635982, lng: 7.4577152 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Kletterturm", "Seilbahn"]
+  },
+
+  {
+    id: "caecilienstrasse",
+    name: "Spielplatz Cäcilienstraße",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3634827, lng: 7.4609872 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Seilbahn"]
+  },
+
+  {
+    id: "helenenstrasse",
+    name: "Spielplatz Helenenstraße",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3610893, lng: 7.4626880 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Kletterturm", "Babyschaukel", "Tischtennis"]
+  },
+
+  {
+    id: "ursulinenstrasse",
+    name: "Spielplatz Ursulinenstraße",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3602283, lng: 7.4626397 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Kletterturm", "Turnreck"]
+  },
+
+  {
+    id: "theresenstrasse",
+    name: "Spielplatz Theresenstraße",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3638961, lng: 7.4660539 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Kletterturm", "Babyschaukel"]
+  },
+
+  {
+    id: "theodor-heuss-strasse",
+    name: "Spielplatz Theodor-Heuss-Straße",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3643135, lng: 7.4810427 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Kletterturm", "Babyschaukel", "Bagger", "Seilbahn"]
+  },
+
+  {
+    id: "stauffenbergstrasse",
+    name: "Spielplatz Stauffenbergstraße",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3667577, lng: 7.4851146 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Kleinkinder Kletterturm", "Kletterturm", "Turnreck", "Tischtennis"]
+  },
+
+  {
+    id: "anne-frank-strasse",
+    name: "Spielplatz Anne-Frank-Straße",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3693777, lng: 7.4824971 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Kletterturm", "Turnreck"]
+  },
+
+  {
+    id: "ringstrasse-bolzplatz",
+    name: "Bolzplatz Ringstraße",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3673475, lng: 7.4766053 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Fußball"]
+  },
+
+  {
+    id: "carl-orff-strasse",
+    name: "Spielplatz Carl-Orff-Straße",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3721512, lng: 7.4793157 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Kletterturm", "Babyschaukel", "Tischtennis"]
+  },
+
+  {
+    id: "woehlehof",
+    name: "Spielplatz Wöhlehof",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3713035, lng: 7.4722370 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Kletterturm", "Babyschaukel", "Turnreck", "Schatten"]
+  },
+
+  {
+    id: "an-der-alten-schule",
+    name: "Spielplatz An der Alten Schule",
+    ort: "Spelle",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3723060, lng: 7.4673484 }, 
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
   }
 ];

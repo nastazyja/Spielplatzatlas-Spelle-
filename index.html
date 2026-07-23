@@ -55,52 +55,64 @@
 
 </header>
 
-<section class="filters">
+<section class="filters ausstattungs-filter" aria-label="Spielplatzfilter">
 
-  <button class="active" onclick="setActiveFilter(this); filterCards('all')">Alle</button>
+  <button class="active" data-filter="all" onclick="clearFeatureFilters()">
+    Alle
+  </button>
 
-  <button onclick="setActiveFilter(this); filterCards('Kleinkinder Kletterturm')">
-    <img src="images/kleinkinder kletterturm.png" class="filter-icon">
+  <button data-filter="Atlas-Tipp" onclick="toggleFeatureFilter(this, 'Atlas-Tipp')">
+    <span class="filter-star" aria-hidden="true">★</span>
+    Atlas-Tipp
+  </button>
+
+  <button data-filter="Kleinkinder Kletterturm" onclick="toggleFeatureFilter(this, 'Kleinkinder Kletterturm')">
+    <img src="images/kleinkinder kletterturm.png" class="filter-icon" alt="">
     Kleinkinder Kletterturm
   </button>
 
-  <button onclick="setActiveFilter(this); filterCards('Kletterturm')">
-    <img src="images/kletterturm.png" class="filter-icon">
+  <button data-filter="Kletterturm" onclick="toggleFeatureFilter(this, 'Kletterturm')">
+    <img src="images/kletterturm.png" class="filter-icon" alt="">
     Kletterturm
   </button>
 
-  <button onclick="setActiveFilter(this); filterCards('Babyschaukel')">
-    <img src="images/babyschaukel.png" class="filter-icon">
+  <button data-filter="Babyschaukel" onclick="toggleFeatureFilter(this, 'Babyschaukel')">
+    <img src="images/babyschaukel.png" class="filter-icon" alt="">
     Babyschaukel
   </button>
 
-  <button onclick="setActiveFilter(this); filterCards('Wasserspiel')">
-    <img src="images/wasserspiel.png" class="filter-icon">
+  <button data-filter="Wasserspiel" onclick="toggleFeatureFilter(this, 'Wasserspiel')">
+    <img src="images/wasserspiel.png" class="filter-icon" alt="">
     Wasserspiel
   </button>
 
-  <button onclick="setActiveFilter(this); filterCards('Bagger')">
-    <img src="images/bagger.png" class="filter-icon">
+  <button data-filter="Bagger" onclick="toggleFeatureFilter(this, 'Bagger')">
+    <img src="images/bagger.png" class="filter-icon" alt="">
     Bagger
   </button>
 
-  <button onclick="setActiveFilter(this); filterCards('Turnreck')">
-    <img src="images/turnreck.png" class="filter-icon">
+  <button data-filter="Seilbahn" onclick="toggleFeatureFilter(this, 'Seilbahn')">
+    <img src="images/seilbahn.png" class="filter-icon" alt="">
+    Seilbahn
+  </button>
+
+  <button data-filter="Turnreck" onclick="toggleFeatureFilter(this, 'Turnreck')">
+    <img src="images/turnreck.png" class="filter-icon" alt="">
     Turnreck
   </button>
 
-  <button onclick="setActiveFilter(this); filterCards('Ballspiele')">
-    <img src="images/ballspiele.png" class="filter-icon">
+  <button data-filter="Ballspiele" onclick="toggleFeatureFilter(this, 'Ballspiele')">
+    <img src="images/ballspiele.png" class="filter-icon" alt="">
     Ballspiele
   </button>
 
-  <button onclick="setActiveFilter(this); filterCards('Schatten')">
-    <img src="images/schatten.png" class="filter-icon">
+  <button data-filter="Schatten" onclick="toggleFeatureFilter(this, 'Schatten')">
+    <img src="images/schatten.png" class="filter-icon" alt="">
     Schatten
   </button>
 
-  <button onclick="setActiveFilter(this); filterCards('Abschließbar')">
-    <img src="images/abschließbar.png" class="filter-icon">
+  <button data-filter="Abschließbar" onclick="toggleFeatureFilter(this, 'Abschließbar')">
+    <img src="images/abschließbar.png" class="filter-icon" alt="">
     Abschließbar
   </button>
 
@@ -490,7 +502,7 @@ if ('serviceWorker' in navigator) {
 }
 </script>
 
-<script src="spielplaetze.js?v=7"></script>
-<script src="script.js?v=7"></script>
+<script src="spielplaetze.js?v=9"></script>
+<script src="script.js?v=9"></script>
 </body>
 </html>
