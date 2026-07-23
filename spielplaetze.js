@@ -441,19 +441,6 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
   },
 
   {
-    id: "oevelgoenne",
-    name: "Spielplatz Oevelgönne",
-    ort: "Spelle",
-    atlasTipp: false,
-    koordinaten: { lat: null, lng: null }, // TODO: Koordinaten eintragen
-    bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
-    ],
-    beschreibung: "",
-    tags: []
-  },
-
-  {
     id: "vitusstrasse",
     name: "Spielplatz Vitusstraße",
     ort: "Venhaus",
