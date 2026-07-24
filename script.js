@@ -419,14 +419,35 @@ function renderMarkers() {
   markers = [];
 
   spielplaetze.forEach(spielplatz => {
-    const marker = new maplibregl.Marker({
-      color: "#6ea34d"
-    })
-      .setLngLat([
-        spielplatz.koordinaten.lng,
-        spielplatz.koordinaten.lat
-      ])
-      .addTo(map);
+    const isAtlasTipp = spielplatz.atlasTipp !== false;
+
+let marker;
+
+if (isAtlasTipp) {
+  const el = document.createElement("div");
+  el.textContent = "★";
+  el.style.color = "#b9893b";
+el.style.fontSize = "30px";
+el.style.lineHeight = "1";
+el.style.cursor = "pointer";
+el.style.filter = "drop-shadow(0 1px 2px rgba(0,0,0,0.35))";
+
+  marker = new maplibregl.Marker({
+    element: el,
+    anchor: "bottom"
+  });
+} else {
+  marker = new maplibregl.Marker({
+    color: "#6ea34d"
+  });
+}
+
+marker
+  .setLngLat([
+    spielplatz.koordinaten.lng,
+    spielplatz.koordinaten.lat
+  ])
+  .addTo(map);
       marker.getElement().addEventListener("click", () => {
   openMapCard(spielplatz.id);
 
