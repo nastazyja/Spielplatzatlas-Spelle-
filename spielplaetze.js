@@ -447,11 +447,31 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3580091, lng: 7.4505594 }, 
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+      "images/vitusstrasse1.webp",
+"images/vitusstrasse2.webp",
+"images/vitusstrasse3.webp",
+"images/vitusstrasse4.webp",
+"images/vitusstrasse5.webp"
     ],
     beschreibung: "",
     tags: ["Kleinkinder Kletterturm", "Babyschaukel", "Turnreck", "Tischtennis"]
   },
+  
+  {
+  id: "poggenmoerken",
+  name: "Spielplatz Poggenmörken",
+  ort: "Venhaus",
+  atlasTipp: false,
+  koordinaten: { lat: 52.3567134, lng: 7.4510945 },
+  bilder: [
+    "images/poggenmoerken1.webp",
+    "images/poggenmoerken2.webp",
+    "images/poggenmoerken3.webp",
+    "images/poggenmoerken4.webp"
+  ],
+  beschreibung: "",
+  tags: ["Kletterturm"]
+},
 
   {
     id: "schuetzenstrasse-venhaus",
