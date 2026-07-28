@@ -558,7 +558,9 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3647252, lng: 7.4596263 }, 
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+"images/venhauserstrasse1.webp",
+"images/venhauserstrasse2.webp",
+"images/venhauserstrasse3.webp"
     ],
     beschreibung: "",
     tags: ["Fußball"]
@@ -571,7 +573,9 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3635982, lng: 7.4577152 }, 
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+"images/goethestrasse1.webp",
+"images/goethestrasse2.webp",
+"images/goethestrasse3.webp"
     ],
     beschreibung: "",
     tags: ["Kletterturm", "Seilbahn"]
