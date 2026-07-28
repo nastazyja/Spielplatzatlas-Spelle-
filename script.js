@@ -538,3 +538,38 @@ function updateMarkersVisibility() {
     }
   });
 }
+
+function generateSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": spielplaetze.map(spielplatz => ({
+      "@type": "TouristAttraction",
+      "@id": `https://spielplatzatlas-spelle.de/#${spielplatz.id}`,
+      "name": spielplatz.name,
+      "description": spielplatz.beschreibung
+        ? spielplatz.beschreibung.replace(/<[^>]+>/g, "")
+        : "",
+      "url": "https://spielplatzatlas-spelle.de/",
+      "image": spielplatz.bilder.length
+        ? `https://spielplatzatlas-spelle.de/${spielplatz.bilder[0]}`
+        : undefined,
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": spielplatz.koordinaten.lat,
+        "longitude": spielplatz.koordinaten.lng
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": spielplatz.ort,
+        "addressCountry": "DE"
+      }
+    }))
+  };
+
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.textContent = JSON.stringify(schema);
+  document.head.appendChild(script);
+}
+
+window.addEventListener("load", generateSchema);

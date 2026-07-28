@@ -11,7 +11,7 @@
 <meta property="og:title" content="Spielplatzatlas Spelle">
 <meta property="og:description" content="Entdecke die schönsten Spielplätze in der Samtgemeinde Spelle. Mit Fotos, Ausstattung, Filtern und Navigation.">
 <meta property="og:image" content="https://www.spielplatzatlas-spelle.de/images/social-preview.jpg">
-<meta property="og:url" content="https://www.spielplatzatlas-spelle.de/">
+<meta property="og:url" content="https://spielplatzatlas-spelle.de/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 
@@ -21,6 +21,7 @@
 <meta name="twitter:description" content="Entdecke die schönsten Spielplätze in der Samtgemeinde Spelle.">
 <meta name="twitter:image" content="https://www.spielplatzatlas-spelle.de/images/social-preview.jpg">
   
+  <link rel="canonical" href="https://spielplatzatlas-spelle.de/">
   <link rel="stylesheet" href="style.css">
   
   <link
@@ -28,6 +29,9 @@
   rel="stylesheet"
 >
 
+<!-- MapLibre mit fester Version laden.
+     Ohne Versionsnummer können zukünftige Updates die Kartenansicht beschädigen. -->
+     
 <script src="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -35,7 +39,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="images/icon-512.png">
-  <meta name="theme-color" content="#ffffff">
+  
   
   <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#8b6f47">
@@ -43,6 +47,50 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Spielplatzatlas">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://spielplatzatlas-spelle.de/#website",
+      "url": "https://spielplatzatlas-spelle.de/",
+      "name": "Spielplatzatlas Spelle",
+      "description": "Entdecke die schönsten Spielplätze in der Samtgemeinde Spelle. Mit Fotos, Ausstattung, Filtern und direkter Navigation.",
+      "inLanguage": "de-DE",
+      "publisher": {
+        "@id": "https://spielplatzatlas-spelle.de/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://spielplatzatlas-spelle.de/#organization",
+      "name": "Spielplatzatlas Spelle",
+      "url": "https://spielplatzatlas-spelle.de/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://spielplatzatlas-spelle.de/images/logo.png"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Anastasia Podolski"
+      },
+      "sameAs": [
+        "https://www.instagram.com/spielplatzatlasspelle/",
+        "https://www.facebook.com/profile.php?id=61590993329887"
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Spielplatzatlas Spelle",
+      "applicationCategory": "TravelApplication",
+      "operatingSystem": "Web",
+      "url": "https://spielplatzatlas-spelle.de/",
+      "description": "Interaktiver Spielplatzatlas mit Fotos, Ausstattung, Kartenansicht und Navigation."
+    }
+  ]
+}
+</script>
 </head>
 
 
@@ -293,7 +341,6 @@
 </a>
 <button
   id="installButton"
-  onclick="installPWA()"
   style="
     display:inline-block;
     background:transparent;
