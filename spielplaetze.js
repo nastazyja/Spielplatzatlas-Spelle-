@@ -718,5 +718,24 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     ],
     beschreibung: "",
     tags: []
+  },
+  
+  {
+    id: "buergerpark-schapen",
+    name: "Bürgerpark Schapen",
+    ort: "Schapen",
+    atlasTipp: false,
+    koordinaten: { lat: 52.4000570, lng: 7.5459414 }, 
+    bilder: [
+      "images/buergerparkschapen1.webp",
+"images/buergerparkschapen2.webp",
+"images/buergerparkschapen3.webp",
+"images/buergerparkschapen4.webp",
+"images/buergerparkschapen5.webp",
+"images/buergerparkschapen6.webp",
+"images/buergerparkschapen7.webp"
+    ],
+    beschreibung: "",
+    tags: ["Kletterturm"]
   }
 ];
