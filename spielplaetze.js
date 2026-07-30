@@ -601,10 +601,14 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3610893, lng: 7.4626880 }, 
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+      "images/helenenstrasse1.webp",
+"images/helenenstrasse2.webp",
+"images/helenenstrasse3.webp",
+"images/helenenstrasse4.webp",
+"images/helenenstrasse5.webp"
     ],
     beschreibung: "",
-    tags: ["Kletterturm", "Babyschaukel", "Tischtennis"]
+    tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel", "Tischtennis"]
   },
 
   {
@@ -614,7 +618,10 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3602283, lng: 7.4626397 }, 
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+      "images/ursulinenstrasse1.webp",
+"images/ursulinenstrasse2.webp",
+"images/ursulinenstrasse3.webp",
+"images/ursulinenstrasse4.webp"
     ],
     beschreibung: "",
     tags: ["Kletterturm", "Turnreck"]
