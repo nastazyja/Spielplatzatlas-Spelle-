@@ -382,7 +382,10 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3630282, lng: 7.4713951 }, 
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+      "images/hedwigstr1.webp",
+"images/hedwigstr2.webp",
+"images/hedwigstr3.webp",
+"images/hedwigstr4.webp"
     ],
     beschreibung: "",
     tags: ["Kletterturm", "Babyschaukel", "Turnreck"]
