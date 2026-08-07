@@ -753,5 +753,213 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     ],
     beschreibung: "",
     tags: ["Kletterturm"]
+  },
+
+{
+    id: "crommestrasse",
+    name: "Spielplatz Crommestraße",
+    ort: "Schapen",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3996186, lng: 7.5537970 },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "kirchstrasse-schapen",
+    name: "Spielplatz Kirchstraße",
+    ort: "Schapen",
+    atlasTipp: false,
+    koordinaten: { lat: 52.4015468, lng: 7.5593324 },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "kolpingstrasse-schapen",
+    name: "Bolzplatz Kolpingstraße",
+    ort: "Schapen",
+    atlasTipp: false,
+    koordinaten: { lat: null, lng: null },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: ["Fußball"]
+  },
+
+  {
+    id: "veerkamper-esch",
+    name: "Spielplatz Veerkamper Esch",
+    ort: "Schapen",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3978419, lng: 7.5545781 },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "weemkamp",
+    name: "Spielplatz Weemkamp",
+    ort: "Schapen",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3998318, lng: 7.5493478 },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "wiesengrund-schapen",
+    name: "Spielplatz Wiesengrund",
+    ort: "Schapen",
+    atlasTipp: false,
+    koordinaten: { lat: 52.4019230, lng: 7.5657284 },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "parkstrasse-schapen",
+    name: "Spielplatz Parkstraße",
+    ort: "Schapen",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3965784, lng: 7.5548943 },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "raphaelstrasse",
+    name: "Spielplatz Raphaelstraße",
+    ort: "Schapen",
+    atlasTipp: false,
+    koordinaten: { lat: null, lng: null },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "dr-hellmich-strasse",
+    name: "Spielplatz Dr.-Hellmich-Straße",
+    ort: "Schapen",
+    atlasTipp: false,
+    koordinaten: { lat: 52.3950553, lng: 7.5583644 },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "in-den-gaerten",
+    name: "Spielplatz In den Gärten",
+    ort: "Lünne",
+    atlasTipp: false,
+    koordinaten: { lat: null, lng: null },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "schiessstand-luenne",
+    name: "Spielplatz Schießstand",
+    ort: "Lünne",
+    atlasTipp: false,
+    koordinaten: { lat: 52.4207588, lng: 7.4312894 },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "waldstrasse-luenne",
+    name: "Spielplatz Waldstraße",
+    ort: "Lünne",
+    atlasTipp: false,
+    koordinaten: { lat: null, lng: null },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "st-vitus-strasse-luenne",
+    name: "Spielplatz St.-Vitus-Straße",
+    ort: "Lünne",
+    atlasTipp: false,
+    koordinaten: { lat: 52.4279801, lng: 7.4297247 },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "sonnenbree-neeresch",
+    name: "Spielplatz Sonnenbree/Neeresch",
+    ort: "Lünne",
+    atlasTipp: false,
+    koordinaten: { lat: 52.4295770, lng: 7.4356182 },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "wehwinkel",
+    name: "Spielplatz Wehwinkel",
+    ort: "Lünne",
+    atlasTipp: false,
+    koordinaten: { lat: 52.4292564, lng: 7.4386393 },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
+  },
+
+  {
+    id: "luenner-see",
+    name: "Spielplatz Lünner See",
+    ort: "Lünne",
+    atlasTipp: false,
+    koordinaten: { lat: null, lng: null },
+    bilder: [
+      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    ],
+    beschreibung: "",
+    tags: []
   }
 ];

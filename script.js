@@ -84,9 +84,14 @@ function getTagIcon(tag) {
 function renderCards() {
   cardsContainer.innerHTML = "";
 
-  spielplaetze.forEach(spielplatz => {
-    createCard(spielplatz);
-  });
+  spielplaetze
+    .filter(spielplatz =>
+      spielplatz.koordinaten?.lat != null &&
+      spielplatz.koordinaten?.lng != null
+    )
+    .forEach(spielplatz => {
+      createCard(spielplatz);
+    });
 
   initCarousels();
   initLightbox();
@@ -419,6 +424,13 @@ function renderMarkers() {
   markers = [];
 
   spielplaetze.forEach(spielplatz => {
+    if (
+      spielplatz.koordinaten?.lat == null ||
+      spielplatz.koordinaten?.lng == null
+    ) {
+      return;
+    }
+
     const isAtlasTipp = spielplatz.atlasTipp !== false;
 
 let marker;
@@ -476,7 +488,9 @@ function fitMapToVisiblePlaygrounds() {
     .map(card => card.dataset.id);
 
   const visiblePlaygrounds = spielplaetze.filter(spielplatz =>
-    visibleIds.includes(spielplatz.id)
+    visibleIds.includes(spielplatz.id) &&
+    spielplatz.koordinaten?.lat != null &&
+    spielplatz.koordinaten?.lng != null
   );
 
   if (visiblePlaygrounds.length === 0) return;
