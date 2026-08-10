@@ -369,7 +369,10 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3661495, lng: 7.4744472 },
     bilder: [
-      "images/platzhalter-spielplatz.webp"
+      "images/georgstrasse1.webp",
+"images/georgstrasse2.webp",
+"images/georgstrasse3.webp",
+"images/georgstrasse4.webp"
     ],
     beschreibung: "",
     tags: ["Babyschaukel", "Seilbahn"]
@@ -786,7 +789,7 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     name: "Bolzplatz Kolpingstraße",
     ort: "Schapen",
     atlasTipp: false,
-    koordinaten: { lat: null, lng: null },
+    koordinaten: { lat: 52.3988613, lng: 7.5552249 },
     bilder: [
       "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
     ],
@@ -903,7 +906,7 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     name: "Spielplatz Waldstraße",
     ort: "Lünne",
     atlasTipp: false,
-    koordinaten: { lat: null, lng: null },
+    koordinaten: { lat: 52.4293210, lng: 7.4225803 },
     bilder: [
       "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
     ],
@@ -955,7 +958,7 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     name: "Spielplatz Lünner See",
     ort: "Lünne",
     atlasTipp: false,
-    koordinaten: { lat: null, lng: null },
+    koordinaten: { lat: 52.4119082, lng: 7.4184745 },
     bilder: [
       "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
     ],
