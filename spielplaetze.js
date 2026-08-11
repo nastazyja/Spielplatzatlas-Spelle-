@@ -850,11 +850,11 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
   },
 
   {
-    id: "raphaelstrasse",
-    name: "Spielplatz Raphaelstraße",
+    id: "aelstrasse",
+    name: "Spielplatz aelstraße",
     ort: "Schapen",
     atlasTipp: false,
-    koordinaten: { lat: null, lng: null },
+    koordinaten: { lat: 52.3987762, lng: 7.5587530 },
     bilder: [
       "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
     ],
@@ -880,7 +880,7 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     name: "Spielplatz In den Gärten",
     ort: "Lünne",
     atlasTipp: false,
-    koordinaten: { lat: null, lng: null },
+    koordinaten: { lat: 52.4334849, lng: 7.4237836 },
     bilder: [
       "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
     ],
