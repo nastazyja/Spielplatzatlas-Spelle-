@@ -401,7 +401,11 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3590110, lng: 7.4709291 },
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+      "images/amselweg1.webp",
+"images/amselweg2.webp",
+"images/amselweg3.webp",
+"images/amselweg4.webp",
+"images/amselweg5.webp"
     ],
     beschreibung: "",
     tags: ["Babyschaukel", "Turnreck"]
@@ -414,7 +418,11 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3584123, lng: 7.4682462 }, 
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+      "images/habichtstr1.webp",
+"images/habichtstr2.webp",
+"images/habichtstr3.webp",
+"images/habichtstr4.webp",
+"images/habichtstr5.webp"
     ],
     beschreibung: "",
     tags: ["Basketball", "Seilbahn"]
