@@ -448,10 +448,15 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3542156, lng: 7.4656954 },
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+      "images/neuerring1.webp",
+"images/neuerring2.webp",
+"images/neuerring3.webp",
+"images/neuerring4.webp",
+"images/neuerring5.webp",
+"images/neuerring6.webp"
     ],
     beschreibung: "",
-    tags: ["Babyschaukel", "Turnreck"]
+    tags: ["Kletterturm", "Babyschaukel", "Turnreck"]
   },
 
   {
