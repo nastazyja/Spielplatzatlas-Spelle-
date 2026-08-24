@@ -720,7 +720,14 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3721512, lng: 7.4793157 }, 
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+      "images/carlorff1.webp",
+"images/carlorff2.webp",
+"images/carlorff3.webp",
+"images/carlorff4.webp",
+"images/carlorff5.webp",
+"images/carlorff6.webp",
+"images/carlorff7.webp",
+"images/carlorff8.webp"
     ],
     beschreibung: "",
     tags: ["Kletterturm", "Babyschaukel", "Tischtennis"]
