@@ -553,7 +553,10 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3670636, lng: 7.4638742 }, 
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+      "images/vonseydliz1.webp",
+"images/vonseydliz2.webp",
+"images/vonseydliz3.webp",
+"images/vonseydliz4.webp"
     ],
     beschreibung: "",
     tags: ["Bagger", "Turnreck"]
