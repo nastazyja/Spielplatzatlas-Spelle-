@@ -609,13 +609,23 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     id: "caecilienstrasse",
     name: "Spielplatz Cäcilienstraße",
     ort: "Spelle",
-    atlasTipp: false,
     koordinaten: { lat: 52.3634827, lng: 7.4609872 }, 
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+      "images/caecilienstr1.webp",
+"images/caecilienstr2.webp",
+"images/caecilienstr3.webp",
+"images/caecilienstr4.webp",
+"images/caecilienstr5.webp",
+"images/caecilienstr6.webp",
+"images/caecilienstr7.webp",
+"images/caecilienstr8.webp",
+"images/caecilienstr9.webp",
+"images/caecilienstr10.webp",
+"images/caecilienstr11.webp"
     ],
-    beschreibung: "",
-    tags: ["Seilbahn"]
+    beschreibung: `Der Spielplatz bietet relativ neue Spielgeräte und für Kinder jeden Alters ist etwas dabei. Besonders schön sind der tolle
+Kleinkinder-Kletterturm mit Rutsche, die Eltern-Kind Schaukel für Babys und der große, außergewöhnliche Kletterturm für ältere Kinder, den man so nicht überall sieht.`,
+    tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel", "Seilbahn", "Turnreck", "Fußball"]
   },
 
   {
