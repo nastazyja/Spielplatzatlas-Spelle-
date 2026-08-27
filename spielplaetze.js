@@ -568,8 +568,9 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     ort: "Spelle",
     atlasTipp: false,
     koordinaten: { lat: 52.3684225, lng: 7.4651657 }, 
-    bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    bilder: [   "images/mariaaerdken1.webp",
+"images/mariaaerdken2.webp",
+"images/mariaaerdken3.webp"
     ],
     beschreibung: "",
     tags: ["Kletterturm", "Turnreck"]
@@ -681,7 +682,13 @@ Kleinkinder-Kletterturm mit Rutsche, die Eltern-Kind Schaukel für Babys und der
     atlasTipp: false,
     koordinaten: { lat: 52.3643135, lng: 7.4810427 }, 
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+      "images/theodorheussstr1.webp",
+"images/theodorheussstr2.webp",
+"images/theodorheussstr3.webp",
+"images/theodorheussstr4.webp",
+"images/theodorheussstr5.webp",
+"images/theodorheussstr6.webp",
+"images/theodorheussstr7.webp"
     ],
     beschreibung: "",
     tags: ["Kletterturm", "Babyschaukel", "Bagger", "Seilbahn"]
