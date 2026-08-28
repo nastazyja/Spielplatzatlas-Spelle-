@@ -611,8 +611,7 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     name: "Spielplatz Cäcilienstraße",
     ort: "Spelle",
     koordinaten: { lat: 52.3634827, lng: 7.4609872 }, 
-    bilder: [
-      "images/caecilienstr1.webp",
+    bilder: [  "images/caecilienstr1.webp",
 "images/caecilienstr2.webp",
 "images/caecilienstr3.webp",
 "images/caecilienstr4.webp",
@@ -668,8 +667,10 @@ Kleinkinder-Kletterturm mit Rutsche, die Eltern-Kind Schaukel für Babys und der
     ort: "Spelle",
     atlasTipp: false,
     koordinaten: { lat: 52.3638961, lng: 7.4660539 }, 
-    bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    bilder: [     "images/theresenstr1.webp",
+"images/theresenstr2.webp",
+"images/theresenstr3.webp",
+"images/theresenstr4.webp"
     ],
     beschreibung: "",
     tags: ["Kletterturm", "Babyschaukel"]
