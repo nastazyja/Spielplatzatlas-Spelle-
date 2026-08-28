@@ -891,8 +891,8 @@ Kleinkinder-Kletterturm mit Rutsche, die Eltern-Kind Schaukel für Babys und der
   },
 
   {
-    id: "aelstrasse",
-    name: "Spielplatz aelstraße",
+    id: "Raphaelstrasse",
+    name: "Spielplatz Raphaelstraße",
     ort: "Schapen",
     atlasTipp: false,
     koordinaten: { lat: 52.3987762, lng: 7.5587530 },
