@@ -52,7 +52,7 @@ const spielplaetze = [
       "images/telemannstrasse4.webp"
     ],
     beschreibung: "Ein klassisch ausgestatteter Spielplatz mit viel Schatten und Rasenfläche, super Ziel für warme Sommertage.",
-    tags: ["Turnreck", "Basketball", "Schatten"]
+    tags: ["Turnreck", "Schatten"]
   },
 
   {
