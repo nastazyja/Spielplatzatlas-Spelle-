@@ -714,8 +714,12 @@ Kleinkinder-Kletterturm mit Rutsche, die Eltern-Kind Schaukel für Babys und der
     ort: "Spelle",
     atlasTipp: false,
     koordinaten: { lat: 52.3693777, lng: 7.4824971 }, 
-    bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    bilder: [  "images/annefrank1.webp",
+"images/annefrank2.webp",
+"images/annefrank3.webp",
+"images/annefrank4.webp",
+"images/annefrank5.webp",
+"images/annefrank6.webp"
     ],
     beschreibung: "",
     tags: ["Kletterturm", "Turnreck"]
