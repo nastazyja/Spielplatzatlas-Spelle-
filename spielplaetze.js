@@ -36,7 +36,7 @@ const spielplaetze = [
       "images/rotdornstrasse8.webp",
       "images/rotdornstrasse9.webp"
     ],
-    beschreibung: "Moderner Spielplatz mit großem Kletterturm und sonniger Fläche.",
+    beschreibung: "Moderner Spielplatz mit riesiegem, spannendem Kletterturm für die Großen und vielen Spielangeboten für die ganz Kleinen.",
     tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel"]
   },
 
@@ -537,20 +537,24 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     id: "rudolf-harbig-strasse",
     name: "Spielplatz Rudolf-Harbig-Straße",
     ort: "Spelle",
-    atlasTipp: false,
     koordinaten: { lat: 52.3673782, lng: 7.4574118 }, 
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+"images/rudolfharbig1.webp",
+"images/rudolfharbig2.webp",
+"images/rudolfharbig3.webp",
+"images/rudolfharbig4.webp",
+"images/rudolfharbig5.webp"
     ],
-    beschreibung: "",
-    tags: []
-  },
+    beschreibung: `<p>Ein schöner Spielplatz besonders für Kleinkinder. Unter den großen Bäumen gibt es viel natürlichen Schatten und ein kleines Spielhäuschen, das zum Erkunden und Spielen einlädt. Eine Babyschaukel ist ebenfalls vorhanden.</p>
+
+<p>Für etwas größere Kinder gibt es eine große Rutsche, eine Wippe und eine normale Schaukel. Durch die überschaubare Größe und die vielen schattigen Bereiche eignet sich der Spielplatz besonders gut für einen entspannten Besuch mit kleineren Kindern.</p`,
+    tags: ["Kleinkinder Kletterturm", "Babyschaukel", "Schatten"] },
 
   {
     id: "von-seydlitz-strasse",
     name: "Spielplatz Von-Seydlitz-Straße",
     ort: "Spelle",
-    atlasTipp: false,
+    atlasTp: false,
     koordinaten: { lat: 52.3670636, lng: 7.4638742 }, 
     bilder: [
       "images/vonseydliz1.webp",
