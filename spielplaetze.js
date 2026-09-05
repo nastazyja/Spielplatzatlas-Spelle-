@@ -17,7 +17,9 @@ const spielplaetze = [
       "images/buergerpark10.webp",
       "images/buergerpark11.webp"
     ],
-    beschreibung: "Großer Spielplatz mit viel Schatten. Der Kleinkinder-Kletterturm ist ein Feuerwehrauto. Der Bereich ist eingezäunt und hat ein Tor zum Abschließen. Die große Wasser-Matschanlage ist von gemütlichen Sonnenliegen umgeben.",
+    beschreibung: `<p>Großer Spielplatz mit viel Schatten. Der Kleinkinder-Kletterturm ist ein Feuerwehrauto.</p>
+
+<p>Der Bereich ist eingezäunt und hat ein Tor zum Abschließen. Die große Wasser-Matschanlage ist von gemütlichen Sonnenliegen umgeben.</p>`,
     tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel", "Wasserspiel", "Tischtennis", "Schatten", "Abschließbar"]
   },
 
@@ -137,7 +139,9 @@ const spielplaetze = [
       "images/wacholderstrasse10.webp",
       "images/wacholderstrasse11.webp"
     ],
-    beschreibung: "Dieser ruhig gelegene Spielplatz bietet einen Kletterturm mit Rutsche, Schaukeln und einen großen Sandbereich zum Buddeln. Besonders schön sind die schattenspendenden Bäume und die weitläufige Wiese mit Toren für kleine Fußballspiele. Ein überdachter Unterstand lädt zum Ausruhen oder Picknicken ein. Ideal für einen entspannten Spielplatzbesuch im Grünen.",
+    beschreibung: `<p>Dieser ruhig gelegene Spielplatz bietet einen Kletterturm mit Rutsche, Schaukeln und einen großen Sandbereich zum Buddeln. Besonders schön sind die schattenspendenden Bäume und die weitläufige Wiese mit Toren für kleine Fußballspiele.</p>
+
+<p>Ein überdachter Unterstand lädt zum Ausruhen oder Picknicken ein. Ideal für einen entspannten Spielplatzbesuch im Grünen.</p>`,
     tags: ["Kletterturm", "Babyschaukel", "Seilbahn", "Turnreck", "Tischtennis", "Fußball", "Schatten"]
   },
 
@@ -171,7 +175,9 @@ const spielplaetze = [
       "images/paullinckestrasse5.webp",
       "images/paullinckestrasse6.webp"
     ],
-    beschreibung: "Kleiner, ruhiger Spielplatz mit Rutsche, Kletternetz, Doppelschaukel und Sandkasten mit Sandbagger. Eine Tischtennisplatte sowie Sitzmöglichkeiten laden zum Verweilen ein. Durch die umliegenden Hecken und Bäume ist der Spielplatz angenehm grün und bietet teilweise Schatten.",
+    beschreibung: `<p>Kleiner, ruhiger Spielplatz mit Rutsche, Kletternetz, Doppelschaukel und Sandkasten mit Sandbagger.</p>
+
+<p>Eine Tischtennisplatte sowie Sitzmöglichkeiten laden zum Verweilen ein. Durch die umliegenden Hecken und Bäume ist der Spielplatz angenehm grün und bietet teilweise Schatten.</p>`,
     tags: ["Kletterturm", "Babyschaukel", "Bagger", "Turnreck", "Tischtennis", "Schatten"]
   },
 
@@ -189,7 +195,9 @@ const spielplaetze = [
       "images/konradadenauerring6.webp",
       "images/konradadenauerring7.webp"
     ],
-    beschreibung: "Dieser Spielplatz ist ein wahres Paradies für kleine Kinder. Das große Kletterschiff sorgt für leuchtende Augen und jede Menge Spielspaß. Da der Spielplatz frei liegt, ist er den ganzen Tag über sonnendurchflutet.",
+    beschreibung: `<p>Dieser Spielplatz ist ein wahres Paradies für kleine Kinder. Das große Kletterschiff sorgt für leuchtende Augen und jede Menge Spielspaß.</p>
+
+<p>Da der Spielplatz frei liegt, ist er den ganzen Tag über sonnendurchflutet.</p>`,
     tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel", "Turnreck"]
   },
 
@@ -203,7 +211,9 @@ const spielplaetze = [
       "images/schumannstrasse2.webp",
       "images/schumannstrasse3.webp"
     ],
-    beschreibung: "Dieser Spielplatz bietet viel Platz zum Spielen und Bewegen. Die große Wiese mit Fußballtor lädt zum Kicken und Toben ein. Zwei große Bäume spenden an den Sitzbänken und rund um das Tor angenehmen Schatten und sorgen für einen Rückzugsort an sonnigen Tagen. Das Klettergerüst steht in einem großzügigen Sandbereich, sodass Kinder hier nach Herzenslust klettern, buddeln und spielen können.",
+    beschreibung: `<p>Dieser Spielplatz bietet viel Platz zum Spielen und Bewegen. Die große Wiese mit Fußballtor lädt zum Kicken und Toben ein.</p>
+
+<p>Zwei große Bäume spenden an den Sitzbänken und rund um das Tor angenehmen Schatten und sorgen für einen Rückzugsort an sonnigen Tagen. Das Klettergerüst steht in einem großzügigen Sandbereich, sodass Kinder hier nach Herzenslust klettern, buddeln und spielen können.</p>`,
     tags: ["Kletterturm", "Fußball", "Schatten"]
   },
 
@@ -240,7 +250,9 @@ const spielplaetze = [
       "images/eichenstrasse9.webp",
       "images/eichenstrasse10.webp"
     ],
-    beschreibung: "Ein wunderschöner, grüner und abwechslungsreicher Spielplatz, der sowohl für kleine als auch für größere Kinder viel zu bieten hat. Neben verschiedenen Kletter- und Spielmöglichkeiten gibt es unter anderem eine Stehwippe, Hüpfplatten und Balancierbalken. Außerdem gibt es ein großes Fußballfeld mit zwei Toren. Ein besonderes Highlight für viele Kinder: Direkt hinter dem Feld verläuft die B70. Wer begeistert Lkw, Traktoren oder Autos beobachtet, kommt hier voll auf seine Kosten.",
+    beschreibung: `<p>Ein wunderschöner, grüner und abwechslungsreicher Spielplatz, der sowohl für kleine als auch für größere Kinder viel zu bieten hat. Neben verschiedenen Kletter- und Spielmöglichkeiten gibt es unter anderem eine Stehwippe, Hüpfplatten und Balancierbalken.</p>
+
+<p>Außerdem gibt es ein großes Fußballfeld mit zwei Toren. Ein besonderes Highlight für viele Kinder: Direkt hinter dem Feld verläuft die B70. Wer begeistert Lkw, Traktoren oder Autos beobachtet, kommt hier voll auf seine Kosten.</p>`,
     tags: ["Kletterturm", "Babyschaukel", "Seilbahn", "Turnreck", "Fußball", "Tischtennis", "Schatten"]
   },
 
@@ -259,7 +271,9 @@ const spielplaetze = [
       "images/olympiastrasse7.webp",
       "images/olympiastrasse8.webp"
     ],
-    beschreibung: "Ein schöner Spielplatz auf einer großen Rasenfläche, umgeben von alten Bäumen, die an warmen Tagen angenehm Schatten spenden. Besonders für die Kleinsten gibt es einen großen Kletterturm mit Rutsche und Tunnel, der zum Entdecken einlädt. Auf der weitläufigen Wiese bleibt außerdem jede Menge Platz zum Rennen, Spielen oder für eine Runde Fußball am Tor. Hier finden Kinder jeden Alters viel Platz zum Spielen und Familien ein schattiges Plätzchen zum Verweilen.",
+    beschreibung: `<p>Ein schöner Spielplatz auf einer großen Rasenfläche, umgeben von alten Bäumen, die an warmen Tagen angenehm Schatten spenden. Besonders für die Kleinsten gibt es einen großen Kletterturm mit Rutsche und Tunnel, der zum Entdecken einlädt.</p>
+
+<p>Auf der weitläufigen Wiese bleibt außerdem jede Menge Platz zum Rennen, Spielen oder für eine Runde Fußball am Tor. Hier finden Kinder jeden Alters viel Platz zum Spielen und Familien ein schattiges Plätzchen zum Verweilen.</p>`,
     tags: ["Kleinkinder Kletterturm", "Seilbahn", "Turnreck", "Fußball", "Schatten"]
   },
 
@@ -277,7 +291,11 @@ const spielplaetze = [
       "images/seggerhook6.webp",
       "images/seggerhook7.webp"
     ],
-    beschreibung: "Ein kleiner, idyllischer Spielplatz direkt an einem charmanten Fachwerkhaus. Durch die ruhige Lage und die gemütliche Atmosphäre eignet er sich wunderbar für eine entspannte Spielpause. Unter einer Überdachung stehen Sitzbänke mit Tischen, die auch an sonnigen Tagen einen schattigen Platz zum Picknicken bieten. Unser Highlight: Am Spielplatzzaun grenzt eine Wiese an. Eine neugierige Ziege kam bis an den Zaun und ließ sich mit Blättern von ihrem Lieblingsbusch füttern.",
+    beschreibung: `<p>Ein kleiner, idyllischer Spielplatz direkt an einem charmanten Fachwerkhaus. Durch die ruhige Lage und die gemütliche Atmosphäre eignet er sich wunderbar für eine entspannte Spielpause.</p>
+
+<p>Unter einer Überdachung stehen Sitzbänke mit Tischen, die auch an sonnigen Tagen einen schattigen Platz zum Picknicken bieten.</p>
+
+<p>Unser Highlight: Am Spielplatzzaun grenzt eine Wiese an. Eine neugierige Ziege kam bis an den Zaun und ließ sich mit Blättern von ihrem Lieblingsbusch füttern.</p>`,
     tags: ["Kletterturm", "Babyschaukel", "Turnreck", "Basketball"]
   },
 
@@ -547,7 +565,7 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     ],
     beschreibung: `<p>Ein schöner Spielplatz besonders für Kleinkinder. Unter den großen Bäumen gibt es viel natürlichen Schatten und ein kleines Spielhäuschen, das zum Erkunden und Spielen einlädt. Eine Babyschaukel ist ebenfalls vorhanden.</p>
 
-<p>Für etwas größere Kinder gibt es eine große Rutsche, eine Wippe und eine normale Schaukel. Durch die überschaubare Größe und die vielen schattigen Bereiche eignet sich der Spielplatz besonders gut für einen entspannten Besuch mit kleineren Kindern.</p`,
+<p>Für etwas größere Kinder gibt es eine große Rutsche, eine Wippe und eine normale Schaukel. Durch die überschaubare Größe und die vielen schattigen Bereiche eignet sich der Spielplatz besonders gut für einen entspannten Besuch mit kleineren Kindern.</p>`,
     tags: ["Kleinkinder Kletterturm", "Babyschaukel", "Schatten"] },
 
   {
@@ -627,8 +645,9 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
 "images/caecilienstr10.webp",
 "images/caecilienstr11.webp"
     ],
-    beschreibung: `Der Spielplatz bietet relativ neue Spielgeräte und für Kinder jeden Alters ist etwas dabei. Besonders schön sind der tolle
-Kleinkinder-Kletterturm mit Rutsche, die Eltern-Kind Schaukel für Babys und der große, außergewöhnliche Kletterturm für ältere Kinder, den man so nicht überall sieht.`,
+    beschreibung: `<p>Der Spielplatz bietet relativ neue Spielgeräte und für Kinder jeden Alters ist etwas dabei.</p>
+
+<p>Besonders schön sind der tolle Kleinkinder-Kletterturm mit Rutsche, die Eltern-Kind Schaukel für Babys und der große, außergewöhnliche Kletterturm für ältere Kinder, den man so nicht überall sieht.</p>`,
     tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel", "Seilbahn", "Turnreck", "Fußball"]
   },
 
