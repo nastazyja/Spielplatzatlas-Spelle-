@@ -725,7 +725,12 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3667577, lng: 7.4851146 }, 
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+"images/stauffenbergstr1.webp",
+"images/stauffenbergstr2.webp",
+"images/stauffenbergstr3.webp",
+"images/stauffenbergstr4.webp",
+"images/stauffenbergstr5.webp",
+"images/stauffenbergstr6.webp"
     ],
     beschreibung: "",
     tags: ["Kleinkinder Kletterturm", "Kletterturm", "Turnreck", "Tischtennis"]
@@ -755,10 +760,10 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3673475, lng: 7.4766053 }, 
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+"images/bolzplatzringstr.webp"
     ],
     beschreibung: "",
-    tags: ["Fußball"]
+    tags: ["Fußball", "Abschließbar"]
   },
 
   {
