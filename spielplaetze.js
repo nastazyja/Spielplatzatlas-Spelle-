@@ -529,13 +529,18 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     id: "teichstrasse-varenrode",
     name: "Spielplatz Teichstraße",
     ort: "Varenrode",
-    atlasTipp: false,
     koordinaten: { lat: 52.3849916, lng: 7.4343589 }, 
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+"images/teichstr1.webp",
+"images/teichstr2.webp",
+"images/teichstr3.webp",
+"images/teichstr4.webp",
+"images/teichstr5.webp",
+"images/teichstr6.webp",
+"images/teichstr7.webp"
     ],
-    beschreibung: "",
-    tags: []
+    beschreibung: "<p>Auf dieser weitläufigen Fläche sorgen die großen, alten Bäume für viel angenehmen Schatten an sonnigen Tagen.</p><p>Die Kleinsten können sich im Sandkasten mit kleinem Gartenhäuschen beschäftigen. Dazu gibt es eine Babyschaukel und mehrere Wippgeräte. Für größere Kinder stehen zwei Kletteranlagen bereit. Eine davon verfügt über eine Rutsche und zwei unterschiedlich gestaltete Aufstiege, sodass beim Hochklettern verschiedene Wege ausprobiert werden können.</p><p>Auch rund um den Ball ist einiges geboten: Zwei Fußball-Zielwände bieten Gelegenheit zum Schießen und Trainieren. Bei einer der Wände rollt der Ball anschließend über eine kleine Rampe selbstständig zurück. Wer lieber richtig Fußball spielt, findet auf dem großen Spielfeld mit zwei Toren ausreichend Platz für ein Spiel.</p>",
+    tags: ["Kletterturm", "Babyschaukel", "Turnreck", "Fußball", "Schatten"]
   },
 
   {
@@ -544,8 +549,13 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     ort: "Varenrode",
     atlasTipp: false,
     koordinaten: { lat: 52.3942703, lng: 7.4365817 }, 
-    bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+    bilder: [     "images/schierring1.webp",
+"images/schierring2.webp",
+"images/schierring3.webp",
+"images/schierring4.webp",
+"images/schierring5.webp",
+"images/schierring6.webp",
+"images/schierring7.webp"
     ],
     beschreibung: "",
     tags: ["Kletterturm", "Seilbahn", "Turnreck", "Fußball", "Schatten"]
