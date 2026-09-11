@@ -1040,12 +1040,18 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     id: "luenner-see",
     name: "Spielplatz Lünner See",
     ort: "Lünne",
-    atlasTipp: false,
-    koordinaten: { lat: 52.4119082, lng: 7.4184745 },
+    koordinaten:  {lat: 52.4119082, lng: 7.4184745 },
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+"images/luennersee1.webp",
+"images/luennersee2.webp",
+"images/luennersee3.webp",
+"images/luennersee4.webp",
+"images/luennersee5.webp",
+"images/luennersee6.webp",
+"images/luennersee7.webp",
+"images/luennersee8.webp"
     ],
-    beschreibung: "",
-    tags: []
+    beschreibung: "<p>Hier ist wirklich für jedes Alter etwas dabei! Der großzügige, abschließbare Spielplatz liegt direkt am Lünner See und verbindet jede Menge Spielmöglichkeiten mit einer tollen Lage am Wasser.</p><p>Für die Kleinsten gibt es einen eigenen Kletterturm und eine Baby-Eltern-Schaukel. Auch die größeren Kinder haben viel zu entdecken: Ein weiterer Kletterturm, eine große Kletternetzpyramide, zwei normale Schaukeln, ein Bagger und eine Seilbahn sorgen für jede Menge Abwechslung.</p><p>Direkt neben dem Spielplatz befindet sich ein Zugang zum See mit einem kleinen Sandbereich und Sitzbänken. So lässt sich der Spielplatzbesuch wunderbar mit einer kleinen Pause am Wasser verbinden.</p><p>Besonders praktisch für Familien mit kleinen Kindern: Der Spielplatz ist abschließbar. Dadurch können die Erwachsenen auch mal kurz sitzen und ihre Kinder im Blick behalten, ohne ständig darauf achten zu müssen, dass ein kleiner Ausreißer plötzlich Richtung Straße unterwegs ist.</p>",
+    tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel", "Bagger", "Seilbahn", "Abschließbar"]
   }
 ];
