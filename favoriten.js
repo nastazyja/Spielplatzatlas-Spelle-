@@ -5,7 +5,7 @@ const produktFavoriten = [
     titel: "Sonnenhut mit breiter rundum Krempe und Nackenschutz",
     beschreibung: "Im Rand der Krempe ist rundum ein Draht eingearbeitet. Dadurch behält der Hut seine Form und lässt sich individuell ausrichten. Das Kinnband sorgt dafür, dass er auch bei Wind sicher am Kopf bleibt.\n\nFür uns war er den ganzen Sommer über im Einsatz. Obwohl wir noch einige andere Hüte von Verwandten geschenkt bekommen hatten, haben wir letztendlich immer wieder zu diesem gegriffen.",
     bild: "images/favorites/sonnenhut.webp",
-    link: "https://amzn.to/4yCCFrX"
+    link: "https://link.amazon/B04vQtj1H"
   },
   {
     kategorie: "",
@@ -15,7 +15,7 @@ const produktFavoriten = [
   "images/favorites/fahrradsitz1.webp",
   "images/favorites/fahrradsitz2.webp"
 ],
-    link: "https://amzn.to/4dbEZOg"
+    link: "https://amzn.to/4yGrUFa"
   },
     {
     kategorie: "",
@@ -29,7 +29,7 @@ const produktFavoriten = [
     titel: "reisenthel Loopshopper M",
     beschreibung: "Ich fand diese Tasche so schön, habe aber lange überlegt, ob ich wirklich noch eine Tasche benötige. Sie hat sich als unglaublich praktisch herausgestellt und ist seit der Anschaffung bei uns ständig dabei. Sie passt perfekt in den Fahrradkorb und lässt sich mit Karabinerhaken an jedem Loop am Buggy befestigen. In die beiden Außentaschen passen außerdem perfekt die Wasserflaschen von Mama und Kind.\n\nWertsachen können sicher in der Innentasche mit Reißverschluss verstaut werden, während sich der restliche Inhalt im Innenraum und im dazugehörigen Organizer-Täschchen gut verstauen lässt. Durch die überschaubare Höhe findet man darin auch alles schnell wieder, ohne lange kramen zu müssen.",
     bild: "images/favorites/loopshopperm.webp",
-    link: "https://amzn.to/4yAdaaD"
+    link: "https://amzn.to/3UVVNm6"
   },
   {
     kategorie: "",
