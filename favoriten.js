@@ -5,12 +5,12 @@ const produktFavoriten = [
     titel: "Sonnenhut mit breiter rundum Krempe und Nackenschutz",
     beschreibung: "Im Rand der Krempe ist rundum ein Draht eingearbeitet. Dadurch behält der Hut seine Form und lässt sich individuell ausrichten. Das Kinnband sorgt dafür, dass er auch bei Wind sicher am Kopf bleibt.\n\nFür uns war er den ganzen Sommer über im Einsatz. Obwohl wir noch einige andere Hüte von Verwandten geschenkt bekommen hatten, haben wir letztendlich immer wieder zu diesem gegriffen.",
     bild: "images/favorites/sonnenhut.webp",
-    link: "https://link.amazon/B04vQtj1H"
+    link: "https://amzn.to/4xYZt5k"
   },
   {
     kategorie: "",
     titel: "Fahrradkindersitz für das Lenkrad",
-    beschreibung: "Um mich während des Fahrradfahrens mit meinem Kind unterhalten zu können, wollte ich bewusst einen Fahrradkindersitz am Lenker. Wir lieben diese Fahrvariante! Es macht riesig Spaß, einander während der Fahrt das zu zeigen, was wir sehen, und gemeinsam zu klingeln, um Fußgänger zu warnen.\n\nAber Achtung: Die zusätzliche Last am beweglichen Vorderrad ist nicht zu unterschätzen. Meiner Meinung nach ist diese Variante daher nur etwas für erfahrene und sichere Fahrradfahrer.",
+    beschreibung: "Um mich während des Fahrradfahrens mit meinem Kind unterhalten zu können, wollte ich bewusst einen Fahrradkindersitz am Lenker. Wir lieben diese Fahrvariante! Mein Kind hat während der Fahrt freie Sicht nach vorne, statt mir nur auf den Rücken zu schauen oder allein hinten im Fahrradanhänger zu sitzen. So können wir uns gegenseitig zeigen, was wir unterwegs entdecken, uns darüber unterhalten und gemeinsam klingeln, um Fußgänger zu warnen.\n\nAber Achtung: Die zusätzliche Last am beweglichen Vorderrad ist nicht zu unterschätzen. Meiner Meinung nach ist diese Variante daher nur etwas für erfahrene und sichere Fahrradfahrer.",
     bilder: [
   "images/favorites/fahrradsitz1.webp",
   "images/favorites/fahrradsitz2.webp"
@@ -34,9 +34,9 @@ const produktFavoriten = [
   {
     kategorie: "",
     titel: "Karabinerhaken für den Kinderwagen",
-    beschreibung: "Als Fußgängerin war mir der Platz im Korb des Kinderwagens immer zu knapp für Dinge, die wir unterwegs eigentlich immer dabeihaben – wie Regencover, Regenschirm, Sitzunterlage oder Picknickdecke. Um zusätzlich die Wickeltasche, Einkaufstasche oder den Kita-Rucksack am Kinderwagen befestigen zu können, haben sich die Karabinerhaken als besonders praktisch herausgestellt.",
-    bild: "",
-    link: "https://www.amazon.de/dp/B0DC3ZNKR9/?tag=nastazyja-21"
+    beschreibung: "Als Fußgängerin war mir der Platz im Korb des Kinderwagens immer zu knapp für Dinge, die wir unterwegs eigentlich immer dabeihaben, wie Regencover, Regenschirm, Sitzunterlage oder Picknickdecke. Um zusätzlich die Wickeltasche, Einkaufstasche oder den Kita-Rucksack am Kinderwagen befestigen zu können, haben sich die Karabinerhaken als besonders praktisch herausgestellt.",
+    bild: "images/favorites/karabiner.webp",
+    link: "https://amzn.to/46ocFEM"
   },
   {
     kategorie: "",
@@ -58,6 +58,26 @@ const produktFavoriten = [
     beschreibung: "Diese kurzen und weichen Gummistiefel sind eine bequeme Alternative zu klassischen Gummistiefeln. So kann man auch bei nassem Wetter sorglos durch Gras, Matsch und Pfützen laufen.",
     bild: "",
     link: "https://amzn.to/3SXB68T"
+  },
+  {
+    kategorie: "",
+    titel: "Reflektorbänder",
+    beschreibung: "Gerade bei schlechtem Wetter, in der Dämmerung oder in der dunklen Jahreszeit ist es mir wichtig, mit dem Kinderwagen gut gesehen zu werden. Deshalb haben wir sechs Reflektorbänder an verschiedenen Stellen des Kinderwagengestells angebracht. Eine einfache Ergänzung, die kaum auffällt, aber für zusätzliche Sichtbarkeit unterwegs sorgt.",
+    bilder: [
+  "images/favorites/reflektor1.webp",
+  "images/favorites/reflektor2.webp",
+  "images/favorites/reflektor3.webp"
+],
+    link: "https://amzn.to/4gT9dYH"
+  },
+  {
+    kategorie: "",
+    titel: "Thermobecher",
+    beschreibung: "Wer sein Heißgetränk auch tatsächlich mal heiß trinken möchte, zu Hause aber irgendwie nie dazu kommt: Ich nutze meine Chance beim Spaziergang mit dem Kinderwagen. Kaffee oder Tee kommt einfach mit und wird unterwegs in Ruhe getrunken.\n\nFür mich ist der Thermobecher von Emsa dabei seit Jahren der absolute Favorit. Meiner hat schon einiges mitgemacht und scheint nahezu unkaputtbar zu sein.\n\nUnd für mich ganz wichtig: Er darf komplett in die Spülmaschine. Denn was nicht in die Spülmaschine darf, gehört eigentlich auch nicht in meinen Haushalt.",
+    bilder: [
+  "images/favorites/thermobecher.webp"
+],
+    link: "https://amzn.to/4yEzXlL"
   }
 ];
 
