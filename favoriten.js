@@ -42,15 +42,19 @@ const produktFavoriten = [
     kategorie: "",
     titel: "Klassischer Rucksack",
     beschreibung: "Bei Veranstaltungen, bei denen ein Kinderwagen nicht mitkommen kann und das Kind oft auf dem Arm oder in der Trage ist, ist ein klassischer Rucksack eine gute Alternative. So bleiben beide Hände frei und trotzdem ist alles Wichtige dabei.\n\nDer Inhalt aus dem Loopshopper samt Organizer-Täschchen wird dafür einfach in den Rucksack umgepackt. Auch hier gibt es, außen links und rechts Seitentaschen für die Wasserflaschen, das finde ich sehr praktisch.\n\nDa wir ihn nur für solche eher seltenen Veranstaltungen nutzen, wollte ich bewusst keinen teuren Wickelrucksack mit vielen verschiedenen Abteilen anschaffen.",
-    bild: "",
-    link: "https://www.amazon.de/dp/B0GSR3P8WS/?tag=nastazyja-21"
+    bild: "images/favorites/rucksack.webp",
+    link: "https://amzn.to/4yFJU2i"
   },
   {
     kategorie: "",
     titel: "Fahrradanhänger und Buggy",
-    beschreibung: "Gerade in der kalten Jahreszeit ist ein Fahrradanhänger praktisch, um mit dem Kind sicher und vor Wind und Regen geschützt unterwegs zu sein.\n\nDamit lässt sich auch der Wocheneinkauf erledigen, was vorher ohne Auto nicht möglich war.\n\nAuch für den Weg zur Kita und anschließend weiter zur Arbeit eignet sich der Anhänger gut. Neben der Kita-Tasche ist ausreichend Platz für die Arbeitstasche und das Notebook.",
-    bild: "",
-    link: "https://www.amazon.de/dp/B002ZSSOSA/?tag=nastazyja-21"
+    beschreibung: "Gerade in der kalten Jahreszeit ist ein Fahrradanhänger praktisch, um mit dem Kind sicher und vor Wind und Regen geschützt unterwegs zu sein.\n\nWir haben uns für einen Zweisitzer entschieden, obwohl wir nur ein Kind haben. So haben wir neben dem Sitz noch zusätzlichen Stauraum für alles, was unterwegs mit muss.\n\nDamit lässt sich auch der Wocheneinkauf erledigen, was vorher ohne Auto nicht möglich war.\n\nAuch für den Weg zur Kita und anschließend weiter zur Arbeit eignet sich der Anhänger gut. Neben der Kita-Tasche ist ausreichend Platz für die Arbeitstasche und das Notebook.",
+    bilder: ["images/favorites/anhaenger1.webp",
+  "images/favorites/anhaenger2.webp",
+  "images/favorites/anhaenger3.webp",
+  "images/favorites/anhaenger4.webp",
+  "images/favorites/anhaenger5.webp"],
+    link: "https://amzn.to/4huvz2T"
   },
   {
     kategorie: "",
