@@ -453,10 +453,11 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3562641, lng: 7.4678482 }, 
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
+      "images/bolzplatzsuedring1.webp",
+"images/bolzplatzsuedring2.webp"
     ],
     beschreibung: "",
-    tags: ["Fußball", "Volleyball"]
+    tags: ["Fußball", "Volleyball", "Abschließbar"]
   },
 
   {
@@ -1051,7 +1052,7 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
 "images/luennersee7.webp",
 "images/luennersee8.webp"
     ],
-    beschreibung: "<p>Hier ist wirklich für jedes Alter etwas dabei! Der großzügige, abschließbare Spielplatz liegt direkt am Lünner See und verbindet jede Menge Spielmöglichkeiten mit einer tollen Lage am Wasser.</p><p>Für die Kleinsten gibt es einen eigenen Kletterturm und eine Baby-Eltern-Schaukel. Auch die größeren Kinder haben viel zu entdecken: Ein weiterer Kletterturm, eine große Kletternetzpyramide, zwei normale Schaukeln, ein Bagger und eine Seilbahn sorgen für jede Menge Abwechslung.</p><p>Direkt neben dem Spielplatz befindet sich ein Zugang zum See mit einem kleinen Sandbereich und Sitzbänken. So lässt sich der Spielplatzbesuch wunderbar mit einer kleinen Pause am Wasser verbinden.</p><p>Besonders praktisch für Familien mit kleinen Kindern: Der Spielplatz ist abschließbar. Dadurch können die Erwachsenen auch mal kurz sitzen und ihre Kinder im Blick behalten, ohne ständig darauf achten zu müssen, dass ein kleiner Ausreißer plötzlich Richtung Straße unterwegs ist.</p>",
+    beschreibung: "<p>Hier ist wirklich für jedes Alter etwas dabei! Der großzügige, abschließbare Spielplatz liegt direkt am Lünner See und verbindet jede Menge Spielmöglichkeiten mit einer tollen Lage am Wasser.</p><p>Für die Kleinsten gibt es einen eigenen Kletterturm, eine Baby-Eltern-Schaukel und eine Babyschaukel. Auch die größeren Kinder haben viel zu entdecken: Ein weiterer Kletterturm, eine große Kletternetzpyramide, eine normale Schaukel, ein Bagger und eine Seilbahn sorgen für jede Menge Abwechslung.</p><p>Direkt neben dem Spielplatz befindet sich ein Zugang zum See mit einem kleinen Sandbereich und Sitzbänken. So lässt sich der Spielplatzbesuch wunderbar mit einer kleinen Pause am Wasser verbinden.</p><p>Besonders praktisch für Familien mit kleinen Kindern: Der Spielplatz ist abschließbar. Dadurch können die Erwachsenen auch mal kurz sitzen und ihre Kinder im Blick behalten, ohne ständig darauf achten zu müssen, dass ein kleiner Ausreißer plötzlich Richtung Straße unterwegs ist.</p>",
     tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel", "Bagger", "Seilbahn", "Abschließbar"]
   }
 ];

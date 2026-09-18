@@ -21,8 +21,8 @@ const produktFavoriten = [
     kategorie: "",
     titel: "Thermo Sitzunterlage",
     beschreibung: "Die kompakte Sitzunterlage ist in der kalten Jahreszeit auch immer im Kinderwagen dabei. Wenn wir auf dem Spielplatz sind und das Kind gerade keine Matschhose anhat oder es einfach kalt, aber trocken ist, kann es sich darauf setzen und trotzdem im Sandkasten spielen.\n\nAuch als Elternteil nutze ich die Unterlage gerne, um mich auf dem Spielplatz daneben zu setzen",
-    bild: "",
-    link: "https://amzn.to/4h2iZ9z"
+    bild: "images/favorites/sitzunterlage.webp",
+    link: "https://amzn.to/4iDbk4h"
   },
   {
     kategorie: "",
