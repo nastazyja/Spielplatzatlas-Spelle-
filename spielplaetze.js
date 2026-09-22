@@ -846,26 +846,18 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     id: "crommestrasse",
     name: "Spielplatz Crommestraße",
     ort: "Schapen",
-    atlasTipp: false,
     koordinaten: { lat: 52.3996186, lng: 7.5537970 },
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
-    ],
+  "images/crommestr1.webp",
+  "images/crommestr2.webp",
+  "images/crommestr3.webp",
+  "images/crommestr4.webp",
+  "images/crommestr5.webp",
+  "images/crommestr6.webp",
+  "images/crommestr7.webp"
+],
     beschreibung: "",
-    tags: []
-  },
-
-  {
-    id: "kirchstrasse-schapen",
-    name: "Spielplatz Kirchstraße",
-    ort: "Schapen",
-    atlasTipp: false,
-    koordinaten: { lat: 52.4015468, lng: 7.5593324 },
-    bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
-    ],
-    beschreibung: "",
-    tags: []
+    tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel", "Bagger", "Turnreck", "Schatten"]
   },
 
   {
@@ -888,10 +880,11 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3978419, lng: 7.5545781 },
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
-    ],
+  "images/veerkamperesch1.webp",
+  "images/veerkamperesch2.webp"
+],
     beschreibung: "",
-    tags: []
+    tags: ["Kletterturm"]
   },
 
   {
@@ -904,7 +897,7 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
       "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
     ],
     beschreibung: "",
-    tags: []
+    tags: ["Kletterturm"]
   },
 
   {
@@ -914,10 +907,11 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.4019230, lng: 7.5657284 },
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
-    ],
+  "images/wiesengrund1.webp",
+  "images/wiesengrund2.webp",
+  "images/wiesengrund3.webp"],
     beschreibung: "",
-    tags: []
+    tags: ["Seilbahn"]
   },
 
   {
@@ -927,10 +921,12 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3965784, lng: 7.5548943 },
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
-    ],
+  "images/parkstr1.webp",
+  "images/parkstr2.webp",
+  "images/parkstr3.webp"
+],
     beschreibung: "",
-    tags: []
+    tags: ["Kletterturm", "Babyschaukel", "Bagger", "Seilbahn", "Turnreck" ]
   },
 
   {
@@ -940,23 +936,32 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3987762, lng: 7.5587530 },
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
-    ],
+  "images/raphaelstr1.webp",
+  "images/raphaelstr2.webp",
+  "images/raphaelstr3.webp",
+  "images/raphaelstr4.webp",
+  "images/raphaelstr5.webp",
+  "images/raphaelstr6.webp"
+],
     beschreibung: "",
-    tags: []
+    tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel", "Seilbahn"]
   },
 
   {
     id: "dr-hellmich-strasse",
     name: "Spielplatz Dr.-Hellmich-Straße",
     ort: "Schapen",
-    atlasTipp: false,
     koordinaten: { lat: 52.3950553, lng: 7.5583644 },
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
-    ],
+  "images/drhellmich1.webp",
+  "images/drhellmich2.webp",
+  "images/drhellmich3.webp",
+  "images/drhellmich4.webp",
+  "images/drhellmich5.webp",
+  "images/drhellmich6.webp"
+],
     beschreibung: "",
-    tags: []
+    tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel", "Seilbahn", "Turnreck"]
   },
 
   {
