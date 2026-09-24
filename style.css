@@ -453,3 +453,50 @@ margin: 0;
     font-size: 12px;
   }
 }
+
+
+/* Waldspaziergänge */
+.wald-intro { max-width: 860px; margin: 5px auto 0; padding: 10px 20px 0; text-align: center; box-sizing: border-box; }
+.wald-intro h1 { margin: 10px 0 8px; font-size: clamp(26px, 5vw, 36px); }
+.wald-intro p { margin: 0 auto 8px; max-width: 700px; color: #666; line-height: 1.55; }
+.wald-placeholder { height: 260px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; background: #edf3e9; color: #587052; }
+.wald-placeholder i { font-size: 48px; }
+.wald-placeholder span { font-size: 14px; font-weight: 600; }
+.wald-card .content { padding: 18px 20px 8px; }
+.wald-card .content h2 { margin: 0 0 6px; }
+.wald-adresse { margin: 0 0 14px; color: #777; font-size: 14px; }
+.wald-card .content > p:not(.ort-badge):not(.wald-adresse):not(.wald-source) { line-height: 1.55; }
+.wald-source a { color: #2d6a4f; font-size: 13px; }
+
+/* Route-Grafik Waldspaziergänge */
+.wald-card .route-icon {
+  height: 60px;
+  width: auto;
+  max-width: 95%;
+}
+
+@media (max-width: 650px) {
+  .atlas-nav-inner {
+    max-width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .atlas-nav a {
+    padding: 9px 12px;
+  }
+}
+
+/* Ortsfilter Waldspaziergänge – auf allen Geräten zentriert */
+.wald-ortsfilter {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+  max-width: 900px !important;
+  margin: 20px auto !important;
+  padding: 20px !important;
+  box-sizing: border-box;
+  overflow: visible !important;
+}

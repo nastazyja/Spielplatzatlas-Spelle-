@@ -894,8 +894,10 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     atlasTipp: false,
     koordinaten: { lat: 52.3998318, lng: 7.5493478 },
     bilder: [
-      "images/platzhalter-spielplatz.webp" // TODO: durch echte Bilder ersetzen
-    ],
+  "images/weemkamp1.webp",
+  "images/weemkamp2.webp",
+  "images/weemkamp3.webp"
+],
     beschreibung: "",
     tags: ["Kletterturm"]
   },

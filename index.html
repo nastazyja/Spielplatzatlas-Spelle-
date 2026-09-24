@@ -114,6 +114,10 @@
       <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
       Spielplätze
     </a>
+    <a href="waldspaziergaenge.html">
+      <i class="fa-solid fa-tree" aria-hidden="true"></i>
+      Waldspaziergänge
+    </a>
     <a href="favoriten.html">
       <i class="fa-solid fa-heart" aria-hidden="true"></i>
       Outdoor-Favoriten
@@ -569,5 +573,15 @@ if ('serviceWorker' in navigator) {
 
 <script src="spielplaetze.js?v=9"></script>
 <script src="script.js?v=9"></script>
+
+<script>
+  // Waldspaziergänge vorerst nur in der lokalen Entwicklungsumgebung anzeigen.
+  if (["localhost", "127.0.0.1", "::1"].includes(window.location.hostname)) {
+    document.querySelectorAll(".localhost-only").forEach(link => {
+      link.style.display = "inline-flex";
+    });
+  }
+</script>
+
 </body>
 </html>

@@ -25,6 +25,30 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Spielplatzatlas">
+  <style>
+    /* Favoriten-Einleitung wie auf der Waldspaziergang-Seite */
+    .favoriten-intro-frei {
+      background: transparent !important;
+      box-shadow: none !important;
+      border: none !important;
+      border-radius: 0 !important;
+      max-width: 860px !important;
+      margin: 5px auto 20px !important;
+      padding: 10px 20px 0 !important;
+      text-align: center !important;
+      box-sizing: border-box;
+    }
+    .favoriten-intro-frei h1 {
+      margin: 10px 0 8px !important;
+      font-size: clamp(26px, 5vw, 36px) !important;
+    }
+    .favoriten-intro-frei p {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 700px;
+      line-height: 1.55;
+    }
+  </style>
 </head>
 
 <body>
@@ -42,7 +66,11 @@
         <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
         Spielplätze
       </a>
-      <a href="favoriten.html" class="active" aria-current="page">
+      <a href="waldspaziergaenge.html">
+      <i class="fa-solid fa-tree" aria-hidden="true"></i>
+      Waldspaziergänge
+    </a>
+    <a href="favoriten.html" class="active" aria-current="page">
         <i class="fa-solid fa-heart" aria-hidden="true"></i>
         Outdoor-Favoriten
       </a>
@@ -50,7 +78,7 @@
   </nav>
 
   <main class="favoriten-main">
-    <section class="favoriten-intro">
+    <section class="favoriten-intro wald-intro favoriten-intro-frei">
 
       <h1>Outdoor-Favoriten</h1>
       <p>
@@ -203,5 +231,15 @@
   </div>
 
   <script src="favoriten.js"></script>
+
+<script>
+  // Waldspaziergänge vorerst nur in der lokalen Entwicklungsumgebung anzeigen.
+  if (["localhost", "127.0.0.1", "::1"].includes(window.location.hostname)) {
+    document.querySelectorAll(".localhost-only").forEach(link => {
+      link.style.display = "inline-flex";
+    });
+  }
+</script>
+
 </body>
 </html>

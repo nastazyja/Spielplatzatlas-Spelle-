@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wald- & Naturspaziergänge rund um Spelle | Spielplatzatlas Spelle</title>
+  <meta name="description" content="Entdecke schöne Wald- und Naturspaziergänge rund um Spelle, Lünne und Schapen – mit Fotos, Beschreibungen und direkter Routenplanung für Familien.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://spielplatzatlas-spelle.de/waldspaziergaenge.html">
+
+  <meta property="og:title" content="Wald- & Naturspaziergänge rund um Spelle">
+  <meta property="og:description" content="Schöne Waldwege und Naturorte rund um Spelle, Lünne und Schapen entdecken – mit Fotos und direkter Routenplanung.">
+  <meta property="og:image" content="https://www.spielplatzatlas-spelle.de/images/social-preview.jpg">
+  <meta property="og:url" content="https://spielplatzatlas-spelle.de/waldspaziergaenge.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="produktfavoriten.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#8b6f47">
+</head>
+<body>
+<header class="hero">
+  <div class="logo-wrapper"><img src="images/logo.png" class="logo" alt="Spielplatzatlas Spelle"></div>
+  <p>Die schönsten Spielplätze in der Samtgemeinde Spelle.</p>
+  <p>Der Atlas wird kontinuierlich erweitert.</p>
+</header>
+
+<nav class="atlas-nav" aria-label="Hauptnavigation">
+  <div class="atlas-nav-inner">
+    <a href="index.html"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Spielplätze</a>
+    <a href="waldspaziergaenge.html" class="active" aria-current="page"><i class="fa-solid fa-tree" aria-hidden="true"></i>Waldspaziergänge</a>
+    <a href="favoriten.html"><i class="fa-solid fa-heart" aria-hidden="true"></i>Outdoor-Favoriten</a>
+  </div>
+</nav>
+
+<section class="wald-intro" style="margin-bottom:20px;">
+  <h1>Wald- & Naturspaziergänge</h1>
+  <p>Schöne Wege und Naturorte rund um die Samtgemeinde Spelle, die sich für kleine Auszeiten im Grünen eignen.</p>
+</section>
+
+<section class="filters orts wald-ortsfilter" aria-label="Ortsfilter">
+  <button class="active" onclick="setWaldOrt(this, 'all')">Alle Orte</button>
+  <button onclick="setWaldOrt(this, 'Spelle')">Spelle</button>
+  <button onclick="setWaldOrt(this, 'Lünne')">Lünne</button>
+  <button onclick="setWaldOrt(this, 'Schapen')">Schapen</button>
+</section>
+
+<div id="wald-count" class="playground-count"></div>
+<section id="wald-cards" class="cards"></section>
+
+<div class="card kaffeekasse-card">
+  <div style="display:flex; flex-wrap:wrap; align-items:center; gap:25px; padding:20px;">
+    <div style="flex:0 0 140px; text-align:center;">
+      <img src="images/kaffeekasse.png" alt="Kaffeekasse" style="width:140px; height:auto;">
+    </div>
+    <div style="flex:1; min-width:250px;">
+      <h2 style="margin-top:0; display:flex; align-items:center; gap:10px;">
+        <img src="images/kaffeetasse.png" alt="Kaffeekasse" style="width:40px; height:40px;">
+        Kaffeekasse
+      </h2>
+      <p style="font-size:14px; line-height:1.6;">
+        Der Spielplatzatlas Spelle ist ein privates Herzensprojekt, welches in meiner Elternzeit entstanden ist und wird in meiner Freizeit gepflegt.
+        Wenn dir die Seite geholfen hat, freue ich mich über einen virtuellen Kaffee.
+      </p>
+      <p style="font-size:14px; line-height:1.6;">
+        Die Unterstützung hilft bei Domainkosten, dem Betrieb der Website und dem Ausbau des Spielplatzatlas.
+      </p>
+      <a href="https://paypal.me/Spielplatzatlas" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; background:#e8c547; color:#2e2e2e; padding:10px 18px; border-radius:20px; text-decoration:none; font-weight:bold; margin-top:5px;">
+        Kaffee spendieren
+        <i class="fab fa-paypal" style="font-size:18px; color:#003087;"></i>
+      </a>
+      <p style="font-size:14px; color:#666; margin-top:18px;">Vielen Dank.<br><br>Anastasia</p>
+    </div>
+  </div>
+</div>
+
+<footer style="text-align:center; padding:40px 20px;">
+  <div style="display:flex; justify-content:center; align-items:center; gap:15px; margin-bottom:15px; flex-wrap:wrap;">
+    <a href="https://www.instagram.com/spielplatzatlasspelle/" target="_blank" rel="noopener" aria-label="Instagram">
+      <i class="fab fa-instagram" style="font-size:32px; color:#E4405F;"></i>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61590993329887" target="_blank" rel="noopener" aria-label="Facebook">
+      <i class="fab fa-facebook" style="font-size:32px; color:#1877F2;"></i>
+    </a>
+    <button id="installButton" style="display:inline-block; background:transparent; border:none; padding:0; cursor:pointer;" aria-label="App installieren">
+      <img src="images/pwaicon.png" alt="Installieren" style="width:32px; height:32px;">
+    </button>
+  </div>
+  <div style="font-size:14px; margin-bottom:10px;">
+    <a href="impressum.html" style="color:#2e2e2e; text-decoration:none;">Impressum</a> |
+    <a href="datenschutz.html" style="color:#2e2e2e; text-decoration:none;">Datenschutz</a>
+  </div>
+  <div>© 2026–<span id="year"></span> Spielplatzatlas Spelle</div>
+</footer>
+
+<script src="waldspaziergaenge.js?v=2"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+<script>
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+});
+
+document.getElementById('installButton').addEventListener('click', async () => {
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  if (isIOS) {
+    alert("Auf dem iPhone:\n\n1. Teilen-Symbol antippen\n2. 'Zum Home-Bildschirm' wählen\n3. Hinzufügen");
+    return;
+  }
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    await deferredPrompt.userChoice;
+    deferredPrompt = null;
+  } else {
+    alert("Falls keine Installationsabfrage erscheint, öffne das Browser-Menü und wähle 'App installieren' oder 'Zum Startbildschirm hinzufügen'.");
+  }
+});
+</script>
+
+
+</body>
+</html>
