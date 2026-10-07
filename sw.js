@@ -1,10 +1,14 @@
-const CACHE_NAME = "spielplatzatlas-v10";
+const CACHE_NAME = "spielplatzatlas-v11";
 
 const ASSETS = [
   "./",
   "./index.html",
   "./manifest.json",
   "./favoriten.html",
+  "./tiere-gucken.html",
+  "./tiere-gucken.css",
+  "./tiere-gucken.js",
+  "./tierorte.js",
   "./produktfavoriten.css",
   "./favoriten.js",
   "./images/icon-192.png",

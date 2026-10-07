@@ -58,7 +58,9 @@ const waldspaziergaenge = [
     ort: "Lünne",
     adresse: "Am Speller Sand, 48480 Lünne",
     koordinaten: { lat: 52.3980363, lng: 7.4792305 },
-    bilder: [],
+    bilder: ["images/nature/spellersand1.webp",
+"images/nature/spellersand2.webp",
+"images/nature/spellersand3.webp"],
     beschreibung: `<p>Ein Waldgebiet zwischen Spelle und Lünne.</p>`,
   }
 ];

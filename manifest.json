@@ -1,7 +1,7 @@
 {
   "name": "Spielplatzatlas Spelle",
   "short_name": "Spielplatzatlas",
-  "description": "Spielplätze in der Samtgemeinde Spelle entdecken",
+  "description": "Spielplätze, Waldspaziergänge und Naschorte für Familien in der Samtgemeinde Spelle",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

@@ -395,3 +395,31 @@ body.favoriten-lightbox-open {
 .favoriten-note { background:#eef5ec; border-left:4px solid #82a68a; }
 .favoriten-note strong { color:#46664f; }
 .favoriten-empty i { color:#5f8068; }
+
+
+/* Smartphone-Navigation: Hauptnavigation auf allen Seiten vollständig scrollbar */
+@media (max-width: 650px) {
+  .atlas-nav {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    overflow-x: auto !important;
+    overflow-y: hidden;
+    padding: 8px 12px 4px !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .atlas-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .atlas-nav-inner {
+    display: inline-flex !important;
+    width: max-content !important;
+    min-width: max-content !important;
+    justify-content: flex-start !important;
+    white-space: nowrap;
+  }
+}

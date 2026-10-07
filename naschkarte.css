@@ -1,0 +1,173 @@
+:root {
+  --nasch-green: #6f8f5f;
+  --nasch-green-soft: #e7f0e1;
+  --nasch-beige: #f3eee5;
+  --nasch-berry: #8d4561;
+  --nasch-berry-soft: #f2e3e9;
+  --nasch-plum: #70506f;
+  --nasch-nut: #8b6648;
+  --nasch-nut-soft: #eee2d6;
+}
+
+.nasch-main { max-width: 900px; margin: 0 auto; }
+.nasch-intro { max-width: 760px; margin: 8px auto 18px; padding: 10px 20px 0; text-align: center; }
+.nasch-intro h1 { margin: 10px 0 8px; font-size: clamp(26px,5vw,36px); }
+.nasch-intro p { line-height: 1.55; color: #5d5a55; }
+.nasch-disclaimer { max-width: 760px; margin: 18px auto 12px; padding: 16px 18px; background: #fff; border-left: 4px solid var(--nasch-berry); border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,.05); text-align: left; font-size: 13px; line-height: 1.5; }
+.nasch-filter-title { text-align:center; margin: 18px auto -10px; color:#6b6258; font-size:13px; font-weight:700; }
+.nasch-frucht-filter button.active { background: var(--nasch-berry-soft); color:#71354e; }
+.nasch-frucht-filter button[data-filter="Nüsse"].active { background:var(--nasch-nut-soft); color:#68482f; }
+.nasch-frucht-filter button[data-filter="Äpfel"].active,
+.nasch-frucht-filter button[data-filter="Birnen"].active { background:var(--nasch-green-soft); color:#45643d; }
+.nasch-ortsfilter button.active { background:var(--nasch-green-soft); color:#45643d; }
+.nasch-count { text-align:center; color:#777; font-size:15px; margin:8px 0 20px; font-weight:500; }
+.nasch-meta { margin: 0 5px 12px; font-size:13px; color:#6b6258; }
+.nasch-empty { margin:30px 20px 60px; padding:30px 22px; text-align:center; background:#fff; border-radius:24px; box-shadow:0 2px 8px rgba(0,0,0,.06); color:#6b6258; line-height:1.6; }
+.nasch-marker { width:32px; height:32px; border-radius:50% 50% 50% 0; transform:rotate(-45deg); background:var(--nasch-berry); border:3px solid #fff; box-shadow:0 2px 6px rgba(0,0,0,.25); }
+.nasch-marker::after { content:""; position:absolute; width:10px; height:10px; border-radius:50%; background:#fff; left:8px; top:8px; }
+#nasch-map-view { display:none; padding:15px; }
+#nasch-map { width:100%; height:70vh; min-height:450px; border-radius:25px; overflow:hidden; }
+.atlas-nav { overflow-x:auto; }
+.atlas-nav-inner { white-space:nowrap; }
+@media (max-width:650px) { .nasch-intro { padding-left:18px; padding-right:18px; } .nasch-disclaimer { margin-left:20px; margin-right:20px; } }
+
+.nasch-marker {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #fff;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  box-shadow: 0 2px 7px rgba(0,0,0,.25);
+  cursor: pointer;
+}
+.nasch-legende { display:flex; justify-content:center; gap:16px; flex-wrap:wrap; margin:10px auto 18px; font-size:13px; }
+.nasch-legende span { display:inline-flex; align-items:center; gap:6px; }
+.nasch-legende i { width:12px; height:12px; border-radius:50%; display:inline-block; }
+
+.nasch-filter-icon { display:inline-block; width:1.15em; text-align:center; margin-right:5px; }
+
+
+/* Kompakte horizontale Naschkarten */
+#nasch-cards {
+  padding: 0 14px 24px;
+}
+
+.nasch-card {
+  min-height: 86px;
+  margin: 0 auto 10px;
+  padding: 7px 7px 7px 12px;
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.nasch-symbol {
+  flex: 0 0 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+}
+
+.nasch-symbol i {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.nasch-card .content {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2px 0;
+}
+
+.nasch-card .content h2 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  line-height: 1.15;
+}
+
+.nasch-card .nasch-saison {
+  margin: 0;
+  color: #6a625a;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.nasch-card .route-link {
+  flex: 0 0 74px;
+  width: 74px;
+  min-height: 72px;
+  margin: 0;
+  padding: 7px;
+  border-radius: 14px;
+  background: var(--nasch-green-soft);
+  color: #45643d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.nasch-saison-filter {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.nasch-saison-filter button.active {
+  background: #fff1c9;
+  color: #72570b;
+}
+
+.nasch-saison-filter button i {
+  margin-right: 5px;
+}
+
+@media (max-width: 650px) {
+  #nasch-cards { padding-left: 10px; padding-right: 10px; }
+  .nasch-card { min-height: 82px; margin-bottom: 8px; }
+  .nasch-card .route-link { flex-basis: 70px; width: 70px; min-height: 68px; }
+  .nasch-card .content h2 { font-size: 17px; }
+}
+
+
+/* Angaben in den Naschkarten: Ort, Standort, Saison */
+.nasch-card .nasch-ort,
+.nasch-card .nasch-beschreibung,
+.nasch-card .nasch-saison {
+  margin: 0 0 3px;
+  color: #6a625a;
+  font-size: 12px;
+  line-height: 1.25;
+}
+.nasch-card .nasch-saison { margin-bottom: 0; }
+
+/* Einheitliche vertikale Abstände zwischen den Naschkarten-Filtern */
+.nasch-main .nasch-frucht-filter,
+.nasch-main .nasch-saison-filter,
+.nasch-main .nasch-ortsfilter {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nasch-main .nasch-frucht-filter,
+.nasch-main .nasch-saison-filter,
+.nasch-main .nasch-ortsfilter {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Überschreibt die allgemeinen .orts- und bisherigen Saison-Abstände */
+.nasch-main .nasch-saison-filter,
+.nasch-main .nasch-ortsfilter {
+  margin-top: 0;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naschkarte | Spielplatzatlas Spelle</title>
+  <meta name="description" content="Kostenlose Naschkarte für die Samtgemeinde Spelle: frei zugängliche und freigegebene Obst-, Beeren- und Nuss-Fundorte mit Filtern, Saisonangaben und Navigation.">
+  <link rel="canonical" href="https://spielplatzatlas-spelle.de/naschkarte.html">
+  <meta property="og:title" content="Naschkarte | Spielplatzatlas Spelle">
+  <meta property="og:description" content="Obst, Beeren und Nüsse in der Samtgemeinde Spelle entdecken – mit Fundorten, Filtern und Navigation.">
+  <meta property="og:image" content="https://www.spielplatzatlas-spelle.de/images/social-preview.jpg">
+  <meta property="og:url" content="https://spielplatzatlas-spelle.de/naschkarte.html">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="produktfavoriten.css">
+  <link rel="stylesheet" href="naschkarte.css">
+  <link href="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.css" rel="stylesheet">
+  <script src="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#8d4561">
+</head>
+<body>
+<header class="hero">
+  <div class="logo-wrapper"><img src="images/logo.png" class="logo" alt="Spielplatzatlas Spelle"></div>
+  <p>Alle Spielplätze in der Samtgemeinde Spelle</p>
+</header>
+<nav class="atlas-nav" aria-label="Hauptnavigation"><div class="atlas-nav-inner">
+  <a href="index.html"><i class="fa-solid fa-location-dot"></i> Spielplätze</a>
+  <a href="waldspaziergaenge.html"><i class="fa-solid fa-tree"></i> Waldspaziergänge</a>
+  <a href="naschkarte.html" class="active" aria-current="page"><i class="fa-solid fa-apple-whole"></i> Naschkarte</a>
+  <a href="favoriten.html"><i class="fa-solid fa-heart"></i> Outdoor-Favoriten</a>
+</div></nav>
+
+<main class="nasch-main">
+  <section class="nasch-intro">
+    <h1>Naschkarte</h1>
+    <p>Wo wachsen Obst, Beeren oder Nüsse, die man für den eigenen Bedarf pflücken oder sammeln kann? Die Naschkarte zeigt solche Fundorte.</p>
+  </section>
+  <aside class="nasch-disclaimer">
+    <strong>Bitte beachtet:</strong> Die Karte dient als Orientierung. Prüft Hinweise und Beschilderungen immer auch vor Ort und nehmt nur kleine Mengen für den eigenen Bedarf mit. Wild wachsende Früchte können durch Tiere und Umwelteinflüsse verunreinigt sein. Pflückt nur Früchte, die ihr sicher bestimmen könnt, und wascht sie vor dem Verzehr gründlich. Für Verfügbarkeit, Essbarkeit und Unbedenklichkeit kann keine Gewähr übernommen werden.
+  </aside>
+<section class="filters nasch-frucht-filter" aria-label="Fruchtfilter"></section>
+<section class="filters nasch-saison-filter" aria-label="Saisonfilter">
+  <button id="naschSeasonBtn" type="button" onclick="toggleSeasonFilter(this)"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Jetzt Saison</button>
+</section>
+<section class="filters orts nasch-ortsfilter" aria-label="Ortsfilter"></section>
+
+<div class="view-toggle">
+  <button id="naschListBtn" class="active" onclick="showNaschList()">
+    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    Listenansicht
+  </button>
+
+  <button id="naschMapBtn" onclick="showNaschMap()">
+    <i class="fa-regular fa-map" aria-hidden="true"></i>
+    Kartenansicht
+  </button>
+</div>
+  <div id="nasch-count" class="nasch-count"></div>
+  <div id="nasch-map-view"><div id="nasch-map"></div><div class="nasch-legende" aria-label="Kartenlegende">
+  <span><i style="background:#E10600"></i>Baumobst</span>
+  <span><i style="background:#A978C4"></i>Beeren</span>
+  <span><i style="background:#C79A63"></i>Nüsse</span>
+</div></div>
+  <div id="nasch-map-card-overlay" class="map-card-overlay"><button class="close-map-card" onclick="closeNaschMapCard()">×</button><div id="nasch-map-card-content"></div></div>
+  <section id="nasch-cards" class="cards"></section>
+  <div id="nasch-empty" class="nasch-empty"><strong>Die Naschkarte wächst gerade. 🍎🌰</strong><br>Die ersten geprüften Fundorte werden nach und nach ergänzt.</div>
+</main>
+
+
+<div class="card kaffeekasse-card"><div style="display:flex;flex-wrap:wrap;align-items:center;gap:25px;padding:20px;"><div style="flex:0 0 140px;text-align:center;"><img src="images/kaffeekasse.png" alt="Kaffeekasse" style="width:140px;height:auto;"></div><div style="flex:1;min-width:250px;"><h2 style="margin-top:0;display:flex;align-items:center;gap:10px;"><img src="images/kaffeetasse.png" alt="" style="width:40px;height:40px;">Kaffeekasse</h2><p style="font-size:14px;line-height:1.6;">Der Spielplatzatlas Spelle ist ein privates Herzensprojekt, welches in meiner Elternzeit entstanden ist und wird in meiner Freizeit gepflegt. Wenn dir die Seite geholfen hat, freue ich mich über einen virtuellen Kaffee.</p><p style="font-size:14px;line-height:1.6;">Die Unterstützung hilft bei Domainkosten, dem Betrieb der Website und dem Ausbau des Spielplatzatlas.</p><a href="https://paypal.me/Spielplatzatlas" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#e8c547;color:#2e2e2e;padding:10px 18px;border-radius:20px;text-decoration:none;font-weight:bold;margin-top:5px;">Kaffee spendieren <i class="fab fa-paypal" style="font-size:18px;color:#003087;"></i></a><p style="font-size:14px;color:#666;margin-top:18px;">Vielen Dank.<br><br>Anastasia</p></div></div></div>
+<footer>
+  <div style="display:flex;justify-content:center;align-items:center;gap:15px;margin-bottom:15px;flex-wrap:wrap;">
+    <a href="https://www.instagram.com/spielplatzatlasspelle/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" style="font-size:32px;color:#E4405F;"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61590993329887" target="_blank" aria-label="Facebook"><i class="fab fa-facebook" style="font-size:32px;color:#1877F2;"></i></a><button id="installButton" style="display:inline-block;background:transparent;border:none;padding:0;cursor:pointer;" aria-label="Spielplatzatlas installieren"><img src="images/pwaicon.png" alt="Installieren" style="width:32px;height:32px;"></button>
+  </div>
+  <div style="font-size:14px;margin-bottom:10px;"><a href="impressum.html" style="color:#2e2e2e;text-decoration:none;">Impressum</a> | <a href="datenschutz.html" style="color:#2e2e2e;text-decoration:none;">Datenschutz</a></div>
+  <div>© 2026–<span id="year"></span> Spielplatzatlas Spelle</div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');let deferredPrompt;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;});document.getElementById('installButton')?.addEventListener('click',async()=>{if(/iPad|iPhone|iPod/.test(navigator.userAgent)){alert("Auf dem iPhone:\n\n1. Teilen-Symbol antippen\n2. 'Zum Home-Bildschirm' wählen\n3. Hinzufügen");return;}if(deferredPrompt){deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;}else alert("Falls keine Installationsabfrage erscheint, öffne das Browser-Menü und wähle 'App installieren' oder 'Zum Startbildschirm hinzufügen'.");});</script>
+<script src="naschorte.js?v=1"></script>
+<script src="naschkarte.js?v=1"></script>
+</body>
+</html>
