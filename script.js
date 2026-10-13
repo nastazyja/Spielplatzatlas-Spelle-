@@ -70,6 +70,7 @@ function getTagIcon(tag) {
     "Ballspiele": "images/ballspiele.png",
     "Schatten": "images/schatten.png",
     "Abschließbar": "images/abschließbar.png",
+    "Rodelhügel": "images/rodelhuegel.png",
     "Tischtennis": "images/tischtennis.png",
     "Fußball": "images/fussball.png",
     "Basketball": "images/basketball.png",

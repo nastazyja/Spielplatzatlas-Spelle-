@@ -253,7 +253,7 @@ const spielplaetze = [
     beschreibung: `<p>Ein wunderschöner, grüner und abwechslungsreicher Spielplatz, der sowohl für kleine als auch für größere Kinder viel zu bieten hat. Neben verschiedenen Kletter- und Spielmöglichkeiten gibt es unter anderem eine Stehwippe, Hüpfplatten und Balancierbalken.</p>
 
 <p>Außerdem gibt es ein großes Fußballfeld mit zwei Toren. Ein besonderes Highlight für viele Kinder: Direkt hinter dem Feld verläuft die B70. Wer begeistert Lkw, Traktoren oder Autos beobachtet, kommt hier voll auf seine Kosten.</p>`,
-    tags: ["Kletterturm", "Babyschaukel", "Seilbahn", "Turnreck", "Fußball", "Tischtennis", "Schatten"]
+    tags: ["Kletterturm", "Babyschaukel", "Seilbahn", "Turnreck", "Fußball", "Tischtennis", "Schatten", "Rodelhügel"]
   },
 
   {
@@ -274,7 +274,7 @@ const spielplaetze = [
     beschreibung: `<p>Ein schöner Spielplatz auf einer großen Rasenfläche, umgeben von alten Bäumen, die an warmen Tagen angenehm Schatten spenden. Besonders für die Kleinsten gibt es einen großen Kletterturm mit Rutsche und Tunnel, der zum Entdecken einlädt.</p>
 
 <p>Auf der weitläufigen Wiese bleibt außerdem jede Menge Platz zum Rennen, Spielen oder für eine Runde Fußball am Tor. Hier finden Kinder jeden Alters viel Platz zum Spielen und Familien ein schattiges Plätzchen zum Verweilen.</p>`,
-    tags: ["Kleinkinder Kletterturm", "Seilbahn", "Turnreck", "Fußball", "Schatten"]
+    tags: ["Kleinkinder Kletterturm", "Seilbahn", "Turnreck", "Fußball", "Schatten", "Rodelhügel"]
   },
 
   {
@@ -377,7 +377,7 @@ Das weitläufige Gelände bietet viel Platz zum Spielen und Bewegen. Im Sandbere
 <p>
 Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinschaftshaus an sonnigen Tagen angenehmen Schatten spenden. Direkt daneben befindet sich ein überdachter Pavillon. Er eignet sich ideal für eine gemütliche Pause oder ein Picknick.
 </p>`,
-    tags: ["Kletterturm", "Babyschaukel", "Seilbahn", "Turnreck", "Fußball", "Tischtennis", "Schatten"]
+    tags: ["Kletterturm", "Babyschaukel", "Seilbahn", "Turnreck", "Fußball", "Tischtennis", "Schatten", "Rodelhügel"]
   },
 
   {
@@ -443,7 +443,7 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
 "images/habichtstr5.webp"
     ],
     beschreibung: "",
-    tags: ["Basketball", "Seilbahn"]
+    tags: ["Basketball", "Seilbahn", "Rodelhügel"]
   },
 
   {
@@ -592,7 +592,7 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
 "images/vonseydliz4.webp"
     ],
     beschreibung: "",
-    tags: ["Bagger", "Turnreck"]
+    tags: ["Bagger", "Turnreck", "Rodelhügel"]
   },
 
   {
@@ -636,7 +636,7 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
 "images/goethestrasse3.webp"
     ],
     beschreibung: "",
-    tags: ["Kletterturm", "Seilbahn"]
+    tags: ["Kletterturm", "Seilbahn", "Rodelhügel"]
   },
 
   {
@@ -659,7 +659,7 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
     beschreibung: `<p>Der Spielplatz bietet relativ neue Spielgeräte und für Kinder jeden Alters ist etwas dabei.</p>
 
 <p>Besonders schön sind der tolle Kleinkinder-Kletterturm mit Rutsche, die Eltern-Kind Schaukel für Babys und der große, außergewöhnliche Kletterturm für ältere Kinder, den man so nicht überall sieht.</p>`,
-    tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel", "Seilbahn", "Turnreck", "Fußball"]
+    tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel", "Seilbahn", "Turnreck", "Fußball", "Rodelhügel"]
   },
 
   {
@@ -1060,6 +1060,6 @@ Rund um den Spielplatz wachsen große Bäume, die zusammen mit dem Dorfgemeinsch
 "images/luennersee8.webp"
     ],
     beschreibung: "<p>Hier ist wirklich für jedes Alter etwas dabei! Der großzügige, abschließbare Spielplatz liegt direkt am Lünner See und verbindet jede Menge Spielmöglichkeiten mit einer tollen Lage am Wasser.</p><p>Für die Kleinsten gibt es einen eigenen Kletterturm, eine Baby-Eltern-Schaukel und eine Babyschaukel. Auch die größeren Kinder haben viel zu entdecken: Ein weiterer Kletterturm, eine große Kletternetzpyramide, eine normale Schaukel, ein Bagger und eine Seilbahn sorgen für jede Menge Abwechslung.</p><p>Direkt neben dem Spielplatz befindet sich ein Zugang zum See mit einem kleinen Sandbereich und Sitzbänken. So lässt sich der Spielplatzbesuch wunderbar mit einer kleinen Pause am Wasser verbinden.</p><p>Besonders praktisch für Familien mit kleinen Kindern: Der Spielplatz ist abschließbar. Dadurch können die Erwachsenen auch mal kurz sitzen und ihre Kinder im Blick behalten, ohne ständig darauf achten zu müssen, dass ein kleiner Ausreißer plötzlich Richtung Straße unterwegs ist.</p>",
-    tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel", "Bagger", "Seilbahn", "Abschließbar"]
+    tags: ["Kleinkinder Kletterturm", "Kletterturm", "Babyschaukel", "Bagger", "Seilbahn", "Abschließbar", "Rodelhügel"]
   }
 ];

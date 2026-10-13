@@ -8,7 +8,7 @@ let naschLines = [];
 const naschCards = document.getElementById("nasch-cards");
 const categoryColors = {
   Baumobst: "#E10600",
-  Beeren: "#9B7BC4",
+  Beeren: "#A978C4",
   "Nüsse": "#C79A63"
 };
 

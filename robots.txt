@@ -1,0 +1,14 @@
+# Spielplatzatlas Spelle – öffentliche Seiten für Suchmaschinen
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://spielplatzatlas-spelle.de/sitemap.xml
