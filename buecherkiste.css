@@ -1,0 +1,39 @@
+/* Bücherkiste: angepasste Proportionen der höheren Regalbilder (1312 px Breite). */
+.books-main{max-width:1050px;margin:auto;padding:14px 8px 45px}
+.books-intro{max-width:730px;margin:15px auto 8px;text-align:center;color:#5c5145;font-size:15px;line-height:1.65}
+.books-intro p{margin:0}
+.books-affiliate{max-width:690px;margin:0 auto 22px;padding:0 15px;text-align:center;font-size:12px;line-height:1.5;color:#75695c}
+.bookcase{width:100%;max-width:860px;margin:0 auto;line-height:0}
+#bookcase-books{display:flow-root;margin:0;padding:0}
+.bookcase-module,.bookcase-bottom{display:block;position:relative;width:100%;margin:0;padding:0;border:0;line-height:normal}
+.bookcase-module{background-position:center;background-size:100% 100%;background-repeat:no-repeat}
+.bookcase-module--top{aspect-ratio:1312/608;background-image:url('images/bookshelf/regal_oberteil.png')}
+.bookcase-module--middle{aspect-ratio:1312/424;background-image:url('images/bookshelf/regal_mittelteil.png');z-index:2}
+.bookcase-bottom{aspect-ratio:1312/557;margin-top:-4px;z-index:3}
+.bookcase-bottom img{display:block;width:100%;height:100%}
+.bookcase-module+.bookcase-module{margin-top:-4px}
+.bookcase-content{position:absolute;left:16%;right:16%;bottom:10%;height:75%;display:grid;grid-template-columns:minmax(0,24%) minmax(0,1fr);align-items:center;column-gap:clamp(8px,2vw,20px)}
+.bookcase-module--top .bookcase-content{height:53%;bottom:7%}
+.bookcase-image-link{display:flex;align-items:center;justify-content:center;min-width:0;min-height:0;height:100%;max-height:210px}
+.bookcase-cover{display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(2px 3px 2px #2e190d55)}
+.bookcase-copy{min-width:0;transform:translateY(-8px)}
+.bookcase-copy h2{font-family:Georgia,serif;font-size:clamp(12px,2.2vw,22px);line-height:1.15;color:#332016;margin:0 0 6px}
+.bookcase-copy h2 a{color:inherit;text-decoration:none}
+.bookcase-copy h2 a:hover,.bookcase-copy h2 a:focus-visible{text-decoration:underline}
+.bookcase-copy p{font-size:clamp(10px,1.35vw,13px);line-height:1.32;color:#382719;margin:0}
+.books-disclaimer{text-align:center;color:#75695c;font-size:12px;margin:18px auto}
+@media(max-width:620px){
+ .books-main{padding:12px 0 35px}
+ .books-intro{padding:0 15px}
+ .bookcase-content{left:13.5%;right:13.5%;bottom:10%;height:76%;grid-template-columns:minmax(0,27%) minmax(0,1fr);gap:clamp(5px,1.5vw,10px)}
+ .bookcase-module--top .bookcase-content{height:53%;bottom:7%}
+ .bookcase-image-link{height:88%;max-height:none;align-self:center}
+ .bookcase-copy{transform:translateY(-20px);align-self:center}
+ .bookcase-copy h2{font-size:clamp(10px,2.8vw,16px);line-height:1.1;margin-bottom:3px}
+ .bookcase-copy p{font-size:clamp(9px,2.15vw,12px);line-height:1.17;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:5;overflow:hidden}
+}
+@media(max-width:360px){
+  .bookcase-copy{transform:translateY(-15px)}
+  .bookcase-copy h2{font-size:9px}
+  .bookcase-copy p{font-size:9px;-webkit-line-clamp:4}
+}

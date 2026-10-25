@@ -32,6 +32,8 @@
   <a href="waldspaziergaenge.html"><i class="fa-solid fa-tree"></i> Waldspaziergänge</a>
   <a href="naschkarte.html" class="active" aria-current="page"><i class="fa-solid fa-apple-whole"></i> Naschkarte</a>
   <a href="favoriten.html"><i class="fa-solid fa-heart"></i> Outdoor-Favoriten</a>
+
+    <a href="buecherkiste.html"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Bücherkiste</a>
 </div></nav>
 
 <main class="nasch-main">
@@ -77,7 +79,7 @@
     <a href="https://www.instagram.com/spielplatzatlasspelle/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" style="font-size:32px;color:#E4405F;"></i></a>
     <a href="https://www.facebook.com/profile.php?id=61590993329887" target="_blank" aria-label="Facebook"><i class="fab fa-facebook" style="font-size:32px;color:#1877F2;"></i></a><button id="installButton" style="display:inline-block;background:transparent;border:none;padding:0;cursor:pointer;" aria-label="Spielplatzatlas installieren"><img src="images/pwaicon.png" alt="Installieren" style="width:32px;height:32px;"></button>
   </div>
-  <div style="font-size:14px;margin-bottom:10px;"><a href="impressum.html" style="color:#2e2e2e;text-decoration:none;">Impressum</a> | <a href="datenschutz.html" style="color:#2e2e2e;text-decoration:none;">Datenschutz</a></div>
+  <div style="font-size:14px;margin-bottom:10px;"><a href="impressum.html" style="color:#2e2e2e;text-decoration:none;">Impressum</a> | <a href="datenschutz.html" style="color:#2e2e2e;text-decoration:none;">Datenschutz</a> | <a href="kommunen.html" style="color:#2e2e2e;text-decoration:none;">Für Kommunen</a></div>
   <div>© 2026–<span id="year"></span> Spielplatzatlas Spelle</div>
 </footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');let deferredPrompt;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;});document.getElementById('installButton')?.addEventListener('click',async()=>{if(/iPad|iPhone|iPod/.test(navigator.userAgent)){alert("Auf dem iPhone:\n\n1. Teilen-Symbol antippen\n2. 'Zum Home-Bildschirm' wählen\n3. Hinzufügen");return;}if(deferredPrompt){deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;}else alert("Falls keine Installationsabfrage erscheint, öffne das Browser-Menü und wähle 'App installieren' oder 'Zum Startbildschirm hinzufügen'.");});</script>
